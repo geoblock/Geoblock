@@ -1,0 +1,14 @@
+VERSION 132251653
+COMMENT Written by : Geoblock
+COMMENT Date       : 01.07.2020 21:55:56
+
+COMMENT DHOLES D:\Geoblock\Data\Base\Models\Dholes\
+COMMENT POINTS2D D:\Geoblock\Data\Base\Models\Points2D\
+COMMENT POINTS3D D:\Geoblock\Data\Base\Models\Points3D\
+COMMENT POLYGONS D:\Geoblock\Data\Base\Models\Polygons\Poly\
+COMMENT TIN D:\Geoblock\Data\Base\Models\Tins\Faces\
+COMMENT SOLIDS D:\Geoblock\Data\Base\Models\Solids\
+COMMENT GRID2D D:\Geoblock\Data\Base\Models\Grids2D\
+COMMENT GRID3D D:\Geoblock\Data\Base\Models\Grids3D\
+COMMENT MESH2D D:\Geoblock\Data\Base\Models\Meshes2D\
+COMMENT MESH3D D:\Geoblock\Data\Base\Models\Meshes3D\

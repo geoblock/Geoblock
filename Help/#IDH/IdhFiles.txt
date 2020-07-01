@@ -1,0 +1,4 @@
+D:\Geoblock\Help\IDH_MAIN.H
+D:\Geoblock\Help\IDH_POPUP.H
+D:\Geoblock\Help\PLUGINS.H
+

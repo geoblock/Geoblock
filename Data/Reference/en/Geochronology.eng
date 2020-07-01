@@ -1,0 +1,137 @@
+Phanerozoic ...                      5.70e8 0.00e1
+ Cenozoic Era ...                    6.64e7 0.00e1
+  Quaternary Period ...              1.60e6 0.00e1
+   Holocene (Recent) Epoch           0.01e6 0.00e1
+   Pleistocene Epoch / Calabrian Age 1.60e6 0.01e6
+  Tertiary Period ...                6.64e7 1.60e6
+   Neogene ...                       2.37e7 1.60e6
+    Pliocene Epoch ...               5.30e6 1.60e6
+     Piacenzian Age (Late Pliocene)  3.40e6 1.60e6
+     Zanclean Age (Early Pliocene)   5.30e6 3.40e6
+    Miocene Epoch ...                2.37e7 5.30e6
+     Late Miocene ...                1.20e7 5.30e6
+      Messinian Age                  6.50e6 5.30e6
+      Tortonian Age                  1.20e7 6.50e6
+     Middle Miocene ...              1.66e7 1.20e7
+      Serravallian Age               1.51e7 1.20e7
+      Langhian Age                   1.66e7 1.51e7
+     Early Miocene ...               2.37e7 1.66e7
+      Burdigalian Age                2.18e7 1.66e7
+      Aquitanian Age                 2.37e7 2.18e7
+   Paleogene ...                     6.64e7 2.37e7
+    Oligocene Epoch ...              3.66e7 2.37e7
+     Chattian Age (Late Oligocene)   3.00e7 2.37e7
+     Early Oligocene                 3.66e7 3.00e7
+    Eocene Epoch ...                 5.78e7 3.66e7
+     Rupelian Age                    3.86e7 3.66e7
+     Priabonian Age                  4.00e7 3.86e7
+     Bartonian Age                   4.36e7 4.00e7
+     Lutetian Age                    5.20e7 4.36e7
+     Ypresian Age                    5.78e7 5.20e7
+    Paleocene Epoch ...              6.64e7 5.78e7
+     Selandian Age                   6.36e7 5.78e7
+     Danian Age                      6.64e7 6.36e7
+ Mesozoic Era ...                    2.45e8 6.64e7
+  Cretaceous Period ...              1.44e8 6.64e7
+   Late Cretageous Epoch ...         1.44e8 6.64e7
+    Maastrichtian Age                7.45e7 6.64e7
+    Campanian Age                    8.40e7 7.45e7
+    Santonian Age                    8.75e7 8.40e7
+    Coniacian Age                    8.85e7 8.75e7
+    Turonian Age                     9.10e7 8.85e7
+    Cenomanian Age                   9.75e7 9.10e7
+   Early Cretaceous Epoch ...        1.44e8 9.75e7
+    Albian                           1.13e8 9.75e7
+    Aptian                           1.19e8 1.13e8
+    Barremian                        1.24e8 1.19e8
+    Hauterivian                      1.31e8 1.24e8
+    Valanginian                      1.38e8 1.31e8
+    Berriasian                       1.44e8 1.38e8
+  Jurassic Period ...                2.08e8 1.44e8
+   Late Jurassic Epoch ...           1.63e8 1.44e8
+    Tithonian Age                    1.52e8 1.44e8
+    Kimmeridgian Age                 1.56e8 1.52e8
+    Oxfordian Age                    1.63e8 1.56e8
+   Middle Jurassic Epoch ...         1.87e8 1.63e8
+    Callovian Age                    1.69e8 1.63e8
+    Bathonian Age                    1.76e8 1.69e8
+    Bajocian Age                     1.83e8 1.76e8
+    Aalenian Age                     1.87e8 1.83e8
+   Early Jurassic Epoch ...          2.08e8 1.87e8
+    Toarcian Age                     1.93e8 1.87e8
+    Pliensbachian Age                1.98e8 1.93e8
+    Sinemurian Age                   2.04e8 1.98e8
+    Bathonian Age                    2.08e8 2.04e8
+  Triassic Period ...                2.45e8 2.08e8
+   Late Triassic Epoch ...           2.30e8 2.08e8
+    Norian Age                       2.25e8 2.08e8
+    Carnian Age                      2.30e8 2.25e8
+   Middle Triassic Epoch ...         2.40e8 2.30e8
+    Ladinian Age                     2.35e8 2.30e8
+    Anisian Age                      2.40e8 2.35e8
+   Early Triassic Epoch              2.45e8 2.40e8
+    Scythian Age                     2.45e8 2.40e8
+ Paleozoic Era ...                   5.70e8 2.45e8
+  Permian Period ...                 2.86e8 2.45e8
+   Late Permian Epoch ...            2.58e8 2.45e8
+    Tatarian Age                     2.53e8 2.45e8
+    Kazanian Age                     2.58e8 2.53e8
+   Early Permian Epoch ...           2.86e8 2.58e8
+    Kungurian Age                    2.63e8 2.58e8
+    Artinskian Age                   2.68e8 2.63e8
+    Sakmarian Age                    2.86e8 2.68e8
+  Carboniferous Period ...           3.60e8 2.86e8
+   Pennsylvanian(Late Carboniferous) 3.30e8 2.86e8
+    Gzeliznan Age                    2.91e8 2.86e8
+    Kasimovian Age                   2.96e8 2.91e8
+    Moscovian Age                    3.15e8 2.96e8
+    Bashkirian Age                   3.20e8 3.15e8
+    Serpukhovian Age                 3.30e8 3.20e8
+   Mississippian (Early Carbonifer.) 3.60e8 3.30e8
+    Visean Age                       3.52e8 3.30e8
+    Tournaisian Age                  3.60e8 3.52e8
+  Devonian Period ...                4.08e8 3.60e8
+   Late Devonian Epoch ...           3.74e8 3.60e8
+    Famennian Age                    3.67e8 3.60e8
+    Frasnian Age                     3.74e8 3.67e8
+   Middle Devonian Epoch ...         3.87e8 3.74e8
+    Givetian Age                     3.80e8 3.74e8
+    Eifelian Age                     3.87e8 3.80e8
+   Early Devonian Epoch ...          4.08e8 3.87e8
+    Emsian Age                       3.94e8 3.87e8
+    Siegenian Age                    4.01e8 3.94e8
+    Gedinnian Age                    4.08e8 4.01e8
+  Silurian Period ...                4.38e8 4.08e8
+   Late Silurian Epoch ...           4.21e8 4.08e8
+    Pridolian Age                    4.14e8 4.08e8
+    Ludlovian Age                    4.21e8 4.14e8
+   Early Silurian Epoch ...          4.38e8 4.21e8
+    Wenlockian Age                   4.28e8 4.21e8
+    Llandoverian Age                 4.38e8 4.28e8
+  Ordovician Period ...              5.05e8 4.38e8
+   Late Ordovician Epoch ...         4.58e8 4.38e8
+    Ashgillian Age                   4.48e8 4.38e8
+    Caradocian Age                   4.58e8 4.48e8
+   Middle Ordovician Epoch ...       4.78e8 4.58e8
+    Llandeilan Age                   4.68e8 4.58e8
+    Llanvirnian Age                  4.78e8 4.68e8
+   Early Ordovician Epoch ...        5.05e8 4.78e8
+    Arenigian Age                    4.88e8 4.78e8
+    Tremadocian Age                  5.05e8 4.88e8
+  Cambrian Period ...                5.70e8 5.05e8
+   Late Cambrian Epoch ...           5.23e8 5.05e8
+    Trempealeauan Age                5.10e8 5.05e8
+    Franconian Age                   5.15e8 5.10e8
+    Dresbachian Age                  5.23e8 5.15e8
+   Middle Cambrian Epoch             5.40e8 5.23e8
+   Early Cambrian Epoch              5.70e8 5.40e8
+Precambrian ...                      4.60e9 5.70e8
+ Proterozoic Eon ...                 2.50e9 5.70e8
+  Late Proterozoic Era               9.00e8 5.70e8
+  Middle Proterozoic Era             1.60e9 9.00e8
+  Early Proterozoic Era              2.50e9 1.60e9
+ Archean Eon ...                     3.80e9 2.50e9
+  Late Archean Era                   3.00e9 2.50e9
+  Middle Archean Era                 3.40e9 3.00e9
+  Early Archean Era                  3.80e9 3.40e9
+ Pre-Archean                         4.60e9 3.80e9

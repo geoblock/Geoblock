@@ -1,0 +1,32 @@
+The MPL-Style License for Use and Distribution of Geoblock
+
+1. The contents of the Geoblock program are subject to the Mozilla Public License Version 1.1; you may not use this software except in compliance with the License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+
+2. The source codes of the Geoblock program are free of charge under terms of the License while downloaded from Internet on site http://geoblock.sourceforge.net/ .
+
+3. Independent contributors and organizations could modify source codes and rebuild 
+   Geoblock executables but in the case of commercialization should get a written permission 
+   from project administration to redistribute, rent, lease and selling the Covered Code 
+   under the original trade mark Geoblock, that was registered in RosAPO agency 
+   as a program product ¹970356 privately owned by the Initial Developer.
+
+4. When ordering the Installation CD with Geoblock Pro from Geoblock Software 
+   the registered users enable to get all additional libraries, redistributable 
+   runtime packages, utilities, databases, plugins, documentation and technical support. 
+   Please, send inquires on selling, registration and current prices to the chief administrator 
+   of the project: vassiliev@users.sourceforge.net 
+
+5. Redistribution and usage of source forms, with or without modification, 
+   are permitted provided that the following conditions are met: 
+   Redistributors of source code or Geoblock’s associated partners must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+6. Redistributions of  binary Geoblock.exe must be coordinated by an agreement with Getos Ltd using specific prior written permission. It should include the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. 
+
+7. Otherwise neither the name Geoblock and the names of Geoblock’s copyright owner nor the names of its contributors may be used to endorse or promote products derived from this software.
+8. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, 
+    INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+    IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, 
+   OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) 
+9. HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+10. Installing and using this Geoblock software signifies acceptance of these terms and conditions of the license.
+

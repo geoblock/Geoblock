@@ -1,0 +1,16 @@
+.Topic 99
+This is my test popup text with ID=99
+The source lives in "geoblock_rus.chm::/popups.txt"
+
+.Topic IDH_POPUP_NEWBTN
+Click new to New to create a new file.
+
+.Topic IDH_POPUP_OPENBTN
+Click Open to Open an existing file.
+
+.Topic IDH_POPUP_FNAMEEDIT
+Please enter your first name.
+
+.Topic IDH_POPUP_LNAMEEDIT
+Please enter your last name.
+Microsoft HTML Help Compiler 4.74.8702

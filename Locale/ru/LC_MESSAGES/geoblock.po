@@ -1,0 +1,4047 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Delphi 2005 runtime translation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-27 18:06\n"
+"PO-Revision-Date: 2013-04-12 10:46+0300\n"
+"Last-Translator: Pal Wassail <geoblock@mail.ru>\n"
+"Language-Team: <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "$"
+msgstr "руб"
+
+msgid "$/t"
+msgstr "руб/т"
+
+msgid "&3D"
+msgstr "&3D"
+
+msgid "&About..."
+msgstr "&О системе..."
+
+msgid "&Add"
+msgstr "&Добавить"
+
+msgid "&Add Node"
+msgstr "&Добавить узел"
+
+msgid "&Add table..."
+msgstr "&Добавить таблицу..."
+
+msgid "&Back Color..."
+msgstr "&Цвет фона..."
+
+msgid "&Basic Statistics..."
+msgstr "&Базовая статистика..."
+
+msgid "&Block Evaluation..."
+msgstr "&Оценивание блоков..."
+
+msgid "&Bottom"
+msgstr "&Снизу"
+
+msgid "&Clear"
+msgstr "&Очистить"
+
+msgid "&Close"
+msgstr "&Закрыть"
+
+msgid "&Compositing"
+msgstr "&Компоновка"
+
+msgid "&Configuration..."
+msgstr "&Конфигурация..."
+
+msgid "&Contents"
+msgstr "&Содержание"
+
+msgid "&Contours..."
+msgstr "&Изолинии..."
+
+msgid "&Conversion..."
+msgstr "&Конверсия..."
+
+msgid "&Coordinates of Centers..."
+msgstr "&Координаты центров..."
+
+msgid "&Copy"
+msgstr "&Копировать"
+
+msgid "&Create Cell"
+msgstr "&Создать ячейку"
+
+msgid "&Create Drillhole"
+msgstr "&Создать скажину"
+
+msgid "&Create Node"
+msgstr "&Создать узел"
+
+msgid "&Create Point"
+msgstr "&Создать точку"
+
+msgid "&Create Point 3D"
+msgstr "&Создать точку 3D"
+
+msgid "&Create Polygon"
+msgstr "&Создать полигон"
+
+msgid "&Create Solid"
+msgstr "&Создать солид"
+
+msgid "&Create Vertex"
+msgstr "&Создать вершину"
+
+msgid "&Cut"
+msgstr "&Вырезать"
+
+msgid "&Delete"
+msgstr "&Удалить"
+
+msgid "&Display"
+msgstr "&Отобразить"
+
+msgid "&Draw"
+msgstr "&Рисунок"
+
+msgid "&Drawing Depth..."
+msgstr "&Глубина рисования..."
+
+msgid "&Dressing Prediction..."
+msgstr "&Прогноз обогатимости..."
+
+msgid "&Drillholes"
+msgstr "&Скважины"
+
+msgid "&Drillholes..."
+msgstr "&Скважины..."
+
+msgid "&Edit"
+msgstr "&Правка"
+
+msgid "&Ellipse"
+msgstr "&Эллипс"
+
+msgid "&Factor Analysis..."
+msgstr "&Факторный анализ..."
+
+msgid "&File"
+msgstr "&Файл"
+
+msgid "&Fill Style..."
+msgstr "&Стиль заливки..."
+
+msgid "&Fill..."
+msgstr "&Заливка..."
+
+msgid "&Film..."
+msgstr "&Фильм..."
+
+msgid "&Find..."
+msgstr "&Найти..."
+
+msgid "&Front"
+msgstr "&Спереди"
+
+msgid "&Geology..."
+msgstr "&Геология..."
+
+msgid "&Geoscene..."
+msgstr "&Геосцена..."
+
+msgid "&Glossary..."
+msgstr "&Глоссарий..."
+
+msgid "&Grid 2D..."
+msgstr "&Грид 2D..."
+
+msgid "&Grid 3D..."
+msgstr "&Грид 3D..."
+
+msgid "&Grid Generation..."
+msgstr "&Генерация грида..."
+
+msgid "&Grid2D"
+msgstr "&Грид2D"
+
+msgid "&Help"
+msgstr "&Справка"
+
+msgid "&Hide"
+msgstr "&Скрыть"
+
+msgid "&Inside Horizons..."
+msgstr "&В слое горизонта..."
+
+msgid "&Interpolation..."
+msgstr "&Интерполяция..."
+
+msgid "&Isosurface..."
+msgstr "&Изоповерхность..."
+
+msgid "&Left"
+msgstr "&Слева"
+
+msgid "&Legend..."
+msgstr "&Легенда..."
+
+msgid "&Line Style..."
+msgstr "&Стиль линии..."
+
+msgid "&Line..."
+msgstr "&Линия..."
+
+msgid "&Linear Reserves..."
+msgstr "&Линейные запасы..."
+
+msgid "&Link To Solid"
+msgstr "Связь с солидом"
+
+msgid "&Materials..."
+msgstr "&Материал..."
+
+msgid "&Mesh 2D..."
+msgstr "&Меш 2D..."
+
+msgid "&Mesh 3D..."
+msgstr "&Меш 3D..."
+
+msgid "&Mesh2D"
+msgstr "&Меш2D"
+
+msgid "&Method"
+msgstr "&Метод"
+
+msgid "&Minimize All"
+msgstr "&Свернуть всё"
+
+msgid "&Mining..."
+msgstr "Горное &дело..."
+
+msgid "&New..."
+msgstr "&Новый..."
+
+msgid "&Open Project..."
+msgstr "&Открыть проект..."
+
+msgid "&Open Reference..."
+msgstr "О&ткрыть справочник..."
+
+msgid "&Options..."
+msgstr "&Опции..."
+
+msgid "&Ore Intervals..."
+msgstr "&Рудные интервалы..."
+
+msgid "&Paste"
+msgstr "&Вставить"
+
+msgid "&Perform"
+msgstr "&Представить"
+
+msgid "&Pit Optimization..."
+msgstr "&Оптимизация карьеров..."
+
+msgid "&Points 2D..."
+msgstr "&Точки 2D..."
+
+msgid "&Points 3D..."
+msgstr "&Точки 3D..."
+
+msgid "&Points2D"
+msgstr "&Точки2D"
+
+msgid "&Polygons..."
+msgstr "&Полигоны..."
+
+msgid "&Polyline"
+msgstr "&Полилиния"
+
+msgid "&Print..."
+msgstr "&Печатать..."
+
+msgid "&Problem Book..."
+msgstr "&Сборник задач..."
+
+msgid "&Project Manager..."
+msgstr "&Менеджер проекта..."
+
+msgid "&Rectangle"
+msgstr "&Прямоугольник"
+
+msgid "&Reserve Calculation..."
+msgstr "&Подсчет запасов..."
+
+msgid "&Right"
+msgstr "&Справа"
+
+msgid "&Sample Contacts..."
+msgstr "&Контакты проб..."
+
+msgid "&Save"
+msgstr "&Сохранить"
+
+msgid "&Scale..."
+msgstr "&Масштаб..."
+
+msgid "&Scenery..."
+msgstr "&Сцена..."
+
+msgid "&Section..."
+msgstr "&Разрез..."
+
+msgid "&Select All"
+msgstr "&Выбрать всё"
+
+msgid "&Select Cell"
+msgstr "&Выбрать ячейку"
+
+msgid "&Select Drillhole"
+msgstr "&Выбрать скважину"
+
+msgid "&Select Node"
+msgstr "&Выбрать узел"
+
+msgid "&Select Point"
+msgstr "&Выбрать точку"
+
+msgid "&Select Point 3D"
+msgstr "&Выбрать точку в 3D"
+
+msgid "&Select Polygon"
+msgstr "&Выбрать полигон"
+
+msgid "&Select Vertex"
+msgstr "&Выбрать вершину"
+
+msgid "&Select..."
+msgstr "&Выбрать..."
+
+msgid "&Set Operations..."
+msgstr "&Операции с множествами..."
+
+msgid "&Show"
+msgstr "&Показать"
+
+msgid "&Solids"
+msgstr "&Солиды"
+
+msgid "&Solids..."
+msgstr "&Солиды..."
+
+msgid "&Standard Style"
+msgstr "&Стандартный стиль"
+
+msgid "&Style"
+msgstr "&Стиль"
+
+msgid "&Survey..."
+msgstr "&Съёмка..."
+
+msgid "&Symbol"
+msgstr "&Символ"
+
+msgid "&Symbol..."
+msgstr "&Символ..."
+
+msgid "&Text"
+msgstr "&Текст"
+
+msgid "&Text..."
+msgstr "&Текст..."
+
+msgid "&Tile Horizontally"
+msgstr "&Горизонтально"
+
+msgid "&Tin"
+msgstr "&Тин"
+
+msgid "&Tin..."
+msgstr "&Тин..."
+
+msgid "&Tools"
+msgstr "&Сервис"
+
+msgid "&Top"
+msgstr "&Сверху"
+
+msgid "&Triangulation..."
+msgstr "&Триангуляция..."
+
+msgid "&Undo"
+msgstr "&Отмена"
+
+msgid "&Units Converter..."
+msgstr "&Конвертор единиц..."
+
+msgid "&Variogram Modelling..."
+msgstr "&Моделирование вариограмм..."
+
+msgid "&Variograms..."
+msgstr "&Вариограммы..."
+
+msgid "&Vector..."
+msgstr "&Вектор..."
+
+msgid "&Vectors..."
+msgstr "&Векторы..."
+
+msgid "&View"
+msgstr "&Вид"
+
+msgid "&Volume Calculation..."
+msgstr "&Подсчет объёмов..."
+
+msgid "&Volume XYZ"
+msgstr "&Объём XYZ"
+
+msgid "&Window"
+msgstr "&Окно"
+
+msgid "&XP Style"
+msgstr "&XP стиль"
+
+msgid "&Zoom"
+msgstr "&Увеличить"
+
+msgid "&Zoom InOut"
+msgstr "&Увеличить или уменьшить"
+
+msgid "&Zoom to Project"
+msgstr "В рамках &проекта"
+
+msgid "(  )"
+msgstr "(  )"
+
+msgid "*"
+msgstr "*"
+
+msgid "+"
+msgstr "+"
+
+msgid "-->"
+msgstr "-->"
+
+msgid "."
+msgstr "."
+
+msgid "..."
+msgstr "..."
+
+msgid "/"
+msgstr "/"
+
+msgid "0.00"
+msgstr "0.00"
+
+msgid "3.5"
+msgstr "3.5"
+
+msgid "360.00"
+msgstr "360.00"
+
+msgid "3D"
+msgstr "3D"
+
+msgid "3D Grid Options"
+msgstr "Опции Грида 3D"
+
+msgid "90.5"
+msgstr "90.5"
+
+msgid "<"
+msgstr "<"
+
+msgid "="
+msgstr "="
+
+msgid ">"
+msgstr ">"
+
+msgid ">="
+msgstr ">="
+
+msgid "A = "
+msgstr "A = "
+
+msgid "A&nalyse"
+msgstr "А&нализ"
+
+msgid "A&rrange"
+msgstr "У&порядочить"
+
+msgid "ASTM scale"
+msgstr "Шкала ASTM"
+
+msgid "About"
+msgstr "О программе"
+
+msgid "About..."
+msgstr "О программе..."
+
+msgid "About|Show the program information, version number and the copyright"
+msgstr "О программе|Показать информацию о программе, номере версии и лицензии"
+
+msgid "Abstract data type"
+msgstr "Абстрактный тип данных"
+
+msgid "Active ore type or sort"
+msgstr "Активный тип руды или сорт"
+
+msgid "Add Field"
+msgstr "Добавить поле"
+
+msgid "Add Node"
+msgstr "Добавить узел"
+
+msgid "Add field..."
+msgstr "Добавить поле..."
+
+msgid "Add new level"
+msgstr "Добавить новый уровень"
+
+msgid "Add records to target table"
+msgstr "Добавить записи к таблице"
+
+msgid "All"
+msgstr "Все"
+
+msgid ""
+"All (*.jpg;*.jpeg;*.bmp;*.ico)|*.jpg;*.jpeg;*.bmp;*.ico|JPEG Image File (*."
+"jpg)|*.jpg|JPEG Image File (*.jpeg)|*.jpeg|Bitmaps (*.bmp)|*.bmp|Icons (*."
+"ico)|*.ico"
+msgstr ""
+"Все (*.jpg;*.jpeg;*.bmp;*.ico)|*.jpg;*.jpeg;*.bmp;*.ico|JPEG Image File (*."
+"jpg)|*.jpg|JPEG Image File (*.jpeg)|*.jpeg|Bitmaps (*.bmp)|*.bmp|Icons (*."
+"ico)|*.ico"
+
+msgid "All files"
+msgstr "Все файлы"
+
+msgid "All points"
+msgstr "Все точки"
+
+msgid "Allow delete records"
+msgstr "Разрешить удаление записей"
+
+msgid "Alpha"
+msgstr "Текст"
+
+msgid "Ambient"
+msgstr "Рассеяние"
+
+msgid "Analyse"
+msgstr "Анализ"
+
+msgid "Angle"
+msgstr "Угол"
+
+msgid "Angles"
+msgstr "Углы"
+
+msgid "Anis1"
+msgstr "Аниз1"
+
+msgid "Anis2"
+msgstr "Аниз2"
+
+msgid "Anisotropy"
+msgstr "Анизотропия"
+
+msgid "Ant Colony"
+msgstr "Колония муравьев"
+
+msgid "Apply tiles"
+msgstr "Все тайлы"
+
+msgid "Apply updates"
+msgstr "Обновить"
+
+msgid "Area"
+msgstr "Площадь"
+
+msgid "Areas"
+msgstr "Площади"
+
+msgid "Arimuth bandwidth"
+msgstr "Ширина полосы"
+
+msgid "Arrange"
+msgstr "Упорядочить"
+
+msgid "Arrange all icons"
+msgstr "Упорядочить все значки"
+
+msgid "Array"
+msgstr "Массив"
+
+msgid "As cylinder"
+msgstr "Как цилиндр"
+
+msgid "As height"
+msgstr "Как высота"
+
+msgid "As sphere"
+msgstr "Как сфера"
+
+msgid "Assays"
+msgstr "Опробование"
+
+msgid "Attribute"
+msgstr "Показатель"
+
+msgid "AutoCAD data (*.DXF)"
+msgstr "Данные AutoCAD (*.DXF)"
+
+msgid "Autoincrement"
+msgstr "Автоприращение"
+
+msgid "Available fields"
+msgstr "Доступные поля"
+
+msgid "Average"
+msgstr "Среднее"
+
+msgid "Average arithmetics"
+msgstr "Среднеарифметическое"
+
+msgid "Averaging"
+msgstr "Усреднение"
+
+msgid "Axes"
+msgstr "Оси"
+
+msgid "Azimuth"
+msgstr "Азимут"
+
+msgid "Azimuth tolerance"
+msgstr "Допуск азимута"
+
+msgid "B&ack"
+msgstr "С&зади"
+
+msgid "BCD"
+msgstr "BCD"
+
+msgid "Back"
+msgstr "Сзади"
+
+msgid "Back Color..."
+msgstr "Цвет фона..."
+
+msgid "Back resection"
+msgstr "Обратная засечка"
+
+msgid "Background"
+msgstr "Фон"
+
+msgid "Background color"
+msgstr "Фон"
+
+msgid "Bandwidth"
+msgstr "Ширина полосы"
+
+msgid "Basic Statistics..."
+msgstr "Базовая статистика..."
+
+msgid "Bearing"
+msgstr "Простирание"
+
+msgid "Between marks"
+msgstr "Между метками"
+
+msgid "Bi-linear"
+msgstr "Би-линейная"
+
+msgid "Binary"
+msgstr "Двоичное"
+
+msgid "Binary coded decimal"
+msgstr "Кодированное десятичное"
+
+msgid "Binary large object"
+msgstr "Двоичный объект"
+
+msgid "Block Evaluation"
+msgstr "Оценивание блоков"
+
+msgid "Block Evaluation..."
+msgstr "Оценивание блоков..."
+
+msgid "Block Model Four-X (*.MOD)"
+msgstr "Блочная модель Four-X (*.MOD)"
+
+msgid "Block numbers"
+msgstr "Число блоков"
+
+msgid "Block sizes"
+msgstr "Размеры блоков"
+
+msgid "Boldyrev regions|Reserve calculation using method of Voronoi polygons"
+msgstr "Регионы Болдырева|Подсчет запасов с использованием полигонов Вороного"
+
+msgid "Boolean"
+msgstr "Логическое"
+
+msgid "Bottom"
+msgstr "Снизу"
+
+msgid "Bounding Box"
+msgstr "Бандинг бокс"
+
+msgid "Bounds"
+msgstr "Границы"
+
+msgid "Browse"
+msgstr "Обзор"
+
+msgid "Browser|Data browser"
+msgstr "Браузер|Браузер базы данных"
+
+msgid "Browse|Browse the directory"
+msgstr "Просмотр|Просмотр директории"
+
+msgid "Browse|Browse the directory up one level"
+msgstr "Обзор|Обзор директория выше уровнем"
+
+msgid "By centers"
+msgstr "По центрам"
+
+msgid "By degrees"
+msgstr "По градусам"
+
+msgid "By intervals"
+msgstr "По интервалам"
+
+msgid "By vertices"
+msgstr "По вершинам"
+
+msgid "Bytes"
+msgstr "Байтовое"
+
+msgid "C&alculator"
+msgstr "К&алькулятор"
+
+msgid "C&ascade"
+msgstr "К&аскад"
+
+msgid "C&lose All"
+msgstr "З&акрыть всё"
+
+msgid "C&ompositing"
+msgstr "К&омпоновка проб"
+
+msgid "C&onversion..."
+msgstr "&Конверсия..."
+
+msgid "C&opy"
+msgstr "К&опировать"
+
+msgid "C&reate Cell"
+msgstr "С&оздать ячейку"
+
+msgid "C&reate Segment"
+msgstr "С&оздать сегмент"
+
+msgid "C&reate Triangle"
+msgstr "С&оздать треугольник"
+
+msgid "C&ustomize..."
+msgstr "Н&астройка..."
+
+msgid "Calculate Field"
+msgstr "Вычислить поле"
+
+msgid "Calculate Variograms"
+msgstr "Расчет вариограмм"
+
+msgid "Calculate a field"
+msgstr "Вычислить поле"
+
+msgid "Calculate basic statistics"
+msgstr "Расчет базовой статистики"
+
+msgid "Calculate coordinates of sample contacts"
+msgstr "Расчет координат контактов проб"
+
+msgid "Calculate linear reserves"
+msgstr "Подсчет линейных запасов"
+
+msgid "Calculation..."
+msgstr "Расчет..."
+
+msgid "Calculator"
+msgstr "Калькулятор"
+
+msgid "Camera"
+msgstr "Камера"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Carry out factor analysis"
+msgstr "Выполнение факторного анализа"
+
+msgid "Cars"
+msgstr "Машины"
+
+msgid "Cascade"
+msgstr "Каскад"
+
+msgid "Centimeters"
+msgstr "Сантиметры"
+
+msgid "Changed"
+msgstr "Изменен"
+
+msgid "Check solid bottom"
+msgstr "Отметка дна солида"
+
+msgid "Circle"
+msgstr "Круг"
+
+msgid "Class"
+msgstr "Класс"
+
+msgid "Classes"
+msgstr "Классы"
+
+msgid "Classify samples by ore sorts"
+msgstr "Классификация проб по сортам руд"
+
+msgid "Clear"
+msgstr "Очистить"
+
+msgid "Clear all records in the table"
+msgstr "Очистить таблицу от записей"
+
+msgid "Clear table"
+msgstr "Очистить таблицу"
+
+msgid "Clipping planes"
+msgstr "Отсекающие плоскости"
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Close All"
+msgstr "Закрыть все"
+
+msgid "Close all windows and tables"
+msgstr "Закрыть все окна"
+
+msgid "Close the open table"
+msgstr "Закрыть открытую таблицу"
+
+msgid "Closest Point"
+msgstr "Ближайшая точка"
+
+msgid "Close|Close the graph window"
+msgstr "Закрыть|Закрыть графическое окно"
+
+msgid "Coefficient"
+msgstr "Коэффициент"
+
+msgid "Collars"
+msgstr "Устья"
+
+msgid "Collars not found"
+msgstr "Устья не найдены"
+
+msgid "Color"
+msgstr "Цвет"
+
+msgid "Color Ramps"
+msgstr "Число оттенков"
+
+msgid "Color scheme"
+msgstr "Цветовая схема"
+
+msgid "Column"
+msgstr "Колонка"
+
+msgid "Command"
+msgstr "Команда"
+
+msgid "Component"
+msgstr "Компонент"
+
+msgid "Compose by Horizons"
+msgstr "Компоновка по горизонтам"
+
+msgid "Compose samples inside horizons"
+msgstr "Компоновка проб по горизонтам"
+
+msgid "Compositing"
+msgstr "Компоновка"
+
+msgid "Conditions"
+msgstr "Кондиции"
+
+msgid "Cone"
+msgstr "Конус"
+
+msgid "Configuration"
+msgstr "Конфигурация"
+
+msgid "Configuration..."
+msgstr "Конфигурация..."
+
+msgid "Configuration|Configurate program parameters"
+msgstr "Конфигурация|Задание параметров программы"
+
+msgid "Constant"
+msgstr "Константа"
+
+msgid "Content"
+msgstr "Содержание"
+
+msgid "Contents"
+msgstr "Содержание"
+
+msgid "Contours"
+msgstr "Изолинии"
+
+msgid "Contours..."
+msgstr "Изолинии..."
+
+msgid "Contribution"
+msgstr "Контрибуция"
+
+msgid "Conversion"
+msgstr "Конверсия"
+
+msgid "Conversion..."
+msgstr "Конверсия..."
+
+msgid "Conversion|Convert datasets from one type into other"
+msgstr "Конверсия|Преобразовать набор данных из одного типа в другой"
+
+msgid "Convert units"
+msgstr "Преобразовать единицы измерения"
+
+msgid "Convex hull"
+msgstr "Выпуклая оболочка"
+
+msgid "Coordinates"
+msgstr "Координаты"
+
+msgid "Coordinates of Centers"
+msgstr "Координаты центров"
+
+msgid "Coordinates of Centers..."
+msgstr "Координаты центров..."
+
+msgid "Copy"
+msgstr "Копировать"
+
+msgid "Copy Field Names"
+msgstr "Копировать имена полей"
+
+msgid "Copy field names|Copy field names to clipboard"
+msgstr "Копировать имена полей|Копировать имена полей в обменный буфер"
+
+msgid "Copyright"
+msgstr "Copyright"
+
+msgid "Copy|Copies the selection and puts it on the Clipboard"
+msgstr "Копировать|Копировать и поместить в обменный буфер"
+
+msgid "Correlogram"
+msgstr "Коррелограмма"
+
+msgid "Costs of mining 1t ore"
+msgstr "Расходы по добыче 1т руды"
+
+msgid "Costs of processing 1t waste"
+msgstr "Расходы по переработке 1т породы"
+
+msgid "Count"
+msgstr "Число"
+
+msgid "Covariance"
+msgstr "Ковариация"
+
+msgid "Create"
+msgstr "Создать"
+
+msgid "Create Cell"
+msgstr "Создать ячейку"
+
+msgid "Create Drillhole"
+msgstr "Создать скважину"
+
+msgid "Create Node"
+msgstr "Создать узел"
+
+msgid "Create Point"
+msgstr "Создать точку"
+
+msgid "Create Point 3D"
+msgstr "Создать точку 3D"
+
+msgid "Create Polygon"
+msgstr "Создать полигон"
+
+msgid "Create Segment"
+msgstr "Создать сегмент"
+
+msgid "Create Solid"
+msgstr "Создать солид"
+
+msgid "Create Triangle"
+msgstr "Создать треугольник"
+
+msgid "Create Vertex"
+msgstr "Создать вершину"
+
+msgid "Create a cell"
+msgstr "Создать ячейку"
+
+msgid "Create a drillhole"
+msgstr "Создать скважину"
+
+msgid "Create a new|Create a new file or project"
+msgstr "Новый|Создать новый файл или проект"
+
+msgid "Create a node"
+msgstr "Создать узел"
+
+msgid "Create a point"
+msgstr "Создать точку"
+
+msgid "Create a point on surface"
+msgstr "Создать точку на поверхности"
+
+msgid "Create a polygon"
+msgstr "Создать полигон"
+
+msgid "Create a sample segment"
+msgstr "Создать сегмент пробы"
+
+msgid "Create a selection by querying tables"
+msgstr "Создать выборку по запросу"
+
+msgid "Create a solid"
+msgstr "Создать оболочку"
+
+msgid "Create a triangle"
+msgstr "Создать треугольник"
+
+msgid "Create a vertex"
+msgstr "Создать вершину"
+
+msgid "Cross-quadratic"
+msgstr "Кросс-квадратичная "
+
+msgid "Cu&stomize..."
+msgstr "&Настройки..."
+
+msgid "Cubic"
+msgstr "Кубический"
+
+msgid "Cumulative"
+msgstr "Кумулята"
+
+msgid "Cups "
+msgstr "Покрытия"
+
+msgid "Currency"
+msgstr "Валюта"
+
+msgid "Current record"
+msgstr "Текущая запись"
+
+msgid "Current texture is:"
+msgstr "Текущая текстура:"
+
+msgid "Cursor from Oracle stored procedure"
+msgstr "Курсор хранимой процедуры Oracle"
+
+msgid "Curve Type"
+msgstr "Тип кривой"
+
+msgid "Customize..."
+msgstr "Настройка..."
+
+msgid "Customize|Customize user interface"
+msgstr "Настройка|Настройка пользовательского интерфейса"
+
+msgid "Cut"
+msgstr "Вырезать"
+
+msgid "Cutoff"
+msgstr "Порог"
+
+msgid "Cutoff Grade"
+msgstr "Бортовое качества"
+
+msgid "Cutoff grade"
+msgstr "Бортовое качество"
+
+msgid "Cutting Options"
+msgstr "Опции разрезов"
+
+msgid "Cut|Cuts the selection and puts it on the Clipboard"
+msgstr "Вырезать|Вырезать и поместить в обменный буфер"
+
+msgid "Cylinder"
+msgstr "Цилиндр"
+
+msgid "D"
+msgstr "D"
+
+msgid "D = "
+msgstr "D = "
+
+msgid "DX"
+msgstr "DX"
+
+msgid "DY"
+msgstr "DY"
+
+msgid "DZ"
+msgstr "DZ"
+
+msgid "Data"
+msgstr "Данные"
+
+msgid "Data &Browser..."
+msgstr "Браузер &базы данных..."
+
+msgid "Data Browser"
+msgstr "Браузер данных"
+
+msgid "Data Browser..."
+msgstr "Браузер базы данных..."
+
+msgid "Data Info"
+msgstr "Инфо"
+
+msgid "Data Tables (*.DB)|*.DB"
+msgstr "Таблицы данных (*.DB)|*.DB"
+
+msgid "Data tables (*.DB)|*.DB|All Files (*.*)|*.*"
+msgstr "Таблицы данных  (*.DB)|*.DB"
+
+msgid "Data visualization"
+msgstr "Визуализация данных"
+
+msgid "DataBase"
+msgstr "База данных"
+
+msgid "DataSet"
+msgstr "Набор"
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "Date and time"
+msgstr "Дата и время"
+
+msgid "Decagon"
+msgstr "Декагон"
+
+msgid "Default"
+msgstr "По умолчанию"
+
+msgid "Define Bench Values"
+msgstr "Определить значения уступов"
+
+msgid "Define experimental variograms"
+msgstr "Расчет вариограммы"
+
+msgid "Define ore intervals"
+msgstr "Определение рудных интервалов"
+
+msgid "Define sample or interval centers"
+msgstr "Определение центров проб или интервалов"
+
+msgid "Delaunay Tetrahedra"
+msgstr "Тетраэдры Делоне"
+
+msgid "Delaunay tetrahedralisation"
+msgstr "Тетраэдрализация Делоне"
+
+msgid "Delaunay triangulation"
+msgstr "Триангуляция Делоне"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Delete Field"
+msgstr "Удалить поле"
+
+msgid "Delete Polygon"
+msgstr "Удалить полигон"
+
+msgid "Delete a field"
+msgstr "Удалить поле"
+
+msgid "Delete all records"
+msgstr "Удалить все записи"
+
+msgid "Delete|Delete the current table with associated files"
+msgstr "Удалить|Удалить текущую таблицу и связанные файлы"
+
+msgid "Delete|Erases the selection"
+msgstr "Удалить|Удалить выбранное"
+
+msgid "Density"
+msgstr "Плотность"
+
+msgid "Depth"
+msgstr "Глубина"
+
+msgid "Details"
+msgstr "Детали"
+
+msgid "Dh = "
+msgstr "Dh = "
+
+msgid "Dholes"
+msgstr "Скважины"
+
+msgid "Diagonal"
+msgstr "Диагональ"
+
+msgid "Diameter"
+msgstr "Диаметр"
+
+msgid "Difference"
+msgstr "Разность"
+
+msgid "Diffusion"
+msgstr "Диффузия"
+
+msgid "Dilution"
+msgstr "Разубоживание"
+
+msgid "Dilution of ore in mining operations"
+msgstr "Разубоживание руды при добыче"
+
+msgid "Dimension"
+msgstr "Размерность"
+
+msgid "Dimensions"
+msgstr "Размерность"
+
+msgid "Dip"
+msgstr "Падение"
+
+msgid "Dip bandwidth"
+msgstr "Наклон"
+
+msgid "Dip tolerance"
+msgstr "Допуск по наклону"
+
+msgid "Direct resection"
+msgstr "Прямая засечка"
+
+msgid "Direction"
+msgstr "Направление"
+
+msgid "Disable to rename"
+msgstr "Нельзя переименовать"
+
+msgid "Display"
+msgstr "Показать"
+
+msgid "Display every"
+msgstr "Показать каждый"
+
+msgid "Display the help table of contents"
+msgstr "Показать содержание системы справки"
+
+msgid "Distance"
+msgstr "Расстояние"
+
+msgid "Distribution"
+msgstr "Распределение"
+
+msgid "Divide By Zero"
+msgstr "Деление на ноль"
+
+msgid "Dividing of samples"
+msgstr "Деление проб"
+
+msgid "Dodecagon"
+msgstr "Додекаэдр"
+
+msgid "Draw"
+msgstr "Рисунок"
+
+msgid "Draw on change"
+msgstr "При изменении"
+
+msgid "Drawing Depth"
+msgstr "Глубина черчения"
+
+msgid "Drawing Depth..."
+msgstr "Глубина черчения..."
+
+msgid "Drawings"
+msgstr "Рисунки"
+
+msgid "Dressing"
+msgstr "Обогащение"
+
+msgid "Dressing Prediction"
+msgstr "Прогноз обогатимости"
+
+msgid "Dressing Prediction..."
+msgstr "Прогноз обогатимости..."
+
+msgid "Drift"
+msgstr "Дрифт"
+
+msgid "Drillholes"
+msgstr "Скважины"
+
+msgid "Drillholes options|Set options of drillholes"
+msgstr "Опции скважин|Задать опции скважин"
+
+msgid "Drillholes..."
+msgstr "Скважины..."
+
+msgid "Dv = "
+msgstr "Dv = "
+
+msgid "E&xport..."
+msgstr "Э&кспорт..."
+
+msgid "Ecology"
+msgstr "Экология"
+
+msgid "Edges"
+msgstr "Ребра"
+
+msgid "Edit"
+msgstr "Правка"
+
+msgid "Edit Field"
+msgstr "Редактируемое поле"
+
+msgid "Editor of XML"
+msgstr "Редактор XML"
+
+msgid "Elliipsoid"
+msgstr "Эллипсоид"
+
+msgid "Ellipse"
+msgstr "Эллипс"
+
+msgid "Ellipse tool"
+msgstr "Инструмент Эллипс"
+
+msgid "Ellipses"
+msgstr "Эллипсы"
+
+msgid "Ellipsoid"
+msgstr "Эллипсоид"
+
+msgid "Email:"
+msgstr "Эл.почта:"
+
+msgid "Empirical"
+msgstr "Эмпирическое"
+
+msgid "Empty"
+msgstr "Очистить"
+
+msgid "Empty table"
+msgstr "Очистить таблицу"
+
+msgid "End"
+msgstr "Конец"
+
+msgid "Energy"
+msgstr "Энергия"
+
+msgid "English"
+msgstr "Английский"
+
+msgid "Error"
+msgstr "Ошибка"
+
+msgid "Error creating path"
+msgstr "Ошибка при создании пути"
+
+msgid "Error deleting fields"
+msgstr "Ошибка удаления поля"
+
+msgid "Error loading file"
+msgstr "Ошибка загрузки файла"
+
+msgid "Error with SQL"
+msgstr "Ошибка SQL"
+
+msgid "Error with table"
+msgstr "Ошибка в таблице"
+
+msgid "Evaluation|Evaluate block values"
+msgstr "Оценивание|Оценка стоимости блоков"
+
+msgid "Example"
+msgstr "Пример"
+
+msgid "Exit"
+msgstr "Выход"
+
+msgid "Exit|Quits the application"
+msgstr "Выход|Выход из приложения"
+
+msgid "Experimental variogram"
+msgstr "Экспериментальная вариограмма"
+
+msgid "Exponential"
+msgstr "Экспоненциальное"
+
+msgid "Export"
+msgstr "Экспорт"
+
+msgid "Export the active data table"
+msgstr "Экспорт активной таблицы данных"
+
+msgid "Export..."
+msgstr "Экспорт..."
+
+msgid "Extrapolation"
+msgstr "Экстраполяция"
+
+msgid "F&ile"
+msgstr "&Файл"
+
+msgid "FPS:"
+msgstr "FPS:"
+
+msgid "Factor"
+msgstr "Фактор"
+
+msgid "Factor Analysis..."
+msgstr "Факторный анализ..."
+
+msgid "Factor X"
+msgstr "Коэфф X"
+
+msgid "Factor Y"
+msgstr "Коэфф Y"
+
+msgid "Factor Z"
+msgstr "Коэфф Z"
+
+msgid "Factors"
+msgstr "Факторы"
+
+msgid "Features of Contours"
+msgstr "Параметры изолиний"
+
+msgid "Features of Isosurfaces"
+msgstr "Параметры изоповерхности"
+
+msgid "Features of Vectors"
+msgstr "Свойства векторов"
+
+msgid "Features of contours "
+msgstr "Параметры изолиний"
+
+msgid "Features of cuttings"
+msgstr "Параметры разрезов"
+
+msgid "Features of films"
+msgstr "Параметры фрагментов фильма"
+
+msgid "Features of isosurfaces"
+msgstr "Свойства изоповерхности"
+
+msgid "Features of vectors"
+msgstr "Свойства векторов"
+
+msgid "Field"
+msgstr "Поле"
+
+msgid "Field name"
+msgstr "Имя поля"
+
+msgid "Field:"
+msgstr "Поле:"
+
+msgid "Fields not found"
+msgstr "Поля не найдены"
+
+msgid "File"
+msgstr "Файл"
+
+msgid "File New"
+msgstr "Новый файл"
+
+msgid "File Open Dialog"
+msgstr "Файловый диалог"
+
+msgid "File not found"
+msgstr "Файл не найден"
+
+msgid "Files with extention"
+msgstr "Файл с расширением"
+
+msgid "Fill"
+msgstr "Заливка"
+
+msgid "Fill Style"
+msgstr "Стиль заливки"
+
+msgid "Fill style|Set a fill style for new or selected objects"
+msgstr "Стиль заливки|Задать стиль заливки для нового или отмеченного объекта"
+
+msgid "Fill..."
+msgstr "Заливка..."
+
+msgid "Film..."
+msgstr "Фильм..."
+
+msgid "Filter"
+msgstr "Фильтр"
+
+msgid "Find an object by identifier"
+msgstr "Найти объект по идентификатору"
+
+msgid "Find records"
+msgstr "Найти записи"
+
+msgid "Find..."
+msgstr "Найти..."
+
+msgid "Fitting"
+msgstr "Подгонка"
+
+msgid "Fixed bytes"
+msgstr "Постоянные байты"
+
+msgid "Fixed character"
+msgstr "Символ"
+
+msgid "Flat Shading with lines"
+msgstr "Затенение с линиями"
+
+msgid "Float"
+msgstr "Вещественное"
+
+msgid "Floating Cone"
+msgstr "Плавающий конус"
+
+msgid "Flow"
+msgstr "Поток"
+
+msgid "Fmemo"
+msgstr "Форматное memo"
+
+msgid "Font"
+msgstr "Шрифт"
+
+msgid "Force"
+msgstr "Сила"
+
+msgid "Formatted memo"
+msgstr "Форматное мемо"
+
+msgid "Formula"
+msgstr "Формула"
+
+msgid "Frame"
+msgstr "Рамка"
+
+msgid "Free and open source software"
+msgstr "Программа с открытым исходным кодом"
+
+msgid "Frequency"
+msgstr "Частота"
+
+msgid "Front"
+msgstr "Спереди"
+
+msgid "G&eometry..."
+msgstr "Г&еометрия..."
+
+msgid "G&rid3D"
+msgstr "Г&рид3D"
+
+msgid "GLScene Material Library (*.glml)|*.glml|All files (*.*)|*.*"
+msgstr "Библиотека материалов  (*.glml)|*.glml|Все файлы (*.*)|*.*"
+
+msgid "Gaussian"
+msgstr "Гауссовая"
+
+msgid "General"
+msgstr "Общая"
+
+msgid "General relative variogram"
+msgstr "Общая вариограмма"
+
+msgid "Generate a grid"
+msgstr "Генерировать грид"
+
+msgid "Genetic Algorithm"
+msgstr "Генетический алгоритм"
+
+msgid "Geoblock"
+msgstr "Геоблок"
+
+msgid "Geoblock "
+msgstr "Geoblock"
+
+msgid "Geoblock.exe"
+msgstr "Geoblock.exe"
+
+msgid "Geochronology"
+msgstr "Геохронология"
+
+msgid "Geology"
+msgstr "Геология"
+
+msgid "Geology Calculator"
+msgstr "Геологический калькулятор"
+
+msgid "Geology..."
+msgstr "Геология..."
+
+msgid "Geometry Calculator"
+msgstr "Геометрический калькулятор"
+
+msgid "Geometry..."
+msgstr "Геометрия..."
+
+msgid "Geoscene..."
+msgstr "Геосцена..."
+
+msgid "Geotime"
+msgstr "Геохронология"
+
+msgid "Glossary..."
+msgstr "Термины..."
+
+msgid "Gradient "
+msgstr "Градиент "
+
+msgid "Grain size"
+msgstr "Размер зерен"
+
+msgid "Graph"
+msgstr "График"
+
+msgid "Graph Type"
+msgstr "Тип графика"
+
+msgid "Graphic"
+msgstr "Графическое"
+
+msgid "Graph|Show the result as graphics"
+msgstr "График|Показать результат как график"
+
+msgid "Grid 2D"
+msgstr "Грид 2D"
+
+msgid "Grid 2D Options"
+msgstr "Опции Грида 2D"
+
+msgid "Grid 2D..."
+msgstr "Грид 2D..."
+
+msgid "Grid 3D"
+msgstr "Грид 3D"
+
+msgid "Grid 3D..."
+msgstr "Грид 3D..."
+
+msgid "Grid Generation"
+msgstr "Генерация решетки"
+
+msgid "Grid Generation..."
+msgstr "Генерация решетки..."
+
+msgid "Grid Parameters"
+msgstr "Параметры грида"
+
+msgid "Grid2D"
+msgstr "Грид2D"
+
+msgid "Grid3D"
+msgstr "Грид3D"
+
+msgid "Grids 2D"
+msgstr "Гриды 2D"
+
+msgid "Grids 2D options|Set options of grids 2D"
+msgstr "Грид 2D|Задать опции грида 2D"
+
+msgid "Grids 3D"
+msgstr "Гриды 3D"
+
+msgid "Grids 3D options|Set options of grids 3D"
+msgstr "Грид 3D|Задать опции грида 3D"
+
+msgid "Height"
+msgstr "Высота"
+
+msgid "Help"
+msgstr "Справка"
+
+msgid "Heptagon"
+msgstr "Гептагон"
+
+msgid "Hexagon"
+msgstr "Гексагон"
+
+msgid "High"
+msgstr "Вверх"
+
+msgid "Histogram"
+msgstr "Гистограмма"
+
+msgid "Holes"
+msgstr "Скважины"
+
+msgid "Horizon"
+msgstr "Горизонт"
+
+msgid "Horizons"
+msgstr "Горизонты"
+
+msgid "Horizontal thickness"
+msgstr "Горизонтальная мощность"
+
+msgid "Hue"
+msgstr "Оттенок"
+
+msgid "Hydro reserves"
+msgstr "Запасы воды"
+
+msgid "I&mport..."
+msgstr "И&мпорт..."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Image Editor"
+msgstr "Редактор изображений"
+
+msgid "Image Registration"
+msgstr "Регистрация изображения"
+
+msgid "Import"
+msgstr "Импорт"
+
+msgid "Import data from another formats"
+msgstr "Импорт данных других форматов"
+
+msgid "Import..."
+msgstr "Импорт..."
+
+msgid "Inclins"
+msgstr "Инклинометрия"
+
+msgid "Incrementation"
+msgstr "Приращение"
+
+msgid "Indicator"
+msgstr "Индикатор"
+
+msgid "Info"
+msgstr "Инфо"
+
+msgid "Information"
+msgstr "Информация"
+
+msgid "Input"
+msgstr "Ввод"
+
+msgid "Input A"
+msgstr "Ввод A"
+
+msgid "Input B"
+msgstr "Ввод B"
+
+msgid "Input model B"
+msgstr "Входная модель B"
+
+msgid "Insert a field"
+msgstr "Вставить поле"
+
+msgid "Inside Horizons..."
+msgstr "В пределах горизонта..."
+
+msgid "Instrument height"
+msgstr "Высота инструмента"
+
+msgid "Integer"
+msgstr "Целое"
+
+msgid "Integer fields"
+msgstr "Целое поле"
+
+msgid "Intensity"
+msgstr "Интенсивность"
+
+msgid "Interface"
+msgstr "Интерфейс"
+
+msgid "Interpolate points to a grid or mesh"
+msgstr "Интерполировать точки в грид или меш"
+
+msgid "Interpolation"
+msgstr "Интерполяция"
+
+msgid "Interpolation..."
+msgstr "Интерполяция..."
+
+msgid "Intersection"
+msgstr "Пересечение"
+
+msgid "Interval"
+msgstr "Интервал"
+
+msgid "Invalid Shape"
+msgstr "Неверна форма"
+
+msgid "Invalid Value"
+msgstr "Неверное значение"
+
+msgid "Inverse Distance Options"
+msgstr "Опции обратных расстояний"
+
+msgid "Inverse Distances"
+msgstr "Обратные расстояния"
+
+msgid "Invert Normals"
+msgstr "Инвертировать нормали"
+
+msgid "Isolines..."
+msgstr "Изолинии..."
+
+msgid "Isosurface..."
+msgstr "Изоповерхность..."
+
+msgid "Kilometers"
+msgstr "Километры"
+
+msgid "Kind"
+msgstr "Сорт"
+
+msgid "Kriging"
+msgstr "Кригинг"
+
+msgid "Kriging Options"
+msgstr "Опции кригинга"
+
+msgid "L"
+msgstr "L"
+
+msgid "L&ighting..."
+msgstr "О&свещение..."
+
+msgid "L&ine..."
+msgstr "Л&иния..."
+
+msgid "L&ink To Solid"
+msgstr "С&вязать в солид"
+
+msgid "LX"
+msgstr "LX"
+
+msgid "LY"
+msgstr "LY"
+
+msgid "LZ"
+msgstr "LZ"
+
+msgid "Lag"
+msgstr "Лаг"
+
+msgid "Lags"
+msgstr "Лаги"
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "Large integer"
+msgstr "Длинное целое"
+
+msgid "Last"
+msgstr "Последний"
+
+msgid "Layer"
+msgstr "Слой"
+
+msgid "Layer thickness"
+msgstr "Мощность пласта"
+
+msgid "Layers"
+msgstr "Слои"
+
+msgid "Left"
+msgstr "Слева"
+
+msgid "Legend"
+msgstr "Легенда"
+
+msgid "Legend..."
+msgstr "Легенда..."
+
+msgid "Length"
+msgstr "Длина"
+
+msgid "Length factor"
+msgstr "Фактор удлинения"
+
+msgid "Lengthy attributes"
+msgstr "Протяженные атрибуты"
+
+msgid "Lerchs Grossmann"
+msgstr "Лерчс-Гроссман"
+
+msgid "Light color"
+msgstr "Цвет света"
+
+msgid "Lighting"
+msgstr "Освещение"
+
+msgid "Lighting..."
+msgstr "Освещение..."
+
+msgid "Line"
+msgstr "Линия"
+
+msgid "Line Style"
+msgstr "Стиль линии"
+
+msgid "Line segments"
+msgstr "Линейные сегменты"
+
+msgid "Line style|Set a line style for new or selected objects"
+msgstr "Стиль линии|Задать стиль линии для нового или отмеченного объекта"
+
+msgid "Line..."
+msgstr "Линия..."
+
+msgid "Lineament"
+msgstr "Линеамент"
+
+msgid "Lineament orientation"
+msgstr "Оринтация линеамента"
+
+msgid "Linear"
+msgstr "Линейный"
+
+msgid "Linear Options"
+msgstr "Опции линейной интерполяции"
+
+msgid "Linear Reserves"
+msgstr "Линейные запасы"
+
+msgid "Linear Reserves..."
+msgstr "Линейные запасы..."
+
+msgid "Lines"
+msgstr "Линии"
+
+msgid "Link"
+msgstr "Связь"
+
+msgid "Link To Solid"
+msgstr "Связать в солид"
+
+msgid "Link polygons to a solid"
+msgstr "Связать полигоны в солид"
+
+msgid "List"
+msgstr "Список"
+
+msgid "Load"
+msgstr "Загрузить"
+
+msgid "Load report"
+msgstr "Загрузить отчёт"
+
+msgid "Load when starting"
+msgstr "Загрузить при запуске"
+
+msgid "Loading..."
+msgstr "Загрузка..."
+
+msgid "Log Normal"
+msgstr "Логнормальное"
+
+msgid "Logical"
+msgstr "Логическое"
+
+msgid "Lognormal scale"
+msgstr "Логнормальная шкала"
+
+msgid "Long"
+msgstr "Длинное целое"
+
+msgid "Lookup"
+msgstr "Просмотр"
+
+msgid "Lookup field"
+msgstr "Поле подстановки"
+
+msgid "Lookup table"
+msgstr "Таблица подстановки"
+
+msgid "Losses"
+msgstr "Потери"
+
+msgid "Losses and Dilutions"
+msgstr "Потери и разубоживание"
+
+msgid "Low"
+msgstr "Вниз"
+
+msgid "M&ap"
+msgstr "К&арта"
+
+msgid "M&esh3D"
+msgstr "М&еш3D"
+
+msgid "MS Paint"
+msgstr "MS Paint"
+
+msgid "Madogram"
+msgstr "Мадограмма"
+
+msgid "Main Menu"
+msgstr "Главное меню"
+
+msgid "Map"
+msgstr "Карта"
+
+msgid "Map Window..."
+msgstr "Окно карты..."
+
+msgid "Map canvas"
+msgstr "Канва карты"
+
+msgid "Map scale|Set scale for the map"
+msgstr "Масштаб карты|Задать масштаб карты"
+
+msgid "Map units"
+msgstr "Единицы карты"
+
+msgid "Map with four windows"
+msgstr "Карта с четырьмя окнами"
+
+msgid "Map|Show the result as map"
+msgstr "Карта|Показать результат как карту"
+
+msgid "Mark"
+msgstr "Метка"
+
+msgid "Mark every"
+msgstr "Пометить каждую"
+
+msgid "Mass"
+msgstr "Масса"
+
+msgid "Material"
+msgstr "Материал"
+
+msgid "Material ID"
+msgstr "ID материала"
+
+msgid "Materials..."
+msgstr "Материалы..."
+
+msgid "Matrix"
+msgstr "Матрица"
+
+msgid "Max"
+msgstr "Макс"
+
+msgid "Max lag"
+msgstr "Макс лаг"
+
+msgid "Maximum"
+msgstr "Максимум"
+
+msgid "Maximum search radius"
+msgstr "Максимальный радиус поиска"
+
+msgid "Maximum waste interval"
+msgstr "Максимальный интервал породы"
+
+msgid "Mean must be Positive"
+msgstr "Среднее значение должно быть положительным"
+
+msgid "Memo"
+msgstr "Мемо"
+
+msgid "Mesh 2D"
+msgstr "Меш 2D"
+
+msgid "Mesh 2D Options"
+msgstr "Опции Сетки 2D"
+
+msgid "Mesh 2D..."
+msgstr "Меш 2D..."
+
+msgid "Mesh 3D"
+msgstr "Меш 3D"
+
+msgid "Mesh 3D Options"
+msgstr "Опции Сетки 3D"
+
+msgid "Mesh 3D..."
+msgstr "Меш 3D..."
+
+msgid "Mesh2D"
+msgstr "Меш2D"
+
+msgid "Mesh3D"
+msgstr "Меш3D"
+
+msgid "Meshes 2D"
+msgstr "Сетки 2D"
+
+msgid "Meshes 3D"
+msgstr "Сетки 3D"
+
+msgid "Meters"
+msgstr "Метры"
+
+msgid "Method"
+msgstr "Метод"
+
+msgid "Microns"
+msgstr "Микроны"
+
+msgid "Millimeters"
+msgstr "Миллиметры"
+
+msgid "Min"
+msgstr "Мин"
+
+msgid "Mineable Grade"
+msgstr "Извлекаемое качество"
+
+msgid "Mineral deposit modelling"
+msgstr "Моделирование месторождений"
+
+msgid "Minimize All"
+msgstr "Минимизировать все окна"
+
+msgid "Minimum"
+msgstr "Минимум"
+
+msgid "Minimum ore interval"
+msgstr "Минимальный рудный интервал"
+
+msgid "Minimum sample length"
+msgstr "Минимальная длина пробы"
+
+msgid "Minimum thickness"
+msgstr "Минимальная мощность"
+
+msgid "Mining"
+msgstr "Горное дело"
+
+msgid "Mining Calculator"
+msgstr "Калькулятор горняка"
+
+msgid "Mining calculator"
+msgstr "Горный калькулятор"
+
+msgid "Mining costs"
+msgstr "Расходы на добычу"
+
+msgid "Mining..."
+msgstr "Горное дело..."
+
+msgid "Miscellany"
+msgstr "Разное"
+
+msgid "Mode"
+msgstr "Способ"
+
+msgid "Model"
+msgstr "Модель"
+
+msgid "Model A"
+msgstr "Модель A"
+
+msgid "Model B"
+msgstr "Модель B"
+
+msgid "Model Palette"
+msgstr "Панель моделей"
+
+msgid "Model function"
+msgstr "Модельная функция"
+
+msgid "Model size "
+msgstr "Размер модели "
+
+msgid "Modify..."
+msgstr "Изменить..."
+
+msgid "Moisture"
+msgstr "Влажность"
+
+msgid "Money"
+msgstr "Денежное"
+
+msgid "NAME"
+msgstr "Имя"
+
+msgid "NULL"
+msgstr "NULL"
+
+msgid "NX"
+msgstr "NX"
+
+msgid "NY"
+msgstr "NY"
+
+msgid "NZ"
+msgstr "NZ"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "Nanobot Army"
+msgstr "Артель наноботов"
+
+msgid "Natural Neighbors"
+msgstr "Естественные соседи"
+
+msgid "Natural Neighbors Options"
+msgstr "Опции естественных соседей"
+
+msgid "Near points"
+msgstr "Ближние точки"
+
+msgid "Nearest points"
+msgstr "Ближайшие точки"
+
+msgid "Negative value"
+msgstr "Отрицательное значение"
+
+msgid "Neighbors"
+msgstr "Соседи"
+
+msgid "Nested structures"
+msgstr "Гнездовые структуры"
+
+msgid "New"
+msgstr "Новый"
+
+msgid "New name"
+msgstr "Новое имя"
+
+msgid "New..."
+msgstr "Новый..."
+
+msgid "No data"
+msgstr "Нет данных"
+
+msgid "No."
+msgstr "№"
+
+msgid "Node function"
+msgstr "Узловая функция"
+
+msgid "Nodes"
+msgstr "Узлы"
+
+msgid "Nonagon"
+msgstr "Нонагон"
+
+msgid "None"
+msgstr "Нет"
+
+msgid "Normal"
+msgstr "Нормальное"
+
+msgid "Not enough textures!"
+msgstr "Мало текстур!"
+
+msgid "Not equal structures"
+msgstr "Различные структуры"
+
+msgid "Not found"
+msgstr "Не найден"
+
+msgid "Not implemented"
+msgstr "Не реализовано"
+
+msgid "Nugget"
+msgstr "Самородок"
+
+msgid "Number"
+msgstr "Число"
+
+msgid "Number of Levels"
+msgstr "Число уровней"
+
+msgid "Number of classes"
+msgstr "Число уровней"
+
+msgid "Number of levels"
+msgstr "Число уровней"
+
+msgid "Number of points"
+msgstr "Число точек"
+
+msgid "Numeric"
+msgstr "Числовой"
+
+msgid "O&pen Database..."
+msgstr "Открыть базу данных..."
+
+msgid "O&pen Project..."
+msgstr "Открыть& проект..."
+
+msgid "O&re Sorting..."
+msgstr "&Рудосортировка..."
+
+msgid "OK"
+msgstr "ОК"
+
+msgid "OLE  "
+msgstr "OLE  "
+
+msgid "Object height"
+msgstr "Высота объекта"
+
+msgid "Objects viewer"
+msgstr "Вьюер объектов"
+
+msgid "Observe"
+msgstr "Наблюдать"
+
+msgid "Octagon"
+msgstr "Октагон"
+
+msgid "Op&en Database..."
+msgstr "Открыть базу данных..."
+
+msgid "Op&en Model..."
+msgstr "От&крыть модель..."
+
+msgid "Open"
+msgstr "Открыть"
+
+msgid "Open &Database..."
+msgstr "Открыть &базу данных..."
+
+msgid "Open &Image..."
+msgstr "Открыть &изображение..."
+
+msgid "Open &Model..."
+msgstr "Открыть &модель..."
+
+msgid "Open &Reference..."
+msgstr "Открыть &справочник..."
+
+msgid "Open &Text..."
+msgstr "Открыть &текст..."
+
+msgid "Open Base"
+msgstr "Открыть базу"
+
+msgid "Open Database..."
+msgstr "Открыть базу данных..."
+
+msgid "Open Image..."
+msgstr "Открыть изображение..."
+
+msgid "Open Model"
+msgstr "Открыть модель"
+
+msgid "Open Model..."
+msgstr "Открыть модель..."
+
+msgid "Open Project..."
+msgstr "Открыть проект..."
+
+msgid "Open Reference"
+msgstr "Открыть справочник"
+
+msgid "Open Reference..."
+msgstr "Открыть справочник..."
+
+msgid "Open Repor&t..."
+msgstr "Открыть отче&т..."
+
+msgid "Open Report..."
+msgstr "Открыть отчет..."
+
+msgid "Open Text..."
+msgstr "Открыть текст..."
+
+msgid "Open a database|Open a database tables"
+msgstr "База данных|Открыть таблицу базы данных"
+
+msgid "Open a project|Open a project file as text or map"
+msgstr "Проект|Открыть файл проекта как текст или карту"
+
+msgid "Open a reference table"
+msgstr "Открыть таблицу справочника"
+
+msgid "Open a report table"
+msgstr "Открыть таблицу отчета"
+
+msgid "Open a spatial model|Open a model table"
+msgstr "Пространственная модель|Открыть таблицу модели"
+
+msgid "Open a text file"
+msgstr "Открыть текстовый файл"
+
+msgid "Open an image"
+msgstr "Открыть изображение"
+
+msgid "Open bounds|Open a saved framework"
+msgstr "Границы|Открыть сохраненные рамки модели"
+
+msgid "Open manager|Open the project manager browser"
+msgstr "Открыть менеджер|Открыть менеджер проекта"
+
+msgid "Open texture library..."
+msgstr "Открыть текстуры..."
+
+msgid "Open..."
+msgstr "Открыть..."
+
+msgid "Operation"
+msgstr "Операция"
+
+msgid "Optimization|Optimize open pit limits"
+msgstr "Оптимизация|Оптимизация границ карьера"
+
+msgid "Optimize Mesh"
+msgstr "Оптимизировать сетку"
+
+msgid "Option"
+msgstr "Опции"
+
+msgid "Options"
+msgstr "Опции"
+
+msgid "Options of Dholes"
+msgstr "Опции Скважин"
+
+msgid "Options of Polygons"
+msgstr "Опции Полигонов"
+
+msgid "Options..."
+msgstr "Опции..."
+
+msgid "Ordinary"
+msgstr "Обычный"
+
+msgid "Ore"
+msgstr "Руда"
+
+msgid "Ore  "
+msgstr "Руда "
+
+msgid "Ore Intervals"
+msgstr "Рудные интервалы"
+
+msgid "Ore Intervals..."
+msgstr "Рудные интервалы..."
+
+msgid "Ore Sorting"
+msgstr "Сортировка руды"
+
+msgid "Ore Sorting..."
+msgstr "Сортировка руды..."
+
+msgid "Ore reserve calculation"
+msgstr "Подсчет запасов руд"
+
+msgid "Ore type"
+msgstr "Тип руды"
+
+msgid "Ore type and sort"
+msgstr "Тип руды и сорт"
+
+msgid "Origin"
+msgstr "Привязка"
+
+msgid "Others"
+msgstr "Другие"
+
+msgid "Outline Type"
+msgstr "Тип контура"
+
+msgid "Outline every"
+msgstr "Вывести каждую"
+
+msgid "Outlining"
+msgstr "Оконтуривание"
+
+msgid "Output"
+msgstr "Вывод"
+
+msgid "Output field"
+msgstr "Поле вывода"
+
+msgid "Output model"
+msgstr "Выходная модель"
+
+msgid "Over convex hull"
+msgstr "За выпуклой оболочкой"
+
+msgid "P&an"
+msgstr "&Вращать"
+
+msgid "P&lane XY"
+msgstr "&Плоскость XY"
+
+msgid "P&oints3D"
+msgstr "&Точки3D"
+
+msgid "P&olygon"
+msgstr "П&олигон"
+
+msgid "P1:"
+msgstr "P1:"
+
+msgid "P2:"
+msgstr "P2:"
+
+msgid "P3:"
+msgstr "P3:"
+
+msgid "Page Dialog"
+msgstr "Страничный диалог"
+
+msgid "Pairwise relative variogram"
+msgstr "Парная вариограмма"
+
+msgid "Pan"
+msgstr "Вращение"
+
+msgid "Pan|Rotate the map"
+msgstr "Вращение|Повернуть карту"
+
+msgid "Paradox OLE"
+msgstr "Paradox OLE"
+
+msgid "Parallel Profiles"
+msgstr "Параллельные профили"
+
+msgid "Parallel profiles|Reserve calculation using method of parallel sections"
+msgstr "Параллельные разрезы|Подсчет запасов методом параллельных разрезов"
+
+msgid "Parallelepiped"
+msgstr "Параллелепипед"
+
+msgid "Parameter"
+msgstr "Параметр"
+
+msgid "Parameters"
+msgstr "Параметры"
+
+msgid "Parfile not found"
+msgstr "Нет файла параметров"
+
+msgid "Particle Swarm"
+msgstr "Рой частиц"
+
+msgid "Particles Distribution "
+msgstr "Распределение частиц "
+
+msgid "Paste"
+msgstr "Вставить"
+
+msgid "Paste|Inserts Clipboard contents"
+msgstr "Вставка|Вставить содержимое обменного буфера"
+
+msgid "Path"
+msgstr "Путь"
+
+msgid "Path not exist"
+msgstr "Пути не существует"
+
+msgid "Pattern"
+msgstr "Узор"
+
+msgid "Patterns"
+msgstr "Штриховки"
+
+msgid "Pentagon"
+msgstr "Пентагон"
+
+msgid "Perform"
+msgstr "Представление"
+
+msgid "Perimeter"
+msgstr "Периметр"
+
+msgid "Periodic table"
+msgstr "Периодическая таблица"
+
+msgid "Perspective"
+msgstr "Перспектива"
+
+msgid "Perspective or orthogonal projection"
+msgstr "Перспективные или ортогональные проектции"
+
+msgid "Phase Numbers"
+msgstr "Число фаз"
+
+msgid "Pick texture..."
+msgstr "Выбрать текстуру..."
+
+msgid "Pit Optimization"
+msgstr "Оптимизация карьеров"
+
+msgid "Pit Optimization..."
+msgstr "Оптимизация карьеров..."
+
+msgid "Pla&ne XY"
+msgstr "&Плоскость XY"
+
+msgid "Pla&ne XZ"
+msgstr "П&лоскость XZ"
+
+msgid "Place marks"
+msgstr "Расставить метки"
+
+msgid "Plan&e XZ"
+msgstr "П&лоскость XZ"
+
+msgid "Planar"
+msgstr "Плоская"
+
+msgid "Plane &YZ"
+msgstr "Плоскость &YZ"
+
+msgid "Plane XY"
+msgstr "Плоскость XY"
+
+msgid "Plane XZ"
+msgstr "Плоскость XZ"
+
+msgid "Plane YZ"
+msgstr "Плоскость YZ"
+
+msgid "Plunge"
+msgstr "Наклон"
+
+msgid "Po&lygon"
+msgstr "Поли&гон"
+
+msgid "Po&lygons"
+msgstr "По&лигоны"
+
+msgid "Point"
+msgstr "Точка"
+
+msgid "Points"
+msgstr "Точки"
+
+msgid "Points 2D"
+msgstr "Точки 2D"
+
+msgid "Points 2D Options"
+msgstr "Опции Точек 2D"
+
+msgid "Points 2D options|Set options of points 2D"
+msgstr "Точки 2D|Задать опции точек 2D"
+
+msgid "Points 2D..."
+msgstr "Точки 2D..."
+
+msgid "Points 3D"
+msgstr "Точки 3D"
+
+msgid "Points 3D Options"
+msgstr "Опции Точек 3D"
+
+msgid "Points 3D options|Set options of points 3D"
+msgstr "Точки 3D|Задать опции точек 3D"
+
+msgid "Points 3D..."
+msgstr "Точки 3D..."
+
+msgid "Points in sector"
+msgstr "Точек в секторе"
+
+msgid "Points per octant"
+msgstr "Точек на октант"
+
+msgid "Points2D"
+msgstr "Точки2D"
+
+msgid "Points3D"
+msgstr "Точки3D"
+
+msgid "Poisson"
+msgstr "Пуассона"
+
+msgid "Polygon"
+msgstr "Полигон"
+
+msgid "Polygon options|Set options of polygons"
+msgstr "Опции полигонов|Задать опции полигонов"
+
+msgid "Polygon tool"
+msgstr "Инструмент Полигон"
+
+msgid "Polygonal prizms"
+msgstr "Многоугольные призмы"
+
+msgid "Polygons"
+msgstr "Полигоны"
+
+msgid "Polygons..."
+msgstr "Полигоны..."
+
+msgid "Polyline"
+msgstr "Полилиния"
+
+msgid "Polyline tool"
+msgstr "Инструмент Полилиния"
+
+msgid "Polylines"
+msgstr "Полилинии"
+
+msgid "Polynomial Regression"
+msgstr "Полиномиальная регрессия"
+
+msgid "Polynomial Regression Options"
+msgstr "Опции полиномиальной регрессии"
+
+msgid "Position"
+msgstr "Позиция"
+
+msgid "Power"
+msgstr "Степень"
+
+msgid "Precision"
+msgstr "Точность"
+
+msgid "Prediction|Predict ore dressing parameters"
+msgstr "Прогноз|Прогноз параметров обогащения"
+
+msgid "Price"
+msgstr "Цена"
+
+msgid "Print"
+msgstr "Печать"
+
+msgid "Print Previe&w..."
+msgstr "Просмот&р..."
+
+msgid "Print Preview..."
+msgstr "Печать после просмотра..."
+
+msgid "Print a current open window"
+msgstr "Печать активного открытого окна"
+
+msgid "Print a preview "
+msgstr "Печать после просмотра "
+
+msgid "Print..."
+msgstr "Печать..."
+
+msgid "Prism"
+msgstr "Призма"
+
+msgid "Problem Book"
+msgstr "Сборник задач"
+
+msgid "Problem Book..."
+msgstr "Сборник задач..."
+
+msgid "Problem book|Open a problem book"
+msgstr "Сборник задач|Открыть сборник задач"
+
+msgid "Product price"
+msgstr "Цена продукта"
+
+msgid "Profilogram"
+msgstr "Прфилограмма"
+
+msgid "Program"
+msgstr "Программа"
+
+msgid "Project Manager"
+msgstr "Менеджер проекта"
+
+msgid "Project Manager..."
+msgstr "Менеджер проекта..."
+
+msgid ""
+"Project as Text (*.prj)|*.prj|Project as map (*.prj)|*.prj|All Files (*.*)|*."
+"*"
+msgstr ""
+"Проект как Текст (*.prj)|*.prj|Проект как карта (*.prj)|*.prj|All Files (*."
+"*)|*.*"
+
+msgid "Property"
+msgstr "Свойство"
+
+msgid "Public"
+msgstr "Общий"
+
+msgid "Pyramid"
+msgstr "Пирамида"
+
+msgid "Quadratic"
+msgstr "Квадратичная "
+
+msgid "Quadratic "
+msgstr "Квадратичная"
+
+msgid "Query"
+msgstr "Запрос"
+
+msgid "R"
+msgstr "R"
+
+msgid "R&edraw"
+msgstr "&Перерисовать"
+
+msgid "R&otate Options..."
+msgstr "О&пции поворота..."
+
+msgid "REF"
+msgstr "REF"
+
+msgid "Radius"
+msgstr "Радиус"
+
+msgid "Range"
+msgstr "Диапазон"
+
+msgid "Ratio"
+msgstr "Отношение"
+
+msgid "Ratio1"
+msgstr "Отношение1"
+
+msgid "Ratio2"
+msgstr "Отношение2"
+
+msgid "Real fields not found!"
+msgstr "Вещественные поля не найдены!"
+
+msgid "Record"
+msgstr "Запись"
+
+msgid "Record Editor"
+msgstr "Редактор записи"
+
+msgid "Record Number"
+msgstr "Номер записи"
+
+msgid "Record number"
+msgstr "Номер записи"
+
+msgid "Recovery"
+msgstr "Извлечение"
+
+msgid "Recovery Function"
+msgstr "Функция извлечения"
+
+msgid "Recovery of valuable element to product"
+msgstr "Извлечение ценного элемента в продукт"
+
+msgid "Rectangle"
+msgstr "Прямоугольник"
+
+msgid "Rectangle tool"
+msgstr "Инструмент Прямоугольник"
+
+msgid "Rectangles"
+msgstr "Прямоугольники"
+
+msgid "Redraw"
+msgstr "Перерисовать"
+
+msgid "Reference"
+msgstr "Справочник"
+
+msgid "Reflection"
+msgstr "Отражение"
+
+msgid "Regions of MapInfo (*.MIF)"
+msgstr "Регионы MapInfo (*.MIF)"
+
+msgid "Regular Grid (*.GRD)"
+msgstr "Регулярный Грид (*.GRD)"
+
+msgid "Regular blocks"
+msgstr "Регулярные блоки"
+
+msgid "Reload Geoblock to change language"
+msgstr "Перезагрузите Geoblock для смены языка"
+
+msgid "Remove"
+msgstr "Удалить"
+
+msgid "Rename "
+msgstr "Переименовать"
+
+msgid "Rename Field"
+msgstr "Переименовать поле"
+
+msgid "Rename the field"
+msgstr "Переименовать поле"
+
+msgid "Repeated intersection"
+msgstr "Повторное пересечение"
+
+msgid "Replace"
+msgstr "Заменить"
+
+msgid "Res&hape"
+msgstr "Ре&шейпинг"
+
+msgid "Reserve"
+msgstr "Запас"
+
+msgid "Reserve Calculation"
+msgstr "Подсчет запасов"
+
+msgid "Reserve Calculation..."
+msgstr "Подсчет запасов..."
+
+msgid "Reserve Calculation|Calculate reserves with different methods"
+msgstr "Подсчет запасов|Подсчет запасов различными способами"
+
+msgid "Reset"
+msgstr "Сброс"
+
+msgid "Reset view"
+msgstr "Сброс"
+
+msgid "Reset|Reset model parameters with default values"
+msgstr "Сброс|Установить параметры модели по умолчанию"
+
+msgid "Reshape"
+msgstr "Изменить форму"
+
+msgid "Residue"
+msgstr "Остаток"
+
+msgid "Restore"
+msgstr "Восстановить"
+
+msgid "Restricted tetrahedralisation"
+msgstr "Тетраэдрализацация с ограничениями "
+
+msgid "Restricted triangulation"
+msgstr "Ограниченная триангуляция"
+
+msgid "Result field"
+msgstr "Поле результата"
+
+msgid "Rewrite"
+msgstr "Переписать"
+
+msgid "Right"
+msgstr "Справа"
+
+msgid "Rmax"
+msgstr "Rmax"
+
+msgid "Rmin"
+msgstr "Rmin"
+
+msgid "Rotate"
+msgstr "Поворот"
+
+msgid "Rotate Options..."
+msgstr "Опции вращения..."
+
+msgid "Rotate map|Rotate and zoom options for map"
+msgstr "Вращение|Опции вращения и увеличения карты"
+
+msgid "Row"
+msgstr "Ряд"
+
+msgid "Rr"
+msgstr "Rr"
+
+msgid "Rs"
+msgstr "Rs"
+
+msgid "Russian"
+msgstr "Русский"
+
+msgid "S&ave As..."
+msgstr "Сохранить &как..."
+
+msgid "S&cale..."
+msgstr "Ма&сштаб..."
+
+msgid "S&croll"
+msgstr "С&местить"
+
+msgid "S&elect"
+msgstr "В&ыбрать"
+
+msgid "S&elect Cell"
+msgstr "В&ыбрать ячейку"
+
+msgid "S&elect Column"
+msgstr "&Укажите колонку"
+
+msgid "S&elect Contact"
+msgstr "В&ыбрать контакт"
+
+msgid "S&elect Edge"
+msgstr "В&ыбрать ребро"
+
+msgid "S&elect Row"
+msgstr "В&ыбрать ряд"
+
+msgid "S&elect Solid"
+msgstr "В&ыбрать солид"
+
+msgid "S&elect Vertex"
+msgstr "В&ыбрать вершину"
+
+msgid "S&tandard Style"
+msgstr "&Стандартный стиль"
+
+msgid "S&tatusLine"
+msgstr "&Строка состояния"
+
+msgid "S&wap Diagonals"
+msgstr "С&менить диагонали"
+
+msgid "S&ymbol"
+msgstr "Си&мвол"
+
+msgid "S&ymbol..."
+msgstr "&Символ..."
+
+msgid "Sa&ve Project As..."
+msgstr "Сохранить &проект как..."
+
+msgid "Sample"
+msgstr "Проба"
+
+msgid "Sample Contacts"
+msgstr "Контакты проб"
+
+msgid "Sample Contacts..."
+msgstr "Контакты проб..."
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Save As..."
+msgstr "Сохранить как..."
+
+msgid "Save Polygon"
+msgstr "Сохранить полигон"
+
+msgid "Save Project As..."
+msgstr "Сохранить проект как..."
+
+msgid "Save as..."
+msgstr "Сохранить как..."
+
+msgid "Save as|Save the legend levels as a new color table"
+msgstr "Сохранить как|Сохранить уровни легенды в таблице"
+
+msgid "Save bounds|Save model parameters as a framework"
+msgstr "Сохранить границы|Сохранить параметры модели в виде рамок"
+
+msgid "Save one or more  table"
+msgstr "Сохранить одну или более таблиц"
+
+msgid "Save one or more table"
+msgstr "Сохранить одну или более таблиц"
+
+msgid "Save project as"
+msgstr "Сохранить проект как"
+
+msgid "Save report"
+msgstr "Сохранить отчет"
+
+msgid "Save textures..."
+msgstr "Сохранить текстуры..."
+
+msgid "Save the collector datasets in a superfile"
+msgstr "Сохранить наборы коллектора как суперфайл"
+
+msgid "Save to file"
+msgstr "Сохранить в файл"
+
+msgid "Save when exiting"
+msgstr "Сохранить при выходе"
+
+msgid "Save|Save the legend levels in the color table"
+msgstr "Сохранить|Сохранить уровни легенды в таблице"
+
+msgid "Sc&roll"
+msgstr "Про&крутка"
+
+msgid "Scale"
+msgstr "Масштаб"
+
+msgid "Scale with power 2"
+msgstr "Шкала степени 2"
+
+msgid "Scale..."
+msgstr "Масштаб..."
+
+msgid "Scenery"
+msgstr "Сцена"
+
+msgid "Scenery..."
+msgstr "Сцена..."
+
+msgid "Scroll"
+msgstr "Сместить"
+
+msgid "Scroll|Scroll the map"
+msgstr "Смещение|Сместить карту"
+
+msgid "Se&lect"
+msgstr "Вы&бор"
+
+msgid "Se&lect Column"
+msgstr "Вы&брать колонку"
+
+msgid "Se&lect Segment"
+msgstr "Вы&брать сегмент"
+
+msgid "Se&lect Triangle"
+msgstr "Вы&брать треугольник"
+
+msgid "Se&lect Type"
+msgstr "Вы&брать тип"
+
+msgid "Seam"
+msgstr "Пласт"
+
+msgid "Seam orientation"
+msgstr "Ориентация пласта"
+
+msgid "Search"
+msgstr "Поиск"
+
+msgid "Search options"
+msgstr "Опции поиска"
+
+msgid "Search type"
+msgstr "Вид поиска"
+
+msgid "Section..."
+msgstr "Разрез..."
+
+msgid "Sector"
+msgstr "Сектор"
+
+msgid "Seed Numbers"
+msgstr "Число зерен"
+
+msgid "Seeds"
+msgstr "Зерна"
+
+msgid "Segment"
+msgstr "Сегмент"
+
+msgid "Sele&ct Layer"
+msgstr "Выб&рать слой"
+
+msgid "Select"
+msgstr "Выбрать"
+
+msgid "Select &All"
+msgstr "Выбрать &всё"
+
+msgid "Select All"
+msgstr "Выбрать все"
+
+msgid "Select All|Selects the entire document"
+msgstr "Выбрать все|Выбрать весь документ"
+
+msgid "Select Cell"
+msgstr "Выбрать ячейку"
+
+msgid "Select Column"
+msgstr "Выбрать колонку"
+
+msgid "Select Contact"
+msgstr "Выбрать контакт"
+
+msgid "Select Drillhole"
+msgstr "Выбрать скважины"
+
+msgid "Select Edge"
+msgstr "Выбрать ребро"
+
+msgid "Select Layer"
+msgstr "Выбрать слой"
+
+msgid "Select Node"
+msgstr "Выбрать узел"
+
+msgid "Select Point"
+msgstr "Выбрать точку"
+
+msgid "Select Point 3D"
+msgstr "Выбрать точку 3D"
+
+msgid "Select Polygon"
+msgstr "Выбрать полигон"
+
+msgid "Select Row"
+msgstr "Выбрать ряд"
+
+msgid "Select Segment"
+msgstr "Выбрать сегмент"
+
+msgid "Select Solid"
+msgstr "Выбрать солид"
+
+msgid "Select Triangle"
+msgstr "Выбрать треугольник"
+
+msgid "Select Type"
+msgstr "Выбрать тип"
+
+msgid "Select Vertex"
+msgstr "Выбрать вершину"
+
+msgid "Select a I layer"
+msgstr "Выбрать слой"
+
+msgid "Select a I row"
+msgstr "Выбрать I ряд"
+
+msgid "Select a J column"
+msgstr "Выбрать J колонку"
+
+msgid "Select a J layer"
+msgstr "Выбрать J слой"
+
+msgid "Select a K layer"
+msgstr "Выбрать K слой"
+
+msgid "Select a cell"
+msgstr "Выбрать ячейку"
+
+msgid "Select a contact of samples"
+msgstr "Выбрать контакт проб"
+
+msgid "Select a drillhole"
+msgstr "Выбрать скважину"
+
+msgid "Select a node"
+msgstr "Выбрать узел"
+
+msgid "Select a point"
+msgstr "Выбрать точку"
+
+msgid "Select a polygon"
+msgstr "Выбрать полигон"
+
+msgid "Select a sample segment"
+msgstr "Выбрать сегмент пробы"
+
+msgid "Select a solid"
+msgstr "Выбрать оболочку"
+
+msgid "Select a triangle"
+msgstr "Выбрать треугольник"
+
+msgid "Select a vertex"
+msgstr "Выбрать вершину"
+
+msgid "Select an edge"
+msgstr "Выбрать ребро"
+
+msgid "Select an object"
+msgstr "Выбрать объект"
+
+msgid "Select by Query"
+msgstr "Выбор по запросу"
+
+msgid "Select data folder"
+msgstr "Выбор папки с данными"
+
+msgid "Select file name"
+msgstr "Укажите имя файла"
+
+msgid "Select levels|Set a scale of values for the scalar attribute"
+msgstr "Выбрать уровни|Задать шкалу значений скалярных атрибутов"
+
+msgid "Select materials|Select materials for an integer attribute"
+msgstr "Выбрать материалы|Выбрать материалы для атрибута целого типа"
+
+msgid "Select polygon type"
+msgstr "Выбрать тип полигона"
+
+msgid "Select texture"
+msgstr "Выбрать текстуру"
+
+msgid "Selection"
+msgstr "Выбор"
+
+msgid "Set Operations"
+msgstr "Операции с множествами"
+
+msgid "Set Operations..."
+msgstr "Операции с множествами..."
+
+msgid "Set a background color "
+msgstr "Установить цвет фона"
+
+msgid "Set a dataset options"
+msgstr "Задать опции набора"
+
+msgid "Set lighting|Set options of lighting"
+msgstr "Освещение|Задать опции освещения"
+
+msgid "Set operations between two selected objects"
+msgstr "Выполнить операции с множествами"
+
+msgid "Set options of meshes 2D"
+msgstr "Задать опции меш 2D"
+
+msgid "Set options of meshes 3D"
+msgstr "Задать опции меш 3D"
+
+msgid "Set options of solids"
+msgstr "Задать опции оболочек"
+
+msgid "Shape too small"
+msgstr "Форма слишком мала"
+
+msgid "Short"
+msgstr "Короткое целое"
+
+msgid "Show"
+msgstr "Показать"
+
+msgid "Show as"
+msgstr "Показать как"
+
+msgid "Show as graph"
+msgstr "Показать как график"
+
+msgid "Show as map"
+msgstr "Показать как карту"
+
+msgid "Show as table"
+msgstr "Показать как таблицу"
+
+msgid "Show contours"
+msgstr "Показать изолинии"
+
+msgid "Show or hide status line"
+msgstr "Показать или скрыть статус строку"
+
+msgid "Show the help glossary"
+msgstr "Показать глоссарий справочной системы"
+
+msgid "Show vectors"
+msgstr "Показать векторы"
+
+msgid "Shut down"
+msgstr "Закрыть"
+
+msgid "Side"
+msgstr "Сторона"
+
+msgid "Simple"
+msgstr "Простой"
+
+msgid "Size"
+msgstr "Размер"
+
+msgid "Slope"
+msgstr "Наклон"
+
+msgid "Small integer"
+msgstr "Короткое целое"
+
+msgid "Smooth shading"
+msgstr "Затенение"
+
+msgid "Smoothing"
+msgstr "Сглаживание"
+
+msgid "So&lid"
+msgstr "Со&лид"
+
+msgid "Sobolevskiy grid"
+msgstr "Грид Соболевского"
+
+msgid "Sol&id"
+msgstr "&Тело"
+
+msgid "Solid"
+msgstr "Солид"
+
+msgid "Solid bottom"
+msgstr "Дно Солида"
+
+msgid "Solid tool"
+msgstr "Инструмент Солид"
+
+msgid "Solids"
+msgstr "Солиды"
+
+msgid "Solids Options"
+msgstr "Опции Солидов"
+
+msgid "Solids..."
+msgstr "Солиды..."
+
+msgid "Spanish"
+msgstr "Испанский"
+
+msgid "Specified"
+msgstr "Заданный"
+
+msgid "Specify a file extension"
+msgstr "Задайте расширение файла"
+
+msgid "Spectrum"
+msgstr "Спектр"
+
+msgid "Specular"
+msgstr "Зеркальность"
+
+msgid "Speed"
+msgstr "Скорость"
+
+msgid "Speed:"
+msgstr "Скорость:"
+
+msgid "Sphere"
+msgstr "Сфера"
+
+msgid "Spherical"
+msgstr "Сферическая"
+
+msgid "Spline smoothing"
+msgstr "Сглаживание сплайном"
+
+msgid "Square"
+msgstr "Квадрат"
+
+msgid "St&yle"
+msgstr "Ст&иль"
+
+msgid "Standard"
+msgstr "Стандартная"
+
+msgid "Standard Deviation must be Positive"
+msgstr "Стандартное отклонение должно быть положительно"
+
+msgid "Standard Style"
+msgstr "Стандартный стиль"
+
+msgid "Standard Style|Standard Winows style"
+msgstr "Стандартный стиль|Стиль стандартного окна Winows"
+
+msgid "Standardized"
+msgstr "Стандарт"
+
+msgid "Start"
+msgstr "Старт"
+
+msgid "Start Up"
+msgstr "Заставка"
+
+msgid "Statistics"
+msgstr "Статистика"
+
+msgid "StatusLine"
+msgstr "Строка состояния"
+
+msgid "Strike"
+msgstr "Склонение"
+
+msgid "String"
+msgstr "Стринг"
+
+msgid "Stripping Factor"
+msgstr "Коэффициент вскрыши"
+
+msgid "Stripping Ratio"
+msgstr "Коэффициент вскрыши"
+
+msgid "Stripping ratio"
+msgstr "Коэффициент вскрыши"
+
+msgid "Structure"
+msgstr "Структура"
+
+msgid "Style"
+msgstr "Стиль"
+
+msgid "Sum"
+msgstr "Сумма"
+
+msgid "Surface"
+msgstr "Поверхность"
+
+msgid "Surfaces"
+msgstr "Поверхности"
+
+msgid "Survey"
+msgstr "Маркшейдерия"
+
+msgid "Survey Calculator"
+msgstr "Калькулятор маркшейдера"
+
+msgid "Survey calculator"
+msgstr "Калькулятор маркшейдера"
+
+msgid "Survey..."
+msgstr "Маркшейдерия..."
+
+msgid "Swap Diagonals"
+msgstr "Сменить диагонали"
+
+msgid "Swap diagonals of the quadrilateral"
+msgstr "Поменять диагонали четырехугольника"
+
+msgid "Symbol"
+msgstr "Символ"
+
+msgid "Symbol Style"
+msgstr "Стиль символов"
+
+msgid "Symbol style|Set a symbol style for new or selected objects"
+msgstr "Стиль символа|Задать стиль символа для нового или отмеченного объекта"
+
+msgid "Symbol tool"
+msgstr "Инструмент Символ"
+
+msgid "Symbol..."
+msgstr "Символ..."
+
+msgid "T&ile Vertically"
+msgstr "&Вертикально"
+
+msgid "T&ransformation..."
+msgstr "Т&рансформация..."
+
+msgid "Table"
+msgstr "Таблица"
+
+msgid "Table Window..."
+msgstr "Окно таблицы..."
+
+msgid "Table statistic"
+msgstr "Табличная статистика"
+
+msgid "Table|Show the result as table"
+msgstr "Таблица|Показать результат как таблицу"
+
+msgid "Te&xt..."
+msgstr "&Текст..."
+
+msgid "Temperature"
+msgstr "Температура"
+
+msgid "Tetrahedralisation"
+msgstr "Тетраэдрализация"
+
+msgid "Tetrahedron cells"
+msgstr "Ячейки тетраэдров"
+
+msgid "Text"
+msgstr "Текст"
+
+msgid "Text style|Set a text style for new or selected text"
+msgstr "Стиль текста|Задать стиль текста для нового или отмеченного текста"
+
+msgid "Text tool"
+msgstr "Инструмент Текст"
+
+msgid "Text..."
+msgstr "Текст..."
+
+msgid "Texture"
+msgstr "Текстура"
+
+msgid "Texture size:"
+msgstr "Размер текстуры:"
+
+msgid "Textures"
+msgstr "Текстуры"
+
+msgid "Texturing"
+msgstr "Текстурирование"
+
+msgid "Thickness"
+msgstr "Мощность"
+
+msgid "Tile Horizontally"
+msgstr "Горизонтальная плитка"
+
+msgid "Tile Vertically"
+msgstr "Вертикальная плитка"
+
+msgid "Tile horizontal"
+msgstr "Горизонтальная плитка"
+
+msgid "Tile vertical"
+msgstr "Расположить вертикально"
+
+msgid "Time"
+msgstr "Время"
+
+msgid "Time:"
+msgstr "Время:"
+
+msgid "Timestamp"
+msgstr "Метка времени"
+
+msgid "Tin"
+msgstr "Тин"
+
+msgid "Tin Options"
+msgstr "Опции Триангуляции"
+
+msgid "Tin..."
+msgstr "Триангуляции..."
+
+msgid "Tins"
+msgstr "Триангуляции"
+
+msgid "Tins options|Set options of tins"
+msgstr "Тины|Задать опции тинов"
+
+msgid "To"
+msgstr "До"
+
+msgid "Tolerance"
+msgstr "Допуск"
+
+msgid "Tools"
+msgstr "Сервис"
+
+msgid "Top"
+msgstr "Сверху"
+
+msgid "Toroid"
+msgstr "Тор"
+
+msgid "Transfer"
+msgstr "Перенос"
+
+msgid "Transformation"
+msgstr "Трансформация"
+
+msgid "Transformation..."
+msgstr "Трансформация..."
+
+msgid "Transformation|Transform a model in space, rotate and scale"
+msgstr "Трансформация|Смещение, поворот или масштабирование модели"
+
+msgid "Trees"
+msgstr "Деревья"
+
+msgid "Triangle"
+msgstr "Треугольник"
+
+msgid "Triangle prizms"
+msgstr "Треугольные призмы"
+
+msgid "Triangles"
+msgstr "Треугольники"
+
+msgid "Triangulate data"
+msgstr "Триангулировать данные"
+
+msgid "Triangulation"
+msgstr "Триангуляция"
+
+msgid "Triangulation..."
+msgstr "Триангуляция..."
+
+msgid "True thickness"
+msgstr "Истинная мощность"
+
+msgid "Two Side Lighting"
+msgstr "Двустороннее освещение"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Type:"
+msgstr "Тип:"
+
+msgid "Typed binary"
+msgstr "Типиз.двоичное"
+
+msgid "U&nits Converter..."
+msgstr "Конвертор е&диниц..."
+
+msgid "Undecagon"
+msgstr "Одиннадцатиугольник"
+
+msgid "Undercutting"
+msgstr "Подсечение"
+
+msgid "Undo"
+msgstr "Отменить"
+
+msgid "Undo|Reverts the last action"
+msgstr "Отмена|Отменить последнию операцию"
+
+msgid "Uniform"
+msgstr "Равномерное"
+
+msgid "Uniform scale"
+msgstr "Униформная шкала"
+
+msgid "Union"
+msgstr "Объединение"
+
+msgid "Units"
+msgstr "Ед.изм."
+
+msgid "Units Converter"
+msgstr "Конвертор единиц измерения"
+
+msgid "Units Converter..."
+msgstr "Конвертор единиц..."
+
+msgid "Unknown"
+msgstr "Неизвестное"
+
+msgid "Unsupported file extension"
+msgstr "Не поддерживаемое расширение файла"
+
+msgid "Update"
+msgstr "Обновить"
+
+msgid "Update Structure"
+msgstr "Обновить структуру"
+
+msgid "Update the table structure"
+msgstr "Обновить структуру таблицы"
+
+msgid "Use triangulation"
+msgstr "Используйте триангуляцию"
+
+msgid "V&iew"
+msgstr "&Вид"
+
+msgid "Value"
+msgstr "Значение"
+
+msgid "Variable"
+msgstr "Переменная"
+
+msgid "Variable bytes"
+msgstr "Переменные байты"
+
+msgid "Variance"
+msgstr "Дисперсия"
+
+msgid "Variogram"
+msgstr "Вариограмма"
+
+msgid "Variogram Modeller"
+msgstr "Моделлер вариограмм"
+
+msgid "Variogram Modelling"
+msgstr "Моделирование вариограмм"
+
+msgid "Variogram Modelling..."
+msgstr "Моделирование вариограмм..."
+
+msgid "Variogram model"
+msgstr "Модель вариограммы"
+
+msgid "Variogram of logarithms"
+msgstr "Логарифмическая вариограмма"
+
+msgid "Variograms"
+msgstr "Вариограммы"
+
+msgid "Variograms..."
+msgstr "Вариограммы..."
+
+msgid "Vector Empty"
+msgstr "Пустой вектор"
+
+msgid "Vector too small"
+msgstr "Вектор слишком мал"
+
+msgid "Vectors..."
+msgstr "Векторы..."
+
+msgid "Vertical thickness"
+msgstr "Вертикальная мощность"
+
+msgid "View"
+msgstr "Вид"
+
+msgid "View 3D"
+msgstr "Вид 3D"
+
+msgid "View 3D|Set 3D oblique view"
+msgstr "Вид 3D|Дать объёмный вид в 3D"
+
+msgid "View XYZ|View XYZ volume"
+msgstr "Вид XYZ|Вид XYZ объёма"
+
+msgid "View XY|View XY plane"
+msgstr "Вид XY|Вид XY плоскости"
+
+msgid "View XZ|View XZ plane"
+msgstr "Вид XZ|Вид XZ плоскости"
+
+msgid "View YZ|View YZ plane"
+msgstr "Вид YZ|Вид YZ плоскости"
+
+msgid "View back|Set a back view"
+msgstr "Вид сзади|Дать вид сзади"
+
+msgid "View bottom|Set a bottom view"
+msgstr "Вид снизу|Дать вид снизу"
+
+msgid "View front|Set a front view"
+msgstr "Вид спереди|Дать вид спереди"
+
+msgid "View geoscene to inspect space"
+msgstr "Просмотр пространственной геосцены"
+
+msgid "View left|Set a left view"
+msgstr "Вид слева|Дать вид слева"
+
+msgid "View right|Set a right view"
+msgstr "Вид справа|Дать вид справа"
+
+msgid "View top|Set a top view"
+msgstr "Вид сверху|Показать сверху"
+
+msgid "View variogram"
+msgstr "Вариограммы"
+
+msgid "Volume"
+msgstr "Объем"
+
+msgid "Volume Calculation..."
+msgstr "Подсчет объемов..."
+
+msgid "Volume XYZ"
+msgstr "Объем XYZ"
+
+msgid "Volume calculation|Calculate the volume of an current object on map"
+msgstr "Объёмы|Подсчет объёма активного объекта карты"
+
+msgid "Volumes"
+msgstr "Объёмы"
+
+msgid "VorPanel"
+msgstr "ПанельВороного"
+
+msgid "Voronoi Cells"
+msgstr "Ячейки Вороного"
+
+msgid "Voronoi Polygons"
+msgstr "Полигоны Вороного"
+
+msgid "Voronoi diagram|*.vor|Tetrahedra|*.ele"
+msgstr "Диаграмма Вороного |*.vor|Tetrahedra|*.ele"
+
+msgid "Voronoi polygons"
+msgstr "Полигоны Вороного"
+
+msgid "Voronoi polyhedrons"
+msgstr "Полиэдры Вороного"
+
+msgid "W"
+msgstr "W"
+
+msgid "Waste"
+msgstr "Порода"
+
+msgid "Weighted arithmetics"
+msgstr "Взвешенное арифметическое"
+
+msgid "Where"
+msgstr "Where"
+
+msgid "Wide string"
+msgstr "Длинная строка"
+
+msgid "Width"
+msgstr "Ширина"
+
+msgid "Window"
+msgstr "Окно"
+
+msgid "Wireframe"
+msgstr "Каркас"
+
+msgid "Word"
+msgstr "Слово"
+
+msgid "Wrong value"
+msgstr "Неверное значение"
+
+msgid "X"
+msgstr "X"
+
+msgid "X:"
+msgstr "X:"
+
+msgid "XE"
+msgstr "XE"
+
+msgid "XO"
+msgstr "XO"
+
+msgid "XP Style"
+msgstr "XP стиль"
+
+msgid "XP Style|Winows XP style"
+msgstr "XP стиль|Winows XP стиль"
+
+msgid "XY"
+msgstr "XY"
+
+msgid "XZ"
+msgstr "XZ"
+
+msgid "Y"
+msgstr "Y"
+
+msgid "Y "
+msgstr "Y"
+
+msgid "Y:"
+msgstr "Y:"
+
+msgid "YE"
+msgstr "YE"
+
+msgid "YO"
+msgstr "YO"
+
+msgid "YZ"
+msgstr "YZ"
+
+msgid "Z"
+msgstr "Z"
+
+msgid "Z magnification"
+msgstr "Z увеличение"
+
+msgid "Z&oom Rectangle"
+msgstr "&Прямоугольник увеличения"
+
+msgid "Z&oom to Complete"
+msgstr "В рамках комплекта"
+
+msgid "Z:"
+msgstr "Z:"
+
+msgid "ZE"
+msgstr "ZE"
+
+msgid "ZO"
+msgstr "ZO"
+
+msgid "Zero Thickness"
+msgstr "Нулевая мощность"
+
+msgid "Zoo&m to Model"
+msgstr "В ра&мках модели"
+
+msgid "Zoo&m to Project"
+msgstr "В &рамках проекта"
+
+msgid "Zoom"
+msgstr "Увеличить"
+
+msgid "Zoom &InOut"
+msgstr "Увеличение"
+
+msgid "Zoom &to Complete"
+msgstr "В рамках &комплекта"
+
+msgid "Zoom In"
+msgstr "Увеличить"
+
+msgid "Zoom InOut"
+msgstr "Увеличить"
+
+msgid "Zoom Out"
+msgstr "Уменьшить"
+
+msgid "Zoom Rectangle"
+msgstr "Увеличить в прямоугольнике"
+
+msgid "Zoom rectangle bounds"
+msgstr "В рамках прямоугольника"
+
+msgid "Zoom to Complete"
+msgstr "В рамках комплекта"
+
+msgid "Zoom to Mo&del"
+msgstr "В рамках &модели"
+
+msgid "Zoom to Model"
+msgstr "В рамках модели"
+
+msgid "Zoom to Project"
+msgstr "В рамках проекта"
+
+msgid "Zoom to complete|Zoom to the complete bounds"
+msgstr "В рамках комплекта|Увеличить в рамках комплекта"
+
+msgid "Zoom to model|Zoom to the active model bounds"
+msgstr "В рамках модели|Увеличить в рамках активной модели"
+
+msgid "Zoom to project|Zoom map to the project bounds"
+msgstr "В рамках проекта|Увеличить карту в границах проекта"
+
+msgid "Zoom|Zoom in or zoom out"
+msgstr "Увеличить|Увеличить или уменьшить"
+
+msgid "`"
+msgstr "`"
+
+msgid "dBASE OLE"
+msgstr "dBASE OLE"
+
+msgid "default"
+msgstr "По умолчанию"
+
+msgid "for"
+msgstr "для"
+
+msgid "kg/m3"
+msgstr "кг/м3"
+
+msgid "km/h"
+msgstr "км/ч"
+
+msgid "page"
+msgstr "Страница"
+
+msgid "pages"
+msgstr "страниц"
+
+msgid "t/t"
+msgstr "t/t"
+
+msgid "version"
+msgstr "Версия"
+
+msgid "|"
+msgstr "|"

@@ -1,0 +1,2145 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7B31F687-ED58-4E67-852D-BBC89224B307}</ProjectGuid>
+        <MainSource>Geoblock.dpr</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <TargetedPlatforms>1</TargetedPlatforms>
+        <AppType>Application</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <ProjectVersion>19.0</ProjectVersion>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <UsePackages>true</UsePackages>
+        <SanitizedProjectName>Geoblock</SanitizedProjectName>
+        <DCC_S>false</DCC_S>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=;CFBundleName=;CFBundleDisplayName=;CFBundleIdentifier=;CFBundleVersion=;CFBundlePackageType=;CFBundleSignature=;CFBundleAllowMixedLocalizations=;CFBundleExecutable=</VerInfo_Keys>
+        <VerInfo_Locale>1049</VerInfo_Locale>
+        <DCC_N>false</DCC_N>
+        <DCC_F>false</DCC_F>
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;Bde;VclTee;$(DCC_Namespace)</DCC_Namespace>
+        <DCC_E>false</DCC_E>
+        <DCC_K>false</DCC_K>
+        <DCC_ImageBase>00400000</DCC_ImageBase>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
+        <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
+        <DCC_UsePackage>rtl;vclx;vcl;dbrtl;vcldb;vcldbx;bdertl;$(DCC_UsePackage)</DCC_UsePackage>
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <VerInfo_MinorVer>3</VerInfo_MinorVer>
+        <VerInfo_Release>15</VerInfo_Release>
+        <VerInfo_MajorVer>2015</VerInfo_MajorVer>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <Icon_MainIcon>Bin\Geoblock.ico</Icon_MainIcon>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Keys>CompanyName=;FileVersion=2015.3.15.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_Release>15</VerInfo_Release>
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <UsePackages>true</UsePackages>
+        <Icon_MainIcon>Bin\Geoblock.ico</Icon_MainIcon>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=;FileVersion=2015.3.15.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_MajorVer>2015</VerInfo_MajorVer>
+        <VerInfo_MinorVer>3</VerInfo_MinorVer>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_Optimize>false</DCC_Optimize>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <UsePackages>true</UsePackages>
+        <DCC_CBuilderOutput>All</DCC_CBuilderOutput>
+        <DCC_DcuOutput>.\lib</DCC_DcuOutput>
+        <BT_BuildType>Debug</BT_BuildType>
+        <DCC_UnitSearchPath>.\Source\Code;.\Source\Comps;.\Source\Interface;.\Source\Scene;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_AdditionalSwitches>-LUDesignIDE </DCC_AdditionalSwitches>
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <VerInfo_Release>10</VerInfo_Release>
+        <Icon_MainIcon>Bin\Geoblock.ico</Icon_MainIcon>
+        <VerInfo_MajorVer>2020</VerInfo_MajorVer>
+        <VerInfo_MinorVer>7</VerInfo_MinorVer>
+        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
+        <VerInfo_Build>789</VerInfo_Build>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <DCC_ExeOutput>.\Bin</DCC_ExeOutput>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=Getos Ltd;FileVersion=2020.7.10.789;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=Geoblock;ProductVersion=1.2.3.4;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName)</VerInfo_Keys>
+        <DCC_ObjOutput>.\lib</DCC_ObjOutput>
+        <DCC_BpiOutput>.\lib</DCC_BpiOutput>
+        <DCC_HppOutput>.\include</DCC_HppOutput>
+        <BRCC_IncludePath>.\Source\Code;.\Source\Comp;.\Source\Interface;.\Source\Module;.\Source\Scene;.\Source\Comp;.\Source\Interface;.\Source\Module;.\Source\Scene</BRCC_IncludePath>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="Source\Interface\dDialogs.pas">
+            <Form>dmDialogs</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\dBase.pas">
+            <Form>dmBase</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fInitialForm.pas">
+            <Form>fmInitialForm</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fInitialDialog.pas">
+            <Form>fmInitialDialog</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMethodDialog.pas">
+            <Form>fmMethodDialog</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMethodDualDialog.pas">
+            <Form>fmMethodDualDialog</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fOptionDialog.pas">
+            <Form>fmOptionDialog</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fFileOpenDialog.pas">
+            <Form>fmFileOpenDialog</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fPageDialog.pas">
+            <Form>fmPageDialog</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fPageTreeDialog.pas">
+            <Form>fmPageTreeDialog</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fFileEditGridPars.pas">
+            <Form>fmFileEditGridPars</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fGeoblock.pas">
+            <Form>fmGeoblock</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMethodEvaluation.pas">
+            <Form>fmMethodEvaluation</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fHelpAbout.pas">
+            <Form>fmHelpAbout</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fToolsConfiguration.pas">
+            <Form>fmToolsConfiguration</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fDrawFillStyle.pas">
+            <Form>fmDrawFillStyle</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fDisplayGrid3DOptions.pas">
+            <Form>fmDisplayGrid3DOptions</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fComposeLinearReserves.pas">
+            <Form>fmComposeLinearReserves</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fDisplayTinOptions.pas">
+            <Form>fmDisplayTinOptions</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fDisplayPoints2DOptions.pas">
+            <Form>fmDisplayPoints2DOptions</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fDisplayPoints3DOptions.pas">
+            <Form>fmDisplayPoints3DOptions</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fDisplayGrid2DOptions.pas">
+            <Form>fmDisplayGrid2DOptions</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fDisplayMesh3DOptions.pas">
+            <Form>fmDisplayMesh3DOptions</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fDisplayMesh2DOptions.pas">
+            <Form>fmDisplayMesh2DOptions</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fComposeByHorizons.pas">
+            <Form>fmComposeByHorizons</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fDisplayHolesOptions.pas">
+            <Form>fmDisplayHolesOptions</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fDisplayPolygonsOptions.pas">
+            <Form>fmDisplayPolygonsOptions</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fPerformVectors.pas">
+            <Form>fmPerformVectors</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fPerformContours.pas">
+            <Form>fmPerformContours</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fPerformIsosurfaces.pas">
+            <Form>fmPerformIsosurfaces</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fComposeOreIntervals.pas">
+            <Form>fmComposeOreIntervals</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fDrawLineStyle.pas">
+            <Form>fmDrawLineStyle</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMethodGridGeneration.pas">
+            <Form>fmMethodGridGeneration</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fToolsUnitsConverter.pas">
+            <Form>fmToolsUnitsConverter</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMethodTriangulation.pas">
+            <Form>fmMethodTriangulation</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fReserveCutOptions.pas">
+            <Form>fmReserveCutOptions</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fDrawObjectDepth.pas">
+            <Form>fmDrawObjectDepth</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fEditCalcField.pas">
+            <Form>fmEditCalcField</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fEditDeleteField.pas">
+            <Form>fmEditDeleteField</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fEditMemoField.pas">
+            <Form>fmEditMemoField</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fEditLookupField.pas">
+            <Form>fmEditLookupField</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMethodInterpolation.pas">
+            <Form>fmMethodInterpolation</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fInterKriging.pas">
+            <Form>fmInterKriging</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fInterPolynomRegression.pas">
+            <Form>fmInterPolynomialRegression</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fDisplaySolidOptions.pas">
+            <Form>fmDisplaySolidsOptions</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMapLight.pas">
+            <Form>fmMapLighting</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fAnalyseReserves.pas">
+            <Form>fmAnalyseReserves</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fFileImageRegistration.pas">
+            <Form>fmFileImageRegistration</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fRecordEditor.pas">
+            <Form>fmRecordEditor</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMethodSetOperations.pas">
+            <Form>fmMethodSetOperations</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fComposeCenters.pas">
+            <Form>fmComposeCenters</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fViewRotate.pas">
+            <Form>fmViewRotate</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fEditRenField.pas">
+            <Form>fmEditRenField</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fViewScale.pas">
+            <Form>fmViewScale</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fEditAddField.pas">
+            <Form>fmEditAddField</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fFileExport.pas">
+            <Form>fmFileExport</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fFileEditWhittlePars.pas">
+            <Form>fmFileEditWhittlePars</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fInfoDialog.pas">
+            <Form>fmInfoDialog</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fFileImport.pas">
+            <Form>fmFileImport</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fEditQuery.pas">
+            <Form>fmEditQuery</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fEditGetStatist.pas">
+            <Form>fmEditGetStatist</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fToolsSurveyCalculator.pas">
+            <Form>fmToolsSurveyCalculator</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fAnalyseVariograms.pas">
+            <Form>fmAnalyseVariograms</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMapLegend.pas">
+            <Form>fmMapLegend</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fEditFileXML.pas">
+            <Form>fmEditFileXML</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fToolsGeometryCalculator.pas">
+            <Form>fmToolsGeometryCalculator</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fToolsGeologyCalculator.pas">
+            <Form>fmToolsGeologyCalculator</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fComposeContacts.pas">
+            <Form>fmComposeContacts</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fToolsMiningCalculator.pas">
+            <Form>fmToolsMiningCalculator</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fViewProjectManager.pas">
+            <Form>fmViewProjectManager</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fStartup.pas">
+            <Form>fmStartup</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\iReinit.pas"/>
+        <DCCReference Include="Source\Interface\fMethodConversion.pas">
+            <Form>fmMethodConversion</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMethodTransformation.pas">
+            <Form>fmMethodTransformation</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMapWindow.pas">
+            <Form>fmMapWindow</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fTableWindow.pas">
+            <Form>fmTableWindow</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fGraphWindow.pas">
+            <Form>fmGraphWindow</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fDrawImageEditor.pas">
+            <Form>fmDrawImageEditor</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fDrawSymbolStyle.pas">
+            <Form>fmDrawSymbolStyle</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fFileOpenText.pas">
+            <Form>fmFileOpenText</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fAnalyseProblems.pas">
+            <Form>fmAnalyseProblems</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fComposeOreSorts.pas">
+            <Form>fmComposeOreSorts</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMethodVarioModeller.pas">
+            <Form>fmMethodVarioModeller</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fViewVariogram.pas">
+            <Form>fmViewVariogram</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMapScenery.pas">
+            <Form>fmMapScenery</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fFileDataBrowser.pas">
+            <Form>fmFileDataBrowser</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Scene\fTerraContours.pas">
+            <Form>fmGSContours</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Scene\fTerraScene.pas">
+            <Form>fmGeoScene</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Scene\fTerraSplash.pas">
+            <Form>fmGS_Splash</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fFileOpenModel.pas">
+            <Form>fmFileOpenModel</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMethodPitOptimization.pas">
+            <Form>fmMethodPitOptimization</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMethodPrediction.pas"/>
+        <DCCReference Include="Source\Interface\fEditRecord.pas">
+            <Form>fmInitialDialog1</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fEditVariogram.pas">
+            <Form>fmEditVariogram</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fInterLinear.pas">
+            <Form>fmInterLinear</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fViewHorizon.pas">
+            <Form>fmViewHorizon</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fViewDataVisualizer.pas">
+            <Form>fmInitialForm1</Form>
+        </DCCReference>
+        <DCCReference Include="Source\Code\uResStrings.pas"/>
+        <DCCReference Include="Source\Code\uGlobals.pas"/>
+        <DCCReference Include="Source\Code\uCommon.pas"/>
+        <DCCReference Include="Source\Code\uInterpol.pas"/>
+        <DCCReference Include="Source\Code\uPluginMng.pas"/>
+        <DCCReference Include="Source\Code\uPluginReg.pas"/>
+        <DCCReference Include="Source\Code\uProfuns.pas"/>
+        <DCCReference Include="Source\Code\uSorting.pas"/>
+        <DCCReference Include="Source\Code\uVariograms.pas"/>
+        <DCCReference Include="Source\Code\uDelaunay2D.pas"/>
+        <DCCReference Include="Source\Code\uIOPoly.pas"/>
+        <DCCReference Include="Source\Code\uDrawVor.pas"/>
+        <DCCReference Include="Source\Code\uInverseDistance.pas"/>
+        <DCCReference Include="Source\Code\uSuperblock.pas"/>
+        <DCCReference Include="Source\Code\uLinearByTin.pas"/>
+        <DCCReference Include="Source\Code\uNaturalNeighbors.pas"/>
+        <DCCReference Include="Source\Code\uKriging.pas"/>
+        <DCCReference Include="Source\Code\uClosestPointInt.pas"/>
+        <DCCReference Include="Source\Code\uPolynomialRegression.pas"/>
+        <DCCReference Include="Source\Code\uDelaunay3D.pas"/>
+        <DCCReference Include="Source\Code\uObjects3D.pas"/>
+        <DCCReference Include="Source\Scene\uTerraLayers.pas"/>
+        <DCCReference Include="Source\Scene\uTerraModel.pas"/>
+        <DCCReference Include="Source\Scene\uTerraObjects.pas"/>
+        <DCCReference Include="Source\Scene\uTerraSound.pas"/>
+        <DCCReference Include="Source\Code\uModels.pas"/>
+        <DCCReference Include="Source\Code\uOptimizeLG.pas"/>
+        <DCCReference Include="Source\Code\uFileCreator.pas"/>
+        <DCCReference Include="Source\Scene\uTerraLoader.pas"/>
+        <DCCReference Include="Source\Code\GnuGetText.pas"/>
+        <DCCReference Include="Source\Code\uWhittle.pas"/>
+        <DCCReference Include="Source\Code\uDiscoMetric.pas"/>
+        <DCCReference Include="Source\Code\uDiscoCore.pas"/>
+        <DCCReference Include="Source\Code\uDiscoPoly.pas"/>
+        <DCCReference Include="Source\Scene\uBalloonHints.pas"/>
+        <DCCReference Include="Source\Interface\iToolsGBA.pas"/>
+        <DCCReference Include="Source\Scene\fSceneVR.pas">
+            <Form>fmSceneVR</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Source\Code\uOptimizePF.pas"/>
+        <DCCReference Include="Source\Interface\fMethodOctree.pas">
+            <Form>fmMethodOctree</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Source\Interface\fMethodSimulation.pas">
+            <Form>fmFileNew</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <None Include="ModelSupport_Geoblock\default.txaPackage"/>
+        <None Include="ModelSupport_Geoblock\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\FileCreator\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GBGlobals\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\RecordEditor\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\Geoblock\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\EditLookupField\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\LinearByTin\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GS_Splash\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\MethodGridGeneration\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\EditRenField\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\Geoscene\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\Reinit\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\FileDataBrowser\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\ViewScale\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GBEditValue\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GBGraphics\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GBImages\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GBAreaVolume\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\InterKriging\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\EditCalculateField\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\PerformContours\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GraphWindow\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\CompositingOreSorts\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\ReserveCuttingOptions\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\DisplaySolidsOptions\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GBEditRange\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GBKernel\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\MethodTriangulation\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\ToolsGeologyCalculator\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\CompositingByHorizons\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\DrawImageEditor\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GBObjects\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\DisplayMesh3DOptions\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\CompositingContacts\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\FileExport\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\DisplayHolesOptions\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\InitialForm\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\EditDeleteField\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\MapLight\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GeoSceneObjects\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\ToolsGeometryCalculator\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\Delaunay2D\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\EditAddField\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\FileOpenModel\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\TextDriver\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\ToolsMiningCalculator\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\EditFileXML\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\FileOpenBase\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\EditMemoField\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\MethodTransformation\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\DrawVor\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\PluginReg\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\DrawObjectDepth\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\EditGetStatist\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\PolynomialRegression\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\Models\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\Delaunay3D\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\DisplayTinOptions\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\FileEditGridPars\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\BalloonHints\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\InverseDistance\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\CompositingOreIntervals\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\Main\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\MarchingCubes\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\AnalyseProblems\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GBTables\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\Shapes3D\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\InterPolynomialRegression\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\FileOpenText\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\CompositingCenters\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\Startup\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GeoSceneLayers\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\DisplayPoints3DOptions\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\FileOpenReference\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\CompositingLinearReserves\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\Normal\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\NaturalNeighbors\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\PageDialog\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\Superblock\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GBProfs\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\OptionDialog\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\MethodPitOptimization\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\kt3d\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\MethodDualDialog\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\ToolsSurveyCalculator\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\HelpAbout\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\Interpol\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\FileNew\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\DisplayGrid3DOptions\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\Variograms\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\MethodConversion\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\ViewProjectManager\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\DisplayPolygonsOptions\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\MethodPrediction\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GSContours\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\ViewRotate\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\DisplayPoints2DOptions\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\AnalyseVariograms\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\OptimizeLG\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\MethodSetOperations\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\ToolsConfiguration\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\MapWindow\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GBCommon\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\MethodVarioModeller\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\MethodEvaluation\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\FileEditWhittlePars\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\DrawLineStyle\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\InitialDialog\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\InfoDialog\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\InterInverseDistance\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\PageTreeDialog\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\ToolsUnitsConverter\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\PluginMng\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\DrawFillStyle\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\ViewVariogram\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\MethodInterpolation\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GeoSceneModel\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GBGeometry\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\InterNaturalNeighbours\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GeoTerrainLoader\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GBConsts\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GBPolyMath\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\PerformVectors\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\DisplayMesh2DOptions\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\PerformIsosurfaces\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\DisplayGrid2DOptions\default.txvpck"/>
+        <None Include="ModelSupport_Geoblock\GeoSceneSound\default.txvpck"/>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">Geoblock.dpr</Source>
+                </Source>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">0</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">1049</VersionInfo>
+                    <VersionInfo Name="CodePage">1251</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName"/>
+                    <VersionInfoKeys Name="FileDescription"/>
+                    <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName"/>
+                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                    <VersionInfoKeys Name="CFBundleName"/>
+                    <VersionInfoKeys Name="CFBundleDisplayName"/>
+                    <VersionInfoKeys Name="CFBundleIdentifier"/>
+                    <VersionInfoKeys Name="CFBundleVersion"/>
+                    <VersionInfoKeys Name="CFBundlePackageType"/>
+                    <VersionInfoKeys Name="CFBundleSignature"/>
+                    <VersionInfoKeys Name="CFBundleAllowMixedLocalizations"/>
+                    <VersionInfoKeys Name="CFBundleExecutable"/>
+                </VersionInfoKeys>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k270.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp270.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k270.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp270.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+            </Platforms>
+            <ModelSupport>False</ModelSupport>
+            <Deployment Version="3">
+                <DeployFile LocalName="ModelSupport_Geoblock\EditRenField\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\Interpol\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\ViewScale\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\TextDriver\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\DisplayPoints3DOptions\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GBGraphics\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\ViewVariogram\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\OptimizeLG\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Bin\Geoblock.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>Geoblock.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GSContours\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\PerformVectors\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\MethodConversion\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\LinearByTin\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\FileOpenText\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\PageDialog\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\OptionDialog\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\PluginReg\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\InitialDialog\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\Geoscene\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\MethodPitOptimization\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\CompositingOreSorts\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\FileOpenModel\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GBEditRange\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GeoTerrainLoader\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GBConsts\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\Main\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\DrawImageEditor\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\AnalyseVariograms\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\PluginMng\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\ToolsGeometryCalculator\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\DrawVor\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\InfoDialog\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\ToolsUnitsConverter\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\Shapes3D\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\InterNaturalNeighbours\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GBObjects\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\DisplaySolidsOptions\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\DisplayHolesOptions\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\EditFileXML\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\FileNew\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\MethodTransformation\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\NaturalNeighbors\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\HelpAbout\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\EditLookupField\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\ToolsGeologyCalculator\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\DisplayMesh3DOptions\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\Delaunay3D\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\DrawFillStyle\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GeoSceneSound\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\FileEditGridPars\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\BalloonHints\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GBGeometry\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\CompositingOreIntervals\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GeoSceneModel\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GBKernel\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\EditAddField\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GBTables\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\DisplayPoints2DOptions\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\EditGetStatist\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\FileEditWhittlePars\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\ToolsSurveyCalculator\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\CompositingLinearReserves\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\Startup\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GeoSceneObjects\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\MethodPrediction\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\MethodSetOperations\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\EditCalculateField\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GraphWindow\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\InterPolynomialRegression\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GBProfs\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GBGlobals\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\ViewProjectManager\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\InterInverseDistance\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\MethodGridGeneration\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\Delaunay2D\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\InterKriging\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\EditDeleteField\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\FileOpenBase\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\ViewRotate\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\ReserveCuttingOptions\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\CompositingByHorizons\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\CompositingContacts\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\MarchingCubes\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\PolynomialRegression\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\AnalyseProblems\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\kt3d\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\EditMemoField\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\Models\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GS_Splash\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\DisplayGrid3DOptions\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\FileCreator\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\InverseDistance\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GBCommon\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\PerformIsosurfaces\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\FileExport\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\DrawLineStyle\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GBAreaVolume\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\ToolsConfiguration\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\Variograms\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\MapWindow\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\RecordEditor\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GeoSceneLayers\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GBImages\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GBPolyMath\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\MethodEvaluation\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\DisplayGrid2DOptions\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\MethodVarioModeller\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\ToolsMiningCalculator\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\GBEditValue\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\MapLight\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\Reinit\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\Superblock\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\DisplayMesh2DOptions\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\Normal\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\MethodInterpolation\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\DisplayTinOptions\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\MethodDualDialog\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\InitialForm\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\MethodTriangulation\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\Geoblock\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\DisplayPolygonsOptions\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\FileDataBrowser\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\FileOpenReference\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\PageTreeDialog\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\CompositingCenters\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\PerformContours\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Geoblock\DrawObjectDepth\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployClass Name="AdditionalDebugSymbols">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidClassesDexFile">
+                    <Platform Name="Android">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidFileProvider">
+                    <Platform Name="Android">
+                        <RemoteDir>res\xml</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\xml</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidGDBServer">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeArmeabiFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>library\lib\armeabi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeArmeabiv7aFile">
+                    <Platform Name="Android64">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeMipsFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\mips</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>library\lib\mips</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeX86File"/>
+                <DeployClass Name="AndroidServiceOutput">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>library\lib\arm64-v8a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidServiceOutput_Android32">
+                    <Platform Name="Android64">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashImageDef">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashStyles">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashStylesV21">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values-v21</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\values-v21</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_Colors">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_DefaultAppIcon">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon144">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon36">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-ldpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-ldpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon48">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon72">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon96">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_NotificationIcon24">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_NotificationIcon36">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_NotificationIcon48">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_NotificationIcon72">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_NotificationIcon96">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-xxxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage426">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-small</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-small</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage470">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-normal</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-normal</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage640">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-large</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-large</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage960">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xlarge</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\drawable-xlarge</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_Strings">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DebugSymbols">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyFramework">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.framework</Extensions>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.framework</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyModule">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.dll;.bpl</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="DependencyPackage">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.bpl</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="File">
+                    <Platform Name="Android">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources\StartUp\</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\Resources\StartUp\</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1024">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1536">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch2048">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch2x">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch768">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_LaunchDark2x">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch2x">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch320">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch3x">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_LaunchDark2x">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_LaunchDark3x">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen\Assets\LaunchScreenImage.imageset</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceResourceRules">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSInfoPList">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSLaunchScreen">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen</RemoteDir>
+                        <Operation>64</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>..\$(PROJECTNAME).launchscreen</RemoteDir>
+                        <Operation>64</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSResource">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXDebug">
+                    <Platform Name="OSX64">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXEntitlements">
+                    <Platform Name="OSX32">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXInfoPList">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\Resources</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="ProjectOutput">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android64">
+                        <RemoteDir>library\lib\arm64-v8a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Linux64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX64">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOutput_Android32">
+                    <Platform Name="Android64">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectUWPManifest">
+                    <Platform Name="Win32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="UWP_DelphiLogo150">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="UWP_DelphiLogo44">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSDevice" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Linux64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="OSX64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Android64" Name="$(PROJECTNAME)"/>
+            </Deployment>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+    <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
+</Project>

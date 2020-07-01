@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4b57e402-76e3-4368-bac8-a49f526afb25}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Packages\GBComps.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Geoblock.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Plugins\Geochronology\Geochronology.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Plugins\Mendeleev\Mendeleev.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="GBComps">
+        <MSBuild Projects="Packages\GBComps.dproj"/>
+    </Target>
+    <Target Name="GBComps:Clean">
+        <MSBuild Projects="Packages\GBComps.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GBComps:Make">
+        <MSBuild Projects="Packages\GBComps.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Geoblock">
+        <MSBuild Projects="Geoblock.dproj"/>
+    </Target>
+    <Target Name="Geoblock:Clean">
+        <MSBuild Projects="Geoblock.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Geoblock:Make">
+        <MSBuild Projects="Geoblock.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Geochronology">
+        <MSBuild Projects="Plugins\Geochronology\Geochronology.dproj"/>
+    </Target>
+    <Target Name="Geochronology:Clean">
+        <MSBuild Projects="Plugins\Geochronology\Geochronology.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Geochronology:Make">
+        <MSBuild Projects="Plugins\Geochronology\Geochronology.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Mendeleev">
+        <MSBuild Projects="Plugins\Mendeleev\Mendeleev.dproj"/>
+    </Target>
+    <Target Name="Mendeleev:Clean">
+        <MSBuild Projects="Plugins\Mendeleev\Mendeleev.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Mendeleev:Make">
+        <MSBuild Projects="Plugins\Mendeleev\Mendeleev.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="GBComps;Geoblock;Geochronology;Mendeleev"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="GBComps:Clean;Geoblock:Clean;Geochronology:Clean;Mendeleev:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="GBComps:Make;Geoblock:Make;Geochronology:Make;Mendeleev:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

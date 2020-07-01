@@ -1,0 +1,15 @@
+Geoblock Development Team
+Developers and contributors
+
+===========================
+ 
+Pavel Vassiliev
+Eugene Buianov
+Elena Kinzerskaya
+Maxim Rozanov
+Aaron Hochwimmer
+Hugo Ledoux
+Alexandre Bondarev
+Ivan Lee Herring
+
+
