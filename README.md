@@ -1,3 +1,3 @@
 # Geoblock
-Geoblock is the geoscience modelling and mining simulation program. 
+Geomodeling system for estimation of recoverable mineral reserves
 Alpha version
