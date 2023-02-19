@@ -1,16 +1,12 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
-{!  The GSContours to draw contours of values in GeoScene }
 (*
-  History :
-        12/02/06 - Ilya Lysenko and Alexey Barsuk - Last modified
-        01/11/05 - Ilya Lysenko (link.bsu@mail.ru) and
-                   Alexey Barsuk (barsuk19@rambler.ru)
+  The GSContours to draw contours of values in GeoScene
 *)
 
  // ------------------------------------------
- //  GEOSCENE LAYERS FILE (*.gsl) FORMAT
+ //  TERRASCENE LAYERS FILE (*.gsl) FORMAT
  // ------------------------------------------
  //  #TrianglesCount - number of triangles
  //  #Data - a number of triangles for material
@@ -27,14 +23,14 @@ uses
   Vcl.Dialogs,
 
   
-  GLMesh, 
-  GLTexture,
-  GLMaterial, 
-  GLVectorLists,
+  GLS.Mesh,
+  GLS.Texture,
+  GLS.Material,
+  GLS.VectorLists,
 
-  
+
   uTerraModel,
-  uGlobals, 
+  uGlobals,
   uResStrings,
   uTerraLoader;
 
@@ -45,23 +41,17 @@ type
 
   TLayerProps = record
     No, MaterialNo, prevMaterialNo: integer;
-
   end;
-
 
   TGeoSceneLayer = class
   public
     TrianglesCount: integer;
     Enabled: boolean;
     Items:   array of TLayerProps;
-
     layerName: string;
-
     constructor Create; overload;
     constructor Create(Model: TGeoScenemodel; Name: string); overload;
-
     destructor Destroy; override;
-
     procedure SaveToFile(FileName: string);
     procedure LoadFromFile(FileName: string);
     procedure ApplyLayerForMesh(var Mesh: TGLMesh;
@@ -76,7 +66,6 @@ type
     LayersCount: integer;
     tempArray:   array of TGeoSceneLayer;
     function GetCount(): integer;
-
   public
     Layers: array of TGeoSceneLayer;
     CurrentLayer: integer;
@@ -95,10 +84,7 @@ type
     procedure ReplaceLayers(LayerToReplace1, LayerToReplace2: string); overload;
     procedure ChangeName(NameToChange, NameToSet: string); overload;
     procedure ChangeName(LayerNo: integer; NameToSet: string); overload;
-
     property Count: integer Read GetCount;
-
-
   end;
 
 var
@@ -109,7 +95,7 @@ implementation
 uses
   fTerraScene;
 
-{ TGeoSceneLayer }
+// TGeoSceneLayer
 
 procedure TGeoSceneLayer.ChangeName(NameToSet: string);
 begin

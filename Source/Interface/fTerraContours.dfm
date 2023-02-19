@@ -10,11 +10,9 @@ object fmGSContours: TfmGSContours
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   OnDestroy = FormDestroy
   OnPaint = FormPaint
   OnShow = FormShow
-  PixelsPerInch = 96
   TextHeight = 13
   object btnSaveContours: TButton
     Left = 8

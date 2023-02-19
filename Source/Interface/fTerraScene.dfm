@@ -5,7 +5,6 @@ inherited fmGeoScene: TfmGeoScene
   ClientHeight = 714
   ClientWidth = 797
   Menu = MainMenu1
-  OldCreateOrder = True
   Position = poDesigned
   WindowState = wsMaximized
   OnClose = FormClose
@@ -15,7 +14,6 @@ inherited fmGeoScene: TfmGeoScene
   OnMouseWheel = FormMouseWheel
   ExplicitWidth = 813
   ExplicitHeight = 773
-  PixelsPerInch = 96
   TextHeight = 16
   object Logo: TImage [0]
     Left = 192

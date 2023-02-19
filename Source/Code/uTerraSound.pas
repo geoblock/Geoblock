@@ -1,9 +1,9 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
-{
+(*
   The routines to play sounds in TerraScene
-}
+*)
 
 unit uTerraSound;
 
@@ -14,10 +14,10 @@ uses
   System.SysUtils,
 
   
-  GLSound,
-  GLSMBASS,
-  GLKeyboard,
-  Bass,
+  GLS.SoundManager,
+  Sounds.BASS,
+  GLS.Keyboard,
+  Bass.Import,
   uTerraObjects,
 
   

@@ -1,10 +1,14 @@
-//----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 // Geochronology plugin for Geoblock, http://sourceforge.net/projects/geoblock
-//----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 //
-{! The plugin for problem book }
+(* ! The plugin for problem book *)
 
 library Geochronology;
+
+
+
+{$R 'Geochronos.res' 'Geochronos.rc'}
 
 uses
   Winapi.Windows,
@@ -16,13 +20,13 @@ uses
   fInitialDialog in '..\..\Source\Interface\fInitialDialog.pas' {fmInitialDialog},
   fGeochronology in 'fGeochronology.pas' {fmMainForm};
 
-{$R Glyph.RES}
-
 type
   TGeochronologyPlugin = class(TCustomPlugin)
   public
     constructor Create(Owner: TComponent); override;
     procedure Execute; override;
+    destructor Destroy; override;
+  private
   end;
 
 constructor TGeochronologyPlugin.Create(Owner: TComponent);
@@ -31,9 +35,14 @@ begin
   if fmMainForm = nil then
     fmMainForm := TfmMainForm.Create(Self);
   IDString := 'Geoblock.Geochronology';
-  Glyph := LoadBitmap(HInstance, 'GLYPH');
+  Glyph := LoadBitmap(HInstance, 'Geochronos');      // bitmap name from rc
   PageName := _('Geology');
   Caption := _('Geochronology');
+end;
+
+destructor TGeochronologyPlugin.Destroy;
+begin
+  inherited Destroy;
 end;
 
 procedure TGeochronologyPlugin.Execute;
@@ -42,19 +51,20 @@ begin
 end;
 
 procedure Register;
-var arr: TPluginArray;
+var
+  arr: TPluginArray;
 begin
-  SetLength(arr,1);
-  arr[0]:=TGeochronologyPlugin;
+  SetLength(arr, 1);
+  arr[0] := TGeochronologyPlugin;
   RegisterPlugins('', arr);
 end;
 
-//========================================================================
+// ========================================================================
 exports
-//========================================================================
+// ========================================================================
 
   Register;
 
 begin
-end.
 
+end.

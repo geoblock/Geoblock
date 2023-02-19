@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
 
 unit uTerraLoader;
@@ -13,15 +13,16 @@ uses
   System.Classes,
   Vcl.Dialogs,
 
-  GLScene,
-  GLVectorFileObjects,
-  GLMeshUtils,
-  GLMesh, // Old - GLOxOde,
-  GLMaterial,
-  GLTexture,
-  GLVectorLists,
-  GLVectorTypes,
-  GLVectorGeometry,
+  GLS.Scene,
+  GLS.VectorFileObjects,
+  GLS.MeshUtils,
+  GLS.Mesh,
+  // GLOxOde - Old unit  needs to rewrite for Newton
+  GLS.Material,
+  GLS.Texture,
+  GLS.VectorLists,
+  GLS.VectorTypes,
+  GLS.VectorGeometry,
   GLS.Strings,
 
 
@@ -37,14 +38,14 @@ uses
 procedure LoadTerrainToMesh(var SMesh: TGLMesh);
 
 var
-  mesh:     TMeshObject;
+  mesh:     TGLMeshObject;
   i, j, k, n: integer;
   Tri:      TGeoSceneModel; //Triangle
   MatrixSize: integer;
   //theContours: TContourLines;
   //GSDepths: TArray;
   GSDepths: TMatrix2D;
-  MeshTris: TAffineVectorList;
+  MeshTris: TGLAffineVectorList;
 
 //========================================================================
 implementation
@@ -60,8 +61,8 @@ uses
 procedure LoadTerrainToMesh(var SMesh: TGLMesh);
 var
   fg:  TFGVertexIndexList;
-  Normals: TAffineVectorList;
-  Indices: TIntegerList;
+  Normals: TGLAffineVectorList;
+  Indices: TGLIntegerList;
   RotVector: TVector3f;
   v:   TVector4f;
   HlShader: TGLShader;
@@ -79,9 +80,9 @@ begin
       begin
         SMesh.BeginUpdate;
         //SMesh.MeshObjects.Clear;
-        MeshTris := TAffineVectorList.Create;
+        MeshTris := TGLAffineVectorList.Create;
         //normals:=TAffineVectorList.Create;
-        indices  := TIntegerList.Create;
+        indices  := TGLIntegerList.Create;
 
         Tri.Vertices_Centering;
         map.LoadMapToBmp(bmpScale, Tri);

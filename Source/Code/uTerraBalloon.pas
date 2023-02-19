@@ -1,9 +1,11 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
-{!  The BalloonHints to draw ToolTips }
+(*
+  The TerraBalloon to draw ToolTips for hints
+*)
 
-unit uBalloonHints;
+unit uTerraBalloon;
 
 interface
 

@@ -1,8 +1,8 @@
  //------------------------------------------------------------------------------
- // This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+ // The modeling system Geoblock http://sourceforge.net/projects/geoblock
  //------------------------------------------------------------------------------
 
-unit fSceneVR;
+unit fTerraSceneVR;
 
 interface
 
@@ -17,11 +17,10 @@ uses
   Vcl.Dialogs, 
   Vcl.ExtCtrls,
   
-  GLScene, 
-  GLObjects, 
-  GLCrossPlatform, 
-  GLBaseClasses,
-  GLSceneViewer;
+  GLS.Scene,
+  GLS.Objects,
+  GLS.BaseClasses,
+  GLS.SceneViewer;
 
 type
   TfmSceneVR = class(TForm)

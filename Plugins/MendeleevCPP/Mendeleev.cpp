@@ -7,7 +7,7 @@
 #include <vcl.h>
 #include <windows.h>
 #include <registry.hpp>
-#include "PluginReg.h"
+#include "uPluginReg.h"
 #include "fmMendeleev.h"
 //---------------------------------------------------------------------------
 
@@ -29,13 +29,12 @@ __fastcall TPeriodicTable::TPeriodicTable (TComponent *Owner): TCustomPlugin(Own
   if (fmMain == NULL)
    fmMain = new TfmMain(this);
 
-  IDString = "Geoblock.PeriodicTable";
-  Glyph = LoadBitmap(HInstance,"GLYPH");
-//  PageName = _("Geology");
+  IDString = "Geoblock.Mendeleev";
+  Glyph = LoadBitmap(HInstance,"Mendeleev");
+///  PageName = _("Geology");
   PageName = "Geology";
-//  Caption = _("Periodic Table") + " (C++)";
-  Caption = "Periodic Table";
-
+///  Caption = _("Mendeleev");
+  Caption = "Mendeleev";
 }
 //---------------------------------------------------------------------------
 void __fastcall TPeriodicTable::Execute() {

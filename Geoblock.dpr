@@ -11,7 +11,7 @@
 //
 // The initial developer of the original code is Getos Ltd., Copyright (c) 1997.
 // Portions created by contributors are documented in an accompanying history log
-// and Copyright (c) of these contributors, 1997-2016. All Rights Reserved.
+// and Copyright (c) of these contributors, 1997-2023. All Rights Reserved.
 //---------------------------------------------------------------------------
 
 
@@ -107,9 +107,9 @@ uses
   fViewVariogram in 'Source\Interface\fViewVariogram.pas' {fmViewVariogram},
   fMapScenery in 'Source\Interface\fMapScenery.pas' {fmMapScenery},
   fFileDataBrowser in 'Source\Interface\fFileDataBrowser.pas' {fmFileDataBrowser},
-  fTerraContours in 'Source\Scene\fTerraContours.pas' {fmGSContours},
-  fTerraScene in 'Source\Scene\fTerraScene.pas' {fmGeoScene},
-  fTerraSplash in 'Source\Scene\fTerraSplash.pas' {fmGS_Splash},
+  fTerraContours in 'Source\Interface\fTerraContours.pas' {fmGSContours},
+  fTerraScene in 'Source\Interface\fTerraScene.pas' {fmGeoScene},
+  fTerraSplash in 'Source\Interface\fTerraSplash.pas' {fmGS_Splash},
   fFileOpenModel in 'Source\Interface\fFileOpenModel.pas' {fmFileOpenModel},
   fMethodPitOptimization in 'Source\Interface\fMethodPitOptimization.pas' {fmMethodPitOptimization},
   fMethodPrediction in 'Source\Interface\fMethodPrediction.pas',
@@ -139,22 +139,22 @@ uses
   uPolynomialRegression in 'Source\Code\uPolynomialRegression.pas',
   uDelaunay3D in 'Source\Code\uDelaunay3D.pas',
   uObjects3D in 'Source\Code\uObjects3D.pas',
-  uTerraLayers in 'Source\Scene\uTerraLayers.pas',
-  uTerraModel in 'Source\Scene\uTerraModel.pas',
-  uTerraObjects in 'Source\Scene\uTerraObjects.pas',
-  uTerraSound in 'Source\Scene\uTerraSound.pas',
+  uTerraLayers in 'Source\Code\uTerraLayers.pas',
+  uTerraModel in 'Source\Code\uTerraModel.pas',
+  uTerraObjects in 'Source\Code\uTerraObjects.pas',
+  uTerraSound in 'Source\Code\uTerraSound.pas',
   uModels in 'Source\Code\uModels.pas',
   uOptimizeLG in 'Source\Code\uOptimizeLG.pas',
   uFileCreator in 'Source\Code\uFileCreator.pas',
-  uTerraLoader in 'Source\Scene\uTerraLoader.pas',
+  uTerraLoader in 'Source\Code\uTerraLoader.pas',
   GnuGetText in 'Source\Code\GnuGetText.pas',
   uWhittle in 'Source\Code\uWhittle.pas',
   uDiscoMetric in 'Source\Code\uDiscoMetric.pas',
   uDiscoCore in 'Source\Code\uDiscoCore.pas',
   uDiscoPoly in 'Source\Code\uDiscoPoly.pas',
-  uBalloonHints in 'Source\Scene\uBalloonHints.pas',
+  uTerraBalloon in 'Source\Code\uTerraBalloon.pas',
   iToolsGBA in 'Source\Interface\iToolsGBA.pas',
-  fSceneVR in 'Source\Scene\fSceneVR.pas' {fmSceneVR},
+  fTerraSceneVR in 'Source\Interface\fTerraSceneVR.pas' {fmSceneVR},
   uOptimizePF in 'Source\Code\uOptimizePF.pas',
   fMethodOctree in 'Source\Interface\fMethodOctree.pas' {fmMethodOctree},
   fMethodSimulation in 'Source\Interface\fMethodSimulation.pas' {fmFileNew};

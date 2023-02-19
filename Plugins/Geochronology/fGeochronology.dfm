@@ -4,11 +4,9 @@ inherited fmMainForm: TfmMainForm
   Caption = 'Geochronology'
   ClientHeight = 639
   ClientWidth = 960
-  OldCreateOrder = True
   OnCreate = FormCreate
-  ExplicitWidth = 966
-  ExplicitHeight = 668
-  PixelsPerInch = 96
+  ExplicitWidth = 978
+  ExplicitHeight = 686
   TextHeight = 16
   inherited PanelTop: TPanel
     Width = 960
@@ -63,7 +61,7 @@ inherited fmMainForm: TfmMainForm
           Left = 943
           Top = 0
           Width = 11
-          Height = 21
+          Height = 20
           Align = alRight
           Caption = '0'
           Font.Charset = DEFAULT_CHARSET
@@ -78,7 +76,7 @@ inherited fmMainForm: TfmMainForm
           Left = 0
           Top = 0
           Width = 90
-          Height = 21
+          Height = 20
           Align = alLeft
           Caption = '13 700 000 000'
           Font.Charset = DEFAULT_CHARSET
@@ -220,7 +218,6 @@ inherited fmMainForm: TfmMainForm
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         TabOrder = 0
-        Zoom = 100
       end
     end
   end
@@ -230,17 +227,17 @@ inherited fmMainForm: TfmMainForm
     ExplicitTop = 591
     ExplicitWidth = 960
     inherited ButtonOK: TButton
-      Left = 599
-      ExplicitLeft = 599
+      Left = 937
+      ExplicitLeft = 937
     end
     inherited ButtonCancel: TButton
-      Left = 719
-      ExplicitLeft = 719
+      Left = 1057
+      ExplicitLeft = 1057
     end
     inherited ButtonHelp: TButton
-      Left = 841
+      Left = 1179
       OnClick = nil
-      ExplicitLeft = 841
+      ExplicitLeft = 1179
     end
   end
   object DataSourceAge: TDataSource

@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
 {  The Terrascene unit to view geolobjects in VR}
 
@@ -32,50 +32,47 @@ uses
   //DB
   Bde.DBTables,
   
-  GLTexture,
-  GLCanvas,
-  GLVectorGeometry,
-  GLVectorLists,
-  GLCadencer,
-  GLObjects,
-  GLScene,
-  GLGraph,
-  GLSkydome,
-  GLSceneViewer,
-  GLFileMD3,
-  FileQ3MD3,
-  GLMesh,
-  GLBitmapFont,
-  GLFileObj,
-  OdeImport,
-  GLWindowsFont,
-  GLODEManager,
-  {old GLOXOde,}
-  GLSound,
-  GLSMBASS,
-  GLTexLensFlare,
-  GLLensFlare,
-  GLSkyBox,
-  GLGeomObjects, {oxOdeGl,}
-  GLMeshUtils,
-  GLVectorTypes,
-  GLRenderContextInfo,
-  GLMaterial,
-  GLKeyboard,
-  GLPersistentClasses,
-  GLVectorFileObjects,
-  GLAVIRecorder,
-  GLGameMenu,
-  GLCoordinates,
-  GLCrossPlatform,
-  GLBaseClasses,
+  GLS.Texture,
+  GLS.Canvas,
+  GLS.VectorGeometry,
+  GLS.VectorLists,
+  GLS.Cadencer,
+  GLS.Objects,
+  GLS.Scene,
+  GLS.Graph,
+  GLS.Skydome,
+  GLS.SceneViewer,
+  GLS.FileMD3,
+  GLS.FileQ3MD3,
+  GLS.Mesh,
+  GLS.BitmapFont,
+  GLS.FileObj,
+  Ode.Import,
+  GLS.WindowsFont,
+  Physics.ODEManager, {old GLOXOde,}
+  GLS.SoundManager,
+  Sounds.BASS,
+  GLS.TexLensFlare,
+  GLS.LensFlare,
+  GLS.GeomObjects, {oxOdeGl,}
+  GLS.MeshUtils,
+  GLS.VectorTypes,
+  GLS.RenderContextInfo,
+  GLS.Material,
+  GLS.Keyboard,
+  GLS.PersistentClasses,
+  GLS.VectorFileObjects,
+  GLS.AVIRecorder,
+  GLS.GameMenu,
+  GLS.Coordinates,
+  GLS.BaseClasses,
 
   //GB
   fInitialForm,
   fDrawFillStyle,
   uTerraModel,
   uTerraLayers,
-  uBalloonHints;
+  uTerraBalloon;
 
 
 type
@@ -554,7 +551,7 @@ procedure TfmGeoScene.FindAndSetTriangles(X, Y, Mode: integer);
   end;
 
 var
-  rayStart, rayVector, iPoint, iNormal: TVector;
+  rayStart, rayVector, iPoint, iNormal: TGLVector;
   i: integer;
   v: TVector4f;
 begin
@@ -862,7 +859,7 @@ end;
 procedure TfmGeoScene.GLDirectOpenGL1Render(Sender: TObject;
   var rci: TGLRenderContextInfo);
 var
-  rayStart, rayVector, iPoint, iNormal: TVector;
+  rayStart, rayVector, iPoint, iNormal: TGLVector;
   i, j: integer;
   v:    TVector4f;
 begin

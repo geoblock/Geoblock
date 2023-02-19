@@ -1,6 +1,6 @@
 //-----------------------------------------------------------------------------
 
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 
 //----------------------------------------------------------------------------
 {
@@ -25,32 +25,32 @@ uses
   Vcl.ComCtrls,
 
   
-  GLScene,
-  GLCoordinates,
-  GLCanvas,
-  GLKeyboard,
-  GLTree,
-  GLTexture,
-  GLShadowVolume,
-  GLWindowsFont,
-  GLLensFlare,
-  GLVectorLists,
-  GLVectorTypes,
-  GLVectorGeometry,
-  GLVectorFileObjects,
-  GLObjects,
-  GLFileMD3,
-  FileQ3MD3,
-  GLMaterial,
-  GLRenderContextInfo,
-  GLColor,
-  GLSound,
-  GLFileWAV,
+  GLS.Scene,
+  GLS.Coordinates,
+  GLS.Canvas,
+  GLS.Keyboard,
+  GLS.Tree,
+  GLS.Texture,
+  GLS.ShadowVolume,
+  GLS.WindowsFont,
+  GLS.LensFlare,
+  GLS.VectorLists,
+  GLS.VectorTypes,
+  GLS.VectorGeometry,
+  GLS.VectorFileObjects,
+  GLS.Objects,
+  GLS.FileMD3,
+  GLS.FileQ3MD3,
+  GLS.Material,
+  GLS.RenderContextInfo,
+  GLS.Color,
+  GLS.SoundManager,
+  GLS.FileWAV,
 
   //Physics
-  GLODEManager,
-  GLMesh, // Old - oxOdeImport, GLOxOde,
-  //TerraScene
+  Physics.ODEManager,
+  GLS.Mesh, // Old - oxOdeImport, GLOxOde,
+
   uTerraModel;
 
 const
@@ -976,17 +976,17 @@ procedure InitTrees(Scene: TGLScene; matLib: TGLMaterialLibrary;
   SMesh: TGLMesh; aBox: TGLDummyCube);
 var
   curTriNum: integer;
-  MeshTriangles: TAffineVectorList;
+  MeshTriangles: TGLAffineVectorList;
   i:     integer;
   proxy: TGLProxyObject;
-  s:     TVector;
+  s:     TGLVector;
   f:     single;
 begin
   Randomize;
   GSTree := TGeoSceneTree.Create(aBox);
   GSTree.MaterialLibrary := matLib;
   GSTree.ApplyTreeMaterials;
-  MeshTriangles := TAffineVectorList.Create;
+  MeshTriangles := TGLAffineVectorList.Create;
   // Ox - MeshTriangles := SMesh.MeshObjects[0].ExtractTriangles;
   curTriNum     := Random(MeshTriangles.Count - 1);
   GSTree.Position.X := MeshTriangles.items[curTriNum].V[0];

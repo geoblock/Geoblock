@@ -11,11 +11,9 @@ object fmMain: TfmMain
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   Position = poMainFormCenter
   OnActivate = FormActivate
   OnCreate = FormCreate
-  PixelsPerInch = 96
   TextHeight = 13
   object PanelTable: TPanel
     Left = 0
@@ -1984,10 +1982,6 @@ object fmMain: TfmMain
       OnChange = PageControlLegendChange
       object TabSheetChemistry: TTabSheet
         Caption = 'Chemistry'
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 0
-        ExplicitHeight = 0
         object LabelAlkaliMetals: TLabel
           Left = 14
           Top = 6
@@ -2096,10 +2090,6 @@ object fmMain: TfmMain
       object TabSheetMetallurgy: TTabSheet
         Caption = 'Metallurgy'
         ImageIndex = 1
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 0
-        ExplicitHeight = 0
         object LabelFerrousMetals: TLabel
           Left = 13
           Top = 20
@@ -2401,7 +2391,6 @@ object fmMain: TfmMain
       Font.Style = []
       ReadOnly = True
       TabOrder = 9
-      Zoom = 100
     end
   end
   object DataSourceElements: TDataSource

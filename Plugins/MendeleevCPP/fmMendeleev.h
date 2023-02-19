@@ -16,8 +16,8 @@
 #include <DB.hpp>
 #include <DBTables.hpp>
 #include <Registry.hpp>
-#include "uConsts.hpp"
-#include "gnugettext.hpp"
+#include "cResStrings.hpp"
+//#include "gnugettext.hpp"
 
 
 //---------------------------------------------------------------------------

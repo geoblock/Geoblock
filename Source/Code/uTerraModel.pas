@@ -1,9 +1,9 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
-{
-  The unit to view the virtual reality with geolobjects
-}
+(*
+  The unit to view the virtual reality with TarraObjects
+*)
 
 unit uTerraModel;
 
@@ -19,9 +19,9 @@ uses
   Data.DB,
 
   
-  GLVectorTypes,
-  GLVectorGeometry,
-  GLVectorFileObjects,
+  GLS.VectorTypes,
+  GLS.VectorGeometry,
+  GLS.VectorFileObjects,
 
   //GB
   uGlobals,

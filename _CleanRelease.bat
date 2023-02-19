@@ -9,7 +9,6 @@ del *.o /s
 del *.~* /s
 del *.log /s
 del *.dsk /s
-del *.dres /s
 del *.dof /s
 del *.bk? /s
 del *.mps /s
@@ -53,12 +52,13 @@ echo ************************************************
 echo _
 
 
-del *.res /s
+rem del *.res /s
+del *.dres /s
 
 
 echo --------------------------------------------------------
-echo delete all .svn directories with subdirectories and files 
-for /r %1 %%R in (.svn) do if exist "%%R" (rd /s /q "%%R")
+rem echo delete all .svn directories with subdirectories and files 
+rem for /r %1 %%R in (.svn) do if exist "%%R" (rd /s /q "%%R")
 echo---------------------------------------------------------
 echo delete debug and Platform directories with all subdirectories and files 
 for /r %1 %%R in (Debug_Build) do if exist "%%R" (rd /s /q "%%R")

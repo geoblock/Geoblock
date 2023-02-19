@@ -11,12 +11,10 @@ object fmSceneVR: TfmSceneVR
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   FormStyle = fsMDIChild
-  OldCreateOrder = False
   Position = poDefault
   Visible = True
   OnClose = FormClose
   OnResize = FormResize
-  PixelsPerInch = 96
   TextHeight = 13
   object PanelTop: TPanel
     Left = 0

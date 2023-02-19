@@ -73,9 +73,9 @@ implementation
 //===============================================================
 
 uses
-  uGlobals,
+  cGlobals,
   uCommon,
-  uProfuns,
+  cProfuns,
   gnuGettext;
 
 {$R *.dfm}
@@ -87,37 +87,29 @@ var
 begin
   RegIni := TRegistryIniFile.Create(GeneralSection);
   LangID := RegIni.ReadInteger(GeneralSection, 'LangID', 9);//Default 9
-  AppPath := RegIni.ReadString(GeneralSection,'AppPath',AppPath);
+  PathApp := RegIni.ReadString(GeneralSection,'PathApp', PathApp);
 
   if LangID <> LANG_ENGLISH then
   begin
     TextDomain('geology');
-    BindTextDomain ('geology', AppPath + 'Locale'+ PathDelim);
+    BindTextDomain ('geology', PathApp + 'Locale'+ PathDelim);
   end;
   case LangID of
     LANG_ENGLISH:
     begin
       UseLanguage('en');
-      Application.HelpFile := UpperCase(AppPath+'Help'+PathDelim+'en'+PathDelim+'Geoblock.chm');
-      FileName := UpperCase(AppPath +'Data'+PathDelim +'Reference'+ PathDelim +'en'+ PathDelim + 'Geochronology.eng');
-      TableAge.TableName := UpperCase(AppPath +'Data'+PathDelim +'Reference'+ PathDelim +'en'+ PathDelim + 'age.db');
-      TableEpoch.TableName := UpperCase(AppPath +'Data'+PathDelim +'Reference'+ PathDelim +'en'+ PathDelim + 'epoch.db');
+      Application.HelpFile := UpperCase(PathApp+'Help'+PathDelim+'en'+PathDelim+'Geoblock.chm');
+      FileName := UpperCase(PathApp +'Data'+PathDelim +'Reference'+ PathDelim +'en'+ PathDelim + 'Geochronology.eng');
+      TableAge.TableName := UpperCase(PathApp +'Data'+PathDelim +'Reference'+ PathDelim +'en'+ PathDelim + 'age.db');
+      TableEpoch.TableName := UpperCase(PathApp +'Data'+PathDelim +'Reference'+ PathDelim +'en'+ PathDelim + 'epoch.db');
     end;
     LANG_RUSSIAN:
     begin
       UseLanguage('ru');
-      Application.HelpFile := UpperCase(AppPath+'Help'+PathDelim+'ru'+PathDelim+'Geoblock.chm');
-      FileName := UpperCase(AppPath +'Data'+PathDelim +'Reference'+ PathDelim +'ru'+ PathDelim + 'Geochronology.rus');
-      TableAge.TableName := UpperCase(AppPath +'Data'+PathDelim +'Reference'+ PathDelim +'ru'+ PathDelim + 'age.db');
-      TableEpoch.TableName := UpperCase(AppPath +'Data'+PathDelim +'Reference'+ PathDelim +'ru'+ PathDelim + 'epoch.db');
-    end;
-    LANG_SPANISH:
-    begin
-      UseLanguage('es');
-      Application.HelpFile := UpperCase(AppPath+'Help'+PathDelim+'es'+PathDelim+'Geoblock.chm');
-      FileName := UpperCase(AppPath +'Data'+PathDelim +'Reference'+ PathDelim +'es'+ PathDelim + 'Geochronology.eng');
-      TableAge.TableName := UpperCase(AppPath +'Data'+PathDelim +'Reference'+ PathDelim +'es'+ PathDelim + 'age.db');
-      TableEpoch.TableName := UpperCase(AppPath +'Data'+PathDelim +'Reference'+ PathDelim +'es'+ PathDelim + 'epoch.db');
+      Application.HelpFile := UpperCase(PathApp+'Help'+PathDelim+'ru'+PathDelim+'Geoblock.chm');
+      FileName := UpperCase(PathApp +'Data'+PathDelim +'Reference'+ PathDelim +'ru'+ PathDelim + 'Geochronology.rus');
+      TableAge.TableName := UpperCase(PathApp +'Data'+PathDelim +'Reference'+ PathDelim +'ru'+ PathDelim + 'age.db');
+      TableEpoch.TableName := UpperCase(PathApp +'Data'+PathDelim +'Reference'+ PathDelim +'ru'+ PathDelim + 'epoch.db');
     end;
   end;
 

@@ -14,7 +14,7 @@ uses
   uPluginReg,
   fMendeleev in 'fMendeleev.pas' {fmMendeleev};
 
-{$R Glyph.RES}
+{$R D.RES}
 {$E gpl}
 
 type
