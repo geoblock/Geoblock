@@ -1,5 +1,5 @@
 //
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //
 {
   Plugin Manager
@@ -66,10 +66,10 @@ implementation
 //===========================================================================
 
 uses
-  uGlobals,
+  cGlobals,
   uCommon,
-  uProfuns,
-  uResStrings;
+  cProfuns,
+  cResStrings;
 
 procedure RegisterPlugins(Page: string; Plugins: TPluginArray);
   stdcall;

@@ -1,11 +1,11 @@
  //------------------------------------------------------------------------------
- // This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+ // The modeling system Geoblock http://sourceforge.net/projects/geoblock
  //------------------------------------------------------------------------------
 
 {! The unit includes procedures and functions, that
    implement some calculation routines}
 
-unit uProfuns;
+unit cProfuns;
 
 interface
 
@@ -106,6 +106,9 @@ function CharQuotedStr(const Src: string; Quote: char = ''''): string;
 procedure GetHistogram(var f: array of integer; Lo, Hi, MaxData, MaxClass: integer;
   Data: array of single);
 
+//Round to chosen digits by method
+function RoundToEx(Value, Precision: Currency; Method: Integer): Currency;
+  
 //======================================================================
 implementation
 //======================================================================
@@ -721,5 +724,21 @@ begin
         f[J] := f[J] + 1;
     end;
 end;
+
+function RoundToEx(Value, Precision: Currency; Method: Integer): Currency;
+begin
+  case Method of
+    2: SetRoundMode(rmDown); //to lesser side
+    3: SetRoundMode(rmUp); //to bigger side
+  else
+    SetRoundMode(rmNearest); //mathematically
+  end;
+
+  if Precision > 0 then
+    Result := Round(Value / Precision) * Precision
+  else
+    Result := Value
+end;
+
 
 end.

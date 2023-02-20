@@ -1,20 +1,20 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
 
-{! Area/Volume Library Routines.
+(* Area/Volume Library Routines.
    This unit contains routines to compute areas and volumes
    of various geometric objects
-}
+*)
 
 
-unit uDiscoMetric;
+unit cDiscoMetric;
 
 interface
 
 uses
    System.Math,
-   uDiscoCore;
+   cDiscoCore;
 
 //Area
 {! Returns the area of a right or obtuse triangle}

@@ -24,7 +24,7 @@ uses
   GLS.VectorFileObjects,
 
   //GB
-  uGlobals,
+  cGlobals,
   uCommon;
 
 type

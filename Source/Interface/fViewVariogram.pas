@@ -33,7 +33,7 @@ uses
   Data.DB,
 
   fInitialDialog,
-  uGlobals, 
+  cGlobals, 
   uVariograms,
   gnuGettext;
 

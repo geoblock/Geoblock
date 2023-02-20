@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
 {!  The dialog to select legends for colorfill operations }
 
@@ -292,14 +292,14 @@ var
 implementation
 
 uses
-  uGlobals,
-  uResStrings,
+  cGlobals,
+  cResStrings,
   uCommon,
   fDrawLineStyle,
   fDrawFillStyle,
   dDialogs,
   uFileCreator,
-  uProfuns;
+  cProfuns;
 
 const
   CheckedColumn: integer = 0;

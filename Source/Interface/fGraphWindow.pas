@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
 {! The form to plot data with the help of TTeeChart components}
 
@@ -40,8 +40,8 @@ uses
   VclTee.TeeGDIPlus,
 
   
-  uResStrings,
-  uGlobals,
+  cResStrings,
+  cGlobals,
   fInitialForm;
 
 type

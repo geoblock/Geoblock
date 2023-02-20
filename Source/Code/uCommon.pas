@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
 
 unit uCommon;
@@ -29,13 +29,12 @@ uses
   // Localization
   GnuGetText,
 
-  GBGeometry,
-  uInterpol;   // for data types
+  cInterpol;   // for data types
 
-{! Initialization of general registry}
+// Initialization of general registry}
 procedure InitGeneralRegistry;
 procedure InitCursors;
-{! Initialization of interface languages}
+// Initialization of interface languages}
 procedure InitLanguage;
 function IndexOf(Str: string; Items: TStrings): integer;
 
@@ -99,9 +98,9 @@ implementation
 //==========================================================================\\
 
 uses
-  uGlobals,
-  uProfuns,
-  uResStrings;
+  cGlobals,
+  cProfuns,
+  cResStrings;
 
 procedure InitGeneralRegistry;
 var
@@ -204,7 +203,7 @@ end;
 
 procedure InitCursors;
 begin
-{.$R Gb.res}
+{.$R Gb.res} // include to rc as .cur files
   Screen.Cursors[crPenCursor]    := LoadCursor(HInstance, 'PEN');
   Screen.Cursors[crPanCursor]    := LoadCursor(HInstance, 'PAN');
   Screen.Cursors[crScrollCursor] := LoadCursor(HInstance, 'SCROLL');

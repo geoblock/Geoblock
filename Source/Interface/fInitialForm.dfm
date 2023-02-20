@@ -2,18 +2,16 @@ object fmInitialForm: TfmInitialForm
   Left = 392
   Top = 227
   ClientHeight = 235
-  ClientWidth = 492
+  ClientWidth = 411
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -13
   Font.Name = 'MS Sans Serif'
   Font.Style = []
-  OldCreateOrder = False
   Position = poScreenCenter
   Scaled = False
   OnCreate = FormCreate
-  PixelsPerInch = 96
   TextHeight = 16
   object ImageListInterface: TImageList
     AllocBy = 16
@@ -5577,8 +5575,8 @@ object fmInitialForm: TfmInitialForm
     Height = 32
     Masked = False
     Width = 32
-    Left = 387
-    Top = 35
+    Left = 164
+    Top = 44
     Bitmap = {
       494C010110001200040020002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       000000000000360000002800000080000000A000000001002000000000000040

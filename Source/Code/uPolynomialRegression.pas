@@ -1,9 +1,9 @@
 //
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //
-{
+(*
   Polynomial Regression Interpolation
-}
+*)
 unit uPolynomialRegression;
 
 interface
@@ -13,11 +13,11 @@ uses
   System.Math,
   System.Classes,
 
-  uGlobals,
+  cGlobals,
   uCommon,
-  uProfuns,
-  uInterpol,
-  uSorting;
+  cProfuns,
+  cInterpol,
+  cSorting;
 
 function PolyRegressInterpolation(PointsAr, NodesAr: TCoordinateArray;
   order: integer): TCoordinateArray;
@@ -183,7 +183,7 @@ begin
   Result := NodesAr;
 end;
 
-///////////////////////////////////
+//
 //Multiplication elements of two vectors !! index begin from 0 i.e. A[0]
 //for Main function
 function MultVectors(A, B: TVectorD): TVectorD;
@@ -197,7 +197,7 @@ begin
     Result[i] := A[i] * B[i];
 end;
 
-//////////////////////////////////
+//
 //for Main Function
 function GetVector2D(order: integer; X, Y: TVectorD): TMatrix2D;
 var
@@ -205,7 +205,7 @@ var
   OneVect: TVectorD;
   Vect:    TMatrix2D;
   //value, x2, x3, x4, y2, y3, y4, z2, z3, z4: TDoubleArray;
-  // must be in uGlobals vars
+  // must be in cGlobals vars
 
 begin
   //Get size of vectors
@@ -270,7 +270,7 @@ begin
   OneVect := nil;
 end;
 
- //////////////////////////////////
+ //
  //for Main Function
 function GetVector3D(order: integer; X, Y, Z: TVectorD): TMatrix2D;
 var
@@ -278,7 +278,7 @@ var
   OneVect: TVectorD;
   Vect:    TMatrix2D;
   //value, x2, x3, x4, y2, y3, y4, z2, z3, z4: TDoubleArray;
-  // must be in uGlobals vars
+  // must be in cGlobals vars
 
 begin
   //Get size of vectors
@@ -373,7 +373,7 @@ begin
   OneVect := nil;
 end;
 
- /////////////////////////////////////
+ //
  //for CalcKoef function
  //Delete 0 Row and i Colomn from Matrix
 function Del_RowCol(A: TMatrix2D; l: integer): TMatrix2D;
@@ -417,7 +417,7 @@ begin
   B      := nil;
 end;
 
- /////////////////////////////////////
+ //
  //Determinant of Matrix
 function DetMatrix(Arr: TMatrix2D): double;
 var
@@ -436,13 +436,13 @@ begin {det}
   begin
     for j := i to Count - 1 do                                 {*  Search   }
     begin                                                      {*  of null  }
-      Rows := 0;                                               {*  строк    }
+      Rows := 0;                                               {*  rows     }
       Cols := 0;                                               {*  and      }
-      for k := i to Count - 1 do                               {*  столбцов }
+      for k := i to Count - 1 do                               {*  columns  }
       begin                                                    {*  in       }
         Rows := Rows + Ord(A[j, k] = 0);                       {*  matrix   }
-        Cols := Cols + Ord(A[k, j] = 0);                       {*           }
-      end;                                                     {*           }
+        Cols := Cols + Ord(A[k, j] = 0);
+      end;
       if Rows + Cols = 0 then
         Break;
       if (Cols = Count - i) or (Rows = Count - i) then
@@ -473,9 +473,9 @@ begin {det}
     Result := Result * A[i, i];  { элементов на главной диагонали}
 end;
 
- //////////////////////////////////////
+ //
  //for CalcKoef function
- ////////////////////////////////////////
+ //
  //for CalcKoef function
  //Changing i Colomn of Matrix to Vector V
 function ChengeCol(Al: TMatrix2D; V: TVectorD; k: integer): TMatrix2D;
@@ -501,7 +501,7 @@ begin
 end;
 
 
- ///////////////////////////////////
+ //
  //Calc linear
 function CalcKoef(A: TMatrix2D; V: TVectorD): TVectorD;
 
@@ -605,8 +605,8 @@ end;
   end;
   result:=det;
   end;  }{
-/////////////////////////////////////
-//////////////////Main function old
+//
+//Main function old
 function PolinomRegression(TablePoints, TableNodes: TFDTable;
   order: integer; FieldName: String; ProgressBar: TProgressBar): boolean;
 
@@ -619,7 +619,7 @@ function PolinomRegression(TablePoints, TableNodes: TFDTable;
 
   SumsMatrix: array of TDoubleArray;// Matrix of sums of vectors;
   SumsVector: TDoubleArray;
-  /////////////////////
+  //
   PointsCount, NodesCount: integer;// Count of Points
 
   begin
@@ -658,8 +658,9 @@ function PolinomRegression(TablePoints, TableNodes: TFDTable;
     //  NodeV[I]:=TableNodes.FieldValues[fldZ];//???? m.b. FieldName
     TableNodes.Next;
     end;
-    ///////////////////////////////////
-    //Routain
+
+    //
+    //Routeen
     //Getting memory for Main Vector: Vect
     SetLength(Vect,Vect2DSize[order],PointsCount);
     GetVector2D(order,Px,Py);
@@ -676,14 +677,14 @@ function PolinomRegression(TablePoints, TableNodes: TFDTable;
 
       end;
 
-    ///Get Vector of Sums Values
+    //Get Vector of Sums Values
     SetLength(SumsVector ,Vect2DSize[order]);
       for i:=0 to Vect2DSize[order]-1 do
         begin
         SumsVector[i]:=Sum(MultVectors(Vect[i],Pv));
         end;
 
-    ////////////////// end of function
+    // end of function
     finally
     Pv:=nil;
     end;
@@ -694,7 +695,7 @@ function PolinomRegression(TablePoints, TableNodes: TFDTable;
   Px:=nil;
   end;
 }{
-//////////////////////////////////////////
+//
 //Method Gaysa!!
 function CalculateKoef(KoefMatrix : TMatrixD; ValueVector: TVectorD): TMatrixD;
 var

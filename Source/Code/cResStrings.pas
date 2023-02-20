@@ -1,9 +1,9 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
 {! Resource string constants }
 
-unit uResStrings;
+unit cResStrings;
 
 interface
 

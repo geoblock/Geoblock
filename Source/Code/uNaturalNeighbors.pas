@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-------------------------------------------------------------------------
 {! Natural Neighbors Interpolation routines }
 (**********************************************************
@@ -19,11 +19,11 @@ uses
   System.Math,
   Vcl.ComCtrls,
 
-  GLVectorTypes,
-  GLVectorGeometry,
+  GLS.VectorTypes,
+  GLS.VectorGeometry,
 
   GBGeometry,
-  uInterpol;
+  cInterpol;
 
 {!  Natural Neighbors 2D Interpolation }
 procedure NaturalNeighborsInterpolation2D(var Points: TCoordinateArray;

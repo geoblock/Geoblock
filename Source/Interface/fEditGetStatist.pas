@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
 {!  The form to show main statistics }
 
@@ -85,8 +85,8 @@ implementation
 uses
   dDialogs,
   uCommon,
-  uGlobals,
-  uProfuns;
+  cGlobals,
+  cProfuns;
 
 {$R *.dfm}
 

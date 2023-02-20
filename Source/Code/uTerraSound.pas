@@ -21,7 +21,7 @@ uses
   uTerraObjects,
 
   
-  uGlobals;
+  cGlobals;
 
 var
   //SOUND VARIABLES

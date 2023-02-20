@@ -11,10 +11,8 @@ object fmInitialDialog: TfmInitialDialog
   Font.Height = -13
   Font.Name = 'MS Sans Serif'
   Font.Style = []
-  OldCreateOrder = False
   Position = poScreenCenter
   Scaled = False
-  PixelsPerInch = 96
   TextHeight = 16
   object PanelTop: TPanel
     Left = 0

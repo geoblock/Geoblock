@@ -12,11 +12,9 @@ object fmMendeleev: TfmMendeleev
   Font.Height = -10
   Font.Name = 'MS Sans Serif'
   Font.Style = []
-  OldCreateOrder = False
   Position = poScreenCenter
   OnActivate = FormActivate
   OnCreate = FormCreate
-  PixelsPerInch = 96
   TextHeight = 13
   object PanelPeriodicTable: TPanel
     Left = 0
@@ -122,7 +120,6 @@ object fmMendeleev: TfmMendeleev
         Font.Style = []
         ScrollBars = ssVertical
         TabOrder = 7
-        Zoom = 100
       end
       object DBEditWeight: TDBEdit
         Left = 111
@@ -2280,10 +2277,6 @@ object fmMendeleev: TfmMendeleev
         object TabSheetMetallurgy: TTabSheet
           Caption = 'Metallurgy'
           ImageIndex = 1
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object LabelFerrousMetals: TLabel
             Left = 13
             Top = 20

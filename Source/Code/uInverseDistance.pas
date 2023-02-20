@@ -1,5 +1,5 @@
 // -------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 // -------------------------------------------------------------------------
 { ! Inverse distance weighted interpolation - IDW }
 
@@ -11,9 +11,9 @@ uses
   System.SysUtils,
   System.Math,
 
-  uGlobals,
+  cGlobals,
   uCommon,
-  uInterpol,
+  cInterpol,
   uSuperblock;
 
 { Inverse Distance Weighted Interpolation with Superblock teñhnique}

@@ -1,11 +1,9 @@
 //----------------------------------------------------------------------------
-
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
-
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
-{!
+(*!
   Features of isosorfaces dialog
-}
+*)
 
 
 unit fPerformIsosurfaces;
@@ -26,10 +24,10 @@ uses
   Vcl.ComCtrls,
   Vcl.Grids,
 
-  GLIsosurface,
+  GLS.Isosurface,
 
   fInitialDialog,
-  uGlobals, System.ImageList, Vcl.ImgList, Vcl.Buttons, Vcl.ToolWin;
+  cGlobals, System.ImageList, Vcl.ImgList, Vcl.Buttons, Vcl.ToolWin;
 
 
 type

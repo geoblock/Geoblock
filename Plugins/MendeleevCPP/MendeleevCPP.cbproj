@@ -119,7 +119,7 @@
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <BCC_UserSuppliedOptions> -tWM -Vx -r- -k -tWD -Ve -k</BCC_UserSuppliedOptions>
         <BCC_Defines>_DEBUG;$(BCC_Defines);$(BCC_Defines)</BCC_Defines>
-        <IncludePath>..\..\include</IncludePath>
+        <IncludePath>..\..\include;.\..\..\Source\Code</IncludePath>
         <Debugger_HostApplication>D:\Geoblock\Bin\Geoblock.exe</Debugger_HostApplication>
         <BCC_OutputDir>..\..\lib\</BCC_OutputDir>
         <FinalOutputDir>..\..\Plugins</FinalOutputDir>
@@ -169,8 +169,8 @@
             <Form>Mendeleev.res</Form>
             <BuildOrder>4</BuildOrder>
         </ResourceCompile>
-        <CppCompile Include="..\..\Source\Codec\uPluginReg.cpp">
-            <BuildOrder>3</BuildOrder>
+        <CppCompile Include="..\..\Source\Code\uPluginReg.cpp">
+            <BuildOrder>4</BuildOrder>
         </CppCompile>
         <FormResources Include="fmMendeleev.dfm"/>
         <BuildConfiguration Include="Base">

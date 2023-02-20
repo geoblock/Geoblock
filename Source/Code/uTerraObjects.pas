@@ -137,9 +137,9 @@ implementation
 //=========================================================================
 
 uses
-  uGlobals,
+  cGlobals,
   fTerraScene,
-  uResStrings,
+  cResStrings,
   uTerraLoader;
  //                             ____________________                          //
  // ++++++++++++++++++++++++++ |                    | ++++++++++++++++++++++++++

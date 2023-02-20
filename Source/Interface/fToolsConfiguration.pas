@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 // -----------------------------------------------------------------------------
 
 unit fToolsConfiguration;
@@ -31,10 +31,10 @@ uses
   dBase,
   dDialogs, 
   fPageTreeDialog,
-  uGlobals,
+  cGlobals,
   uCommon,
   gnuGettext,
-  uResStrings;
+  cResStrings;
 
 type
   TfmToolsConfiguration = class(TfmPageTreeDialog)

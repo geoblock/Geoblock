@@ -22,20 +22,20 @@ uses
   Data.DB,
   Bde.DBTables,
 
-  GLVectorGeometry,
-  GLObjects,
-  GLSpaceText,
-  GLVectorTypes,
-  GLIsolines,
+  GLS.VectorGeometry,
+  GLS.Objects,
+  GLS.SpaceText,
+  GLS.VectorTypes,
+  GLS.Isolines,
 
   GBGeometry,
   GBGraphics,
   fMapLegend,
 
-  uGlobals,
+  cGlobals,
   uCommon,
-  uResStrings,
-  uInterpol;
+  cResStrings,
+  cInterpol;
 
 type
   TGBModel = class;
@@ -422,7 +422,7 @@ implementation
 //============================================================================
 
 uses
-  uProfuns,
+  cProfuns,
   fDisplayHolesOptions,
   fDisplayPoints2DOptions,
   fDisplayPoints3DOptions,

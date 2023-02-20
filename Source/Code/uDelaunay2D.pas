@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-------------------------------------------------------------------------
 // The unit for constructing triangulations and voronoi diagrams in 2D
 
@@ -31,7 +31,7 @@ uses
 
   uCommon,
   GBGeometry,
-  uDiscoCore;
+  cDiscoCore;
 
 const
   MAXPTS = 1000024; // MAX. NUM. OF POINTS

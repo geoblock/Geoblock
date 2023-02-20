@@ -1,17 +1,17 @@
 //
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //
-{ Constants, types and vars for interpolation routines }
+(* Constants, types and vars for interpolation routines *)
 
 
-unit uInterpol;
+unit cInterpol;
 
 interface
 
 uses
   System.SysUtils,
   System.Classes,
-  uDiscoCore;
+  cDiscoCore;
 
 const
   NEAR_ZERO = -1E-15;
@@ -186,7 +186,7 @@ type
     UseTriangulation: Boolean;
   end;
 
- { Data structure for Kriging parameters }
+ // Data structure for Kriging parameters
   TKrigingParams = record
     K_type:     integer;      //Type of Kriging
     Drift:      array [1..9] of integer;

@@ -1,9 +1,9 @@
 //-------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-------------------------------------------------------------------------
 {! Global types, variables and constants }
 
-unit uGlobals;
+unit cGlobals;
 
 interface
 
@@ -28,7 +28,7 @@ type
     ptEllipse, ptArc, ptSymbol, ptText);
 
 const
-  { ModelTypes - numbers associated with FileModels.PageIndex }
+  // ModelTypes - numbers associated with FileModels.PageIndex
   mtUnknown  = -1;
   mtFirst    = 0;
   mtDholes   = 0;      // Drillholes
@@ -57,6 +57,7 @@ const
 
 const
   RegGeoblock = '\SOFTWARE\Geoblock\';
+  RegGexoblock = '\SOFTWARE\Gexoblock\';
 
 var
   GeneralSection: string = '\SOFTWARE\Geoblock\General';
@@ -114,13 +115,7 @@ var
 
   DirFiles: TFileName = 'Files' + PathDelim;
   DirLegends: TFileName = 'Legends' + PathDelim;
-  DirProjects: TFileName = 'Projects' + PathDelim;
-
-  //Assets Directory
-  DirObjects:  TFileName = 'Data'+ PathDelim + 'Assets' + PathDelim + 'Objects' + PathDelim;
-  DirSkins:    TFileName = 'Data'+ PathDelim + 'Assets' + PathDelim + 'Skins' + PathDelim;
-  DirTextures: TFileName = 'Data'+ PathDelim + 'Assets' + PathDelim + 'Textures' + PathDelim;
-  DirSounds:   TFileName = 'Data'+ PathDelim + 'Assets' + PathDelim + 'Sounds' + PathDelim;
+  DirProject: TFileName = 'Projects' + PathDelim;
 
   //Reports Directory
   DirReport:  TFileName = 'Reports' + PathDelim;
@@ -133,9 +128,16 @@ var
   DirFitVar: TFileName = 'GeoStat' + PathDelim + 'FitVar' + PathDelim;
   DirHisto:  TFileName = 'GeoStat' + PathDelim + 'Histo' + PathDelim;
 
-  //Plugins and Addons
+  //Assets Directory
+  DirObjects:  TFileName = 'Data'+ PathDelim + 'Assets' + PathDelim + 'Objects' + PathDelim;
+  DirSkins:    TFileName = 'Data'+ PathDelim + 'Assets' + PathDelim + 'Skins' + PathDelim;
+  DirTextures: TFileName = 'Data'+ PathDelim + 'Assets' + PathDelim + 'Textures' + PathDelim;
+  DirSounds:   TFileName = 'Data'+ PathDelim + 'Assets' + PathDelim + 'Sounds' + PathDelim;
+
+  //Plugins and execs
   DirPlugins: TFileName = 'Plugins' + PathDelim;
 
+// Vars for tables
 var
   //Tables
   tblAssays:      string = 'Assays';
@@ -175,10 +177,8 @@ var
   fldFACTOR: string = 'FACTOR';         //ftFloat
   fldFINISH: string = 'FINISH';         //ftDate
   fldFORMULA: string = 'FORMULA';       //ftString
-  fldFRENCH: string = 'FRENCH';         //ftString
   fldFROM:   string = 'FROM';           //ftFloat
   fldG:      string = 'G';              //ftFloat
-  fldGERMAN: string = 'GERMAN';         //ftString
   fldGRADE:  string = 'GRADE';          //ftFloat
   fldGRAINSIZE: string = 'GRAINSIZE';   //ftFloat
   fldDHOLE:  string = 'DHOLE';          //ftString
@@ -225,10 +225,10 @@ var
   fldSEQUENCE: string = 'SEQUENCE'; //ftInteger
   fldSHORT:  string = 'SHORT';      //ftString
   fldSLOPE:  string = 'SLOPE';      //ftFloat
-  fldSPANISH: string = 'SPANISH';   //ftString
   fldSTART:  string = 'START';      //ftDate
   fldSUBBLOCK: string = 'SUBBLOCK'; //ftFloat
   fldSYMBOL: string = 'SYMBOL';
+  fldT: string = 'T';              // ftWord or ftTime ?
   fldTEXTURE: string = 'TEXTURE';
   fldTHICKNESS: string = 'THICKNESS'; //ftFloat
   fldTO:     string = 'TO';           //ftFloat
@@ -274,14 +274,18 @@ var
 var
   IniFile:  TIniFile;
   LangID: integer;
+  CurLang:   string = 'ru';  //Current default is 'en', localized is 'ru' etc.
+
   Precision: integer = -2;
 
 function SlashSep(const Path, S: string): string;
 function ExpandPath(Path: TFileName): TFileName;
 
+
 //=========================================================================
 implementation
 //=========================================================================
+
 
 function SlashSep(const Path, S: string): string;
 begin
@@ -291,7 +295,7 @@ begin
     Result := Path + PathDelim + S;
 end;
 
-
+//================================================================\\
 function ExpandPath(Path: TFileName): TFileName;
 begin
   if AppPath = '' then
@@ -305,8 +309,8 @@ begin
   else if Pos(DirDataSQLs, Result) <> 0 then
     Result := SlashSep(AppPath, DirDataSQLs)
 
-  else if Pos(DirProjects, Result) <> 0 then
-    Result := SlashSep(DataBasePath, DirProjects)
+  else if Pos(DirProject, Result) <> 0 then
+    Result := SlashSep(DataBasePath, DirProject)
   else if Pos(DirExploring, Result) <> 0 then
     Result := SlashSep(DataBasePath, DirExploring)
   else if Pos(DirFiles, Result) <> 0 then
@@ -378,6 +382,7 @@ begin
     Result := SlashSep(DataBasePath, DirFitVar)
   else if Pos(DirHisto, Result) <> 0 then
     Result := SlashSep(DataBasePath, DirHisto)
+  //Reference Directory
   else if Pos(DirDataReference, Result) <> 0 then
     Result := DataReferencePath;
 
@@ -389,7 +394,10 @@ begin
 end;
 
 
+//===========================================
 initialization
+//===========================================
+
   FormatSettings.DecimalSeparator := '.';
   FormatSettings.TwoDigitYearCenturyWindow := 60;
   //Converts a date from two digits to interval (CurrentYear-60 .. CurrentYear+40)

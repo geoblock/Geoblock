@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
 {! The Dialog for unit conversion }
 
@@ -71,10 +71,10 @@ implementation
 //=================================================================
 
 uses
-  uGlobals,
+  cGlobals,
   uCommon,
-  uResStrings,
-  uProfuns;
+  cResStrings,
+  cProfuns;
 
 {$R *.DFM}
 

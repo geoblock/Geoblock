@@ -1,9 +1,9 @@
 //
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //
-{! Kernel unit implements base types and routines for descrete geometry library }
+(* Kernel unit implements base types and routines for descrete geometry library *)
 
-unit uDiscoCore;
+unit cDiscoCore;
 
 interface
 

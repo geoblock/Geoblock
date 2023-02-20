@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
 {!  Parent page dialog }
 
@@ -20,7 +20,7 @@ uses
   Vcl.StdCtrls,
 
   
-  uGlobals,
+  cGlobals,
   fInitialDialog;
 
 type

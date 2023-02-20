@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
 {! The form for export routines }
 
@@ -73,12 +73,12 @@ implementation
 //======================================================================
 
 uses
-  uProfuns,
+  cProfuns,
   uCommon,
-  uGlobals,
+  cGlobals,
   uWhittle,
   gnuGettext,
-  uResStrings;
+  cResStrings;
 
 {$R *.dfm}
 

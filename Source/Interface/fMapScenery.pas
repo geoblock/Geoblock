@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
 {! MapScenery is based on Eric Grange GLSViewer for GLScene: www.glscene.org}
 
@@ -34,25 +34,26 @@ uses
   Vcl.ExtDlgs,
 
 
-  GLScene,
-  GLVectorTypes,
-  GLVectorFileObjects,
-  GLObjects,
-  GLVectorGeometry,
-  GLTexture,
-  GLContext,
-  GLVectorLists,
-  GLCadencer,
-  GLMesh,
-  GLGeomObjects,
-  GLMaterial,
-  GLCoordinates,
-  GLCrossPlatform,
-  GLBaseClasses,
+  GLS.Scene,
+  GLS.VectorTypes,
+  GLS.VectorFileObjects,
+  GLS.Objects,
+  GLS.VectorGeometry,
+  GLS.Texture,
+  GLS.Context,
+  GLS.VectorLists,
+  GLS.Cadencer,
+  GLS.Mesh,
+  GLS.GeomObjects,
+  GLS.Material,
+  GLS.Coordinates,
+  GLS.BaseClasses,
+  GLS.SceneViewer,
+  GLS.Color,
 
-  
+
   fInitialForm,
-  Gnugettext, GLSceneViewer;
+  Gnugettext;
 
 type
   TfmMapScenery = class(TfmInitialForm)
@@ -262,30 +263,29 @@ implementation
 uses
   System.Win.Registry,
 
-  GLPersistentClasses,
-  GLMeshUtils,
-  GLColor,
-  GLKeyboard,
-  GLFileOBJ,
-  GLFileSTL,
-  GLFileLWO,
-  GLFileQ3BSP,
-  GLFileOCT,
-  GLFileMS3D,
-  GLFileNMF,
-  GLFileMD3,
-  GLFile3DS,
-  GLFileMD2,
-  GLFileSMD,
-  GLRenderContextInfo,
-  GLFilePLY,
-  GLFileGTS,
-  GLFileMD5,
+  GLS.PersistentClasses,
+  GLS.MeshUtils,
+  GLS.Keyboard,
+  GLS.FileOBJ,
+  GLS.FileSTL,
+  GLS.FileLWO,
+  GLS.FileQ3BSP,
+  GLS.FileOCT,
+  GLS.FileMS3D,
+  GLS.FileNMF,
+  GLS.FileMD3,
+  GLS.File3DS,
+  GLS.FileMD2,
+  GLS.FileSMD,
+  GLS.RenderContextInfo,
+  GLS.FilePLY,
+  GLS.FileGTS,
+  GLS.FileMD5,
   GLS.FileTIN,
-  GLMeshOptimizer,
-  GLState,
+  GLS.MeshBuilder,
+  GLS.State,
 
-  uGlobals,
+  cGlobals,
   uCommon,
   dDialogs,
   fGeoblock,
@@ -295,8 +295,8 @@ type
   // Hidden line shader (specific implem for the viewer, *not* generic)
   THiddenLineShader = class(TGLShader)
   private
-    LinesColor: TColorVector;
-    BackgroundColor: TColorVector;
+    LinesColor: TGLColorVector;
+    BackgroundColor: TGLColorVector;
     PassCount: integer;
   public
     procedure DoApply(var rci: TGLRenderContextInfo; Sender: TObject); override;
@@ -927,9 +927,9 @@ end;
 
 procedure TfmMapScenery.ACConvertToIndexedTrianglesExecute(Sender: TObject);
 var
-  v:  TAffineVectorList;
-  IntegerList:  TIntegerList;
-  MeshObject: TMeshObject;
+  v:  TGLAffineVectorList;
+  IntegerList:  TGLIntegerList;
+  MeshObject: TGLMeshObject;
   fg: TFGVertexIndexList;
 begin
   v := FreeForm.MeshObjects.ExtractTriangles;
@@ -940,7 +940,7 @@ begin
       IncreaseCoherency(IntegerList, 12);
       IntegerList.Capacity := IntegerList.Count;
       FreeForm.MeshObjects.Clean;
-      MeshObject := TMeshObject.CreateOwned(FreeForm.MeshObjects);
+      MeshObject := TGLMeshObject.CreateOwned(FreeForm.MeshObjects);
       MeshObject.Vertices := v;
       MeshObject.BuildNormals(IntegerList, momTriangles);
       MeshObject.Mode := momFaceGroups;
@@ -961,9 +961,9 @@ end;
 procedure TfmMapScenery.ACStripifyExecute(Sender: TObject);
 var
   i:      integer;
-  mo:     TMeshObject;
+  mo:     TGLMeshObject;
   fg:     TFGVertexIndexList;
-  strips: TPersistentObjectList;
+  strips: TGLPersistentObjectList;
 begin
   ACConvertToIndexedTriangles.Execute;
   mo     := FreeForm.MeshObjects[0];
@@ -974,7 +974,7 @@ begin
     for i := 0 to strips.Count - 1 do
     begin
       fg := TFGVertexIndexList.CreateOwned(mo.FaceGroups);
-      fg.VertexIndices := (strips[i] as TIntegerList);
+      fg.VertexIndices := (strips[i] as TGLIntegerList);
       if i = 0 then
         fg.Mode := fgmmTriangles
       else

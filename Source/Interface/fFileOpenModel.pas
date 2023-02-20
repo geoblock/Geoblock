@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
 {
   FileOpenModel  -  the dialog window to open model files
@@ -56,7 +56,7 @@ implementation
 
 uses
   uCommon,
-  uGlobals;
+  cGlobals;
 
 {$R *.DFM}
 

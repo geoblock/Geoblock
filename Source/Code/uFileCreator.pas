@@ -1,5 +1,5 @@
  //------------------------------------------------------------------------------
- // This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+ // The modeling system Geoblock http://sourceforge.net/projects/geoblock
  //------------------------------------------------------------------------------
 {! The unit includes routines for common usage }
 
@@ -20,10 +20,10 @@ uses
   Data.DB, 
   Bde.DBTables,
   
-  uGlobals,
+  cGlobals,
   uCommon,
-  uResStrings,
-  uProfuns;
+  cResStrings,
+  cProfuns;
 
 const
   dbAssays    = 0;

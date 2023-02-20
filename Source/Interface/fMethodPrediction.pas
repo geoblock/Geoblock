@@ -88,10 +88,10 @@ implementation
 //============================================================
 
 uses
-  uGlobals,
-  uResStrings,
+  cGlobals,
+  cResStrings,
   uCommon,
-  uProfuns,
+  cProfuns,
   dBase;
 
 {$R *.dfm}

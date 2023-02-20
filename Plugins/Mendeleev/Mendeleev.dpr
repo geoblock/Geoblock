@@ -6,6 +6,9 @@ library Mendeleev;
 
 (* Periodic table of Mendeleev *)
 
+{$R 'Mendeleev.res' 'Mendeleev.rc'}
+{$E gpl}
+
 uses
   System.ShareMem,
   Winapi.Windows,
@@ -13,9 +16,6 @@ uses
   gnuGettext,
   uPluginReg,
   fMendeleev in 'fMendeleev.pas' {fmMendeleev};
-
-{$R D.RES}
-{$E gpl}
 
 type
   TPeriodicTablePlugin = Class(TCustomPlugin)
@@ -30,9 +30,9 @@ begin
   if fmMendeleev = nil then
     fmMendeleev := TfmMendeleev.Create(Self);
   IDString := 'Geoblock.MendeleevTable';
-  Glyph := LoadBitmap(HInstance, 'GLYPH');
+  Glyph := LoadBitmap(HInstance, 'Mendeleev');
   PageName := _('Geology');
-  Caption := _('Mendeleev Table');
+  Caption := _('Periodic Table');
 end;
 
 procedure TPeriodicTablePlugin.Execute;

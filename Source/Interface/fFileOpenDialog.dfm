@@ -5,13 +5,11 @@ inherited fmFileOpenDialog: TfmFileOpenDialog
   Caption = 'File Open Dialog'
   ClientHeight = 416
   ClientWidth = 540
-  OldCreateOrder = True
   OnActivate = FormActivate
   OnClose = FormClose
   OnCreate = FormCreate
-  ExplicitWidth = 556
-  ExplicitHeight = 455
-  PixelsPerInch = 96
+  ExplicitWidth = 568
+  ExplicitHeight = 473
   TextHeight = 16
   inherited PanelTop: TPanel
     Width = 540

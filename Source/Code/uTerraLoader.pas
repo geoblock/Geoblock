@@ -52,10 +52,10 @@ implementation
 //========================================================================
 
 uses
-  uGlobals, 
+  cGlobals, 
   fTerraScene,
   uTerraObjects,
-  uResStrings,
+  cResStrings,
   fTerraContours;
 
 procedure LoadTerrainToMesh(var SMesh: TGLMesh);

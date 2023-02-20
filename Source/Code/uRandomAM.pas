@@ -42,7 +42,7 @@ interface
 uses
   System.Math,
   System.SysUtils,
-  uResStrings;
+  cResStrings;
 
 const
   Version = 4.3;

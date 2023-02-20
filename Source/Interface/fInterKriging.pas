@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
 {! The dialog for Kriging options }
 
@@ -32,7 +32,7 @@ uses
   Bde.DBTables,
   
   fInitialDialog,
-  uInterpol,
+  cInterpol,
   uVariograms;
 
 type
@@ -111,7 +111,7 @@ uses
   System.Math,
   // GB
   uCommon,
-  uGlobals,
+  cGlobals,
   gnuGettext,
   fMethodVarioModeller;
 

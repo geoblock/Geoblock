@@ -232,7 +232,7 @@ implementation
 // ===========================================================================
 
 uses
-  uGlobals,
+  cGlobals,
   GNUgettext;
 
 {$R *.DFM}

@@ -36,7 +36,7 @@ uses
   Vcl.ComCtrls,
 
   uCommon,
-  uInterpol;
+  cInterpol;
 
 const
   // User Adjustable Parameters

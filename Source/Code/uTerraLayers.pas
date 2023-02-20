@@ -30,8 +30,8 @@ uses
 
 
   uTerraModel,
-  uGlobals,
-  uResStrings,
+  cGlobals,
+  cResStrings,
   uTerraLoader;
 
 const

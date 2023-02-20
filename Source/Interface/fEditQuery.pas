@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
 {!  The form for SQL queries }
 
@@ -67,11 +67,11 @@ implementation
 //================================================================
 
 uses
-  uGlobals,
+  cGlobals,
   uCommon,
   fTableWindow,
-  uProfuns,
-  uResStrings;
+  cProfuns,
+  cResStrings;
 
 {$R *.dfm}
 

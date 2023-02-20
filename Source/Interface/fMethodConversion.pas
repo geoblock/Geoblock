@@ -1,5 +1,5 @@
 //---------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //---------------------------------------------------------------------
 {! Conversion routines for Geoblock's model types }
 
@@ -79,9 +79,9 @@ var
 implementation
 
 uses
-  uGlobals,
+  cGlobals,
   uCommon,
-  uProfuns,
+  cProfuns,
   uFileCreator;
 
 {$R *.dfm}

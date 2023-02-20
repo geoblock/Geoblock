@@ -1,17 +1,17 @@
 //
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //
 (*-------------------------------------------------------------------
   The functions that pertain polygons.
 ---------------------------------------------------------------------*)
 
-unit uDiscoPoly;
+unit cDiscoPoly;
 
 interface
 
 uses
   System.Math,
-  uDiscoCore;
+  cDiscoCore;
 
 
 //-------------------------------------------------------------------

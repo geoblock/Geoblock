@@ -68,8 +68,8 @@ implementation
 //========================================================================
 
 uses
-  uGlobals,
-  uProfuns,
+  cGlobals,
+  cProfuns,
   uCommon,
   uFileCreator;
 

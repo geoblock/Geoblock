@@ -31,7 +31,7 @@ uses
 
   fMethodDialog,
   dBase,
-  uInterpol,
+  cInterpol,
   uVariograms;
 
 type
@@ -91,10 +91,10 @@ var
 implementation
 
 uses
-  uGlobals, 
+  cGlobals, 
   uCommon, 
   uFileCreator,
-  uProfuns, 
+  cProfuns, 
   gnuGettext;
 
 {$R *.dfm}

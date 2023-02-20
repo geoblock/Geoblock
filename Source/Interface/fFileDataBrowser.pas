@@ -28,7 +28,7 @@ uses
 
   gnuGetText,
   fInitialForm,
-  uGlobals,
+  cGlobals,
   uCommon,
   dBase;
 

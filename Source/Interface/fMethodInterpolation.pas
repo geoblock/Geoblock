@@ -38,11 +38,11 @@ uses
   dDialogs,
   fInitialDialog,
   fMethodDualDialog,
-  uInterpol,
+  cInterpol,
 
-  GLS.OpenCL,
-  GLS.OpenCL_Platform,
-  GLS.OpenCL_GL;
+  OpenCL.Import,
+  OpenCL.Platform,
+  OpenCL.GL;
 
 type
   Tcl_platform_device = record
@@ -121,9 +121,9 @@ implementation
 //==========================================================================
 
 uses
-  uGlobals,
+  cGlobals,
   uCommon,
-  uProfuns,
+  cProfuns,
   fInterInverseDistance,
   fInterKriging,
   fInterNaturalNeighbours,

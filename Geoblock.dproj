@@ -18,6 +18,11 @@
         <CfgParent>Base</CfgParent>
         <Base>true</Base>
     </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
         <Cfg_1>true</Cfg_1>
         <CfgParent>Base</CfgParent>
@@ -29,6 +34,12 @@
         <Cfg_1>true</Cfg_1>
         <Base>true</Base>
     </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win64)'!=''">
+        <Cfg_1_Win64>true</Cfg_1_Win64>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
         <Cfg_2>true</Cfg_2>
         <CfgParent>Base</CfgParent>
@@ -36,6 +47,12 @@
     </PropertyGroup>
     <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
         <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win64)'!=''">
+        <Cfg_2_Win64>true</Cfg_2_Win64>
         <CfgParent>Cfg_2</CfgParent>
         <Cfg_2>true</Cfg_2>
         <Base>true</Base>
@@ -52,6 +69,9 @@
         <DCC_E>false</DCC_E>
         <DCC_K>false</DCC_K>
         <DCC_ImageBase>00400000</DCC_ImageBase>
+        <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+        <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
+        <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
@@ -67,6 +87,15 @@
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
         <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
         <VerInfo_Keys>CompanyName=;FileVersion=2015.3.15.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+        <BT_BuildType>Debug</BT_BuildType>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1)'!=''">
         <DCC_DebugInformation>0</DCC_DebugInformation>
@@ -85,6 +114,10 @@
         <VerInfo_MajorVer>2015</VerInfo_MajorVer>
         <VerInfo_MinorVer>3</VerInfo_MinorVer>
     </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+    </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
         <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
@@ -102,30 +135,32 @@
         <VerInfo_MajorVer>2020</VerInfo_MajorVer>
         <VerInfo_MinorVer>7</VerInfo_MinorVer>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Build>795</VerInfo_Build>
+        <VerInfo_Build>815</VerInfo_Build>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <DCC_ExeOutput>.\Bin</DCC_ExeOutput>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <VerInfo_Keys>CompanyName=Getos Ltd;FileVersion=2020.7.10.795;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=Geoblock;ProductVersion=1.2.3.4;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Getos Ltd;FileVersion=2020.7.10.815;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=Geoblock;ProductVersion=1.2.3.4;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName)</VerInfo_Keys>
         <DCC_ObjOutput>.\lib</DCC_ObjOutput>
         <DCC_BpiOutput>.\lib</DCC_BpiOutput>
         <DCC_HppOutput>.\include</DCC_HppOutput>
-        <BRCC_IncludePath>.\Source\Code;.\Source\Comp;.\Source\Interface;.\Source\Module;.\Source\Scene;.\Source\Comp;.\Source\Interface;.\Source\Module;.\Source\Scene</BRCC_IncludePath>
+        <AppDPIAwarenessMode>none</AppDPIAwarenessMode>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="Source\Interface\dDialogs.pas">
-            <Form>dmDialogs</Form>
-            <DesignClass>TDataModule</DesignClass>
-        </DCCReference>
+        <DCCReference Include="Source\Code\GnuGetText.pas"/>
         <DCCReference Include="Source\Interface\dBase.pas">
             <Form>dmBase</Form>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
-        <DCCReference Include="Source\Interface\fInitialForm.pas">
-            <Form>fmInitialForm</Form>
+        <DCCReference Include="Source\Interface\dDialogs.pas">
+            <Form>dmDialogs</Form>
+            <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <DCCReference Include="Source\Interface\fInitialDialog.pas">
             <Form>fmInitialDialog</Form>
@@ -159,9 +194,6 @@
         </DCCReference>
         <DCCReference Include="Source\Interface\fHelpAbout.pas">
             <Form>fmHelpAbout</Form>
-        </DCCReference>
-        <DCCReference Include="Source\Interface\fToolsConfiguration.pas">
-            <Form>fmToolsConfiguration</Form>
         </DCCReference>
         <DCCReference Include="Source\Interface\fDrawFillStyle.pas">
             <Form>fmDrawFillStyle</Form>
@@ -322,6 +354,9 @@
         <DCCReference Include="Source\Interface\fComposeContacts.pas">
             <Form>fmComposeContacts</Form>
         </DCCReference>
+        <DCCReference Include="Source\Interface\fToolsConfiguration.pas">
+            <Form>fmToolsConfiguration</Form>
+        </DCCReference>
         <DCCReference Include="Source\Interface\fToolsMiningCalculator.pas">
             <Form>fmToolsMiningCalculator</Form>
         </DCCReference>
@@ -405,14 +440,14 @@
         <DCCReference Include="Source\Interface\fViewDataVisualizer.pas">
             <Form>fmInitialForm1</Form>
         </DCCReference>
-        <DCCReference Include="Source\Code\uResStrings.pas"/>
-        <DCCReference Include="Source\Code\uGlobals.pas"/>
+        <DCCReference Include="Source\Code\cResStrings.pas"/>
+        <DCCReference Include="Source\Code\cGlobals.pas"/>
         <DCCReference Include="Source\Code\uCommon.pas"/>
-        <DCCReference Include="Source\Code\uInterpol.pas"/>
+        <DCCReference Include="Source\Code\cInterpol.pas"/>
         <DCCReference Include="Source\Code\uPluginMng.pas"/>
         <DCCReference Include="Source\Code\uPluginReg.pas"/>
-        <DCCReference Include="Source\Code\uProfuns.pas"/>
-        <DCCReference Include="Source\Code\uSorting.pas"/>
+        <DCCReference Include="Source\Code\cProfuns.pas"/>
+        <DCCReference Include="Source\Code\cSorting.pas"/>
         <DCCReference Include="Source\Code\uVariograms.pas"/>
         <DCCReference Include="Source\Code\uDelaunay2D.pas"/>
         <DCCReference Include="Source\Code\uIOPoly.pas"/>
@@ -434,11 +469,10 @@
         <DCCReference Include="Source\Code\uOptimizeLG.pas"/>
         <DCCReference Include="Source\Code\uFileCreator.pas"/>
         <DCCReference Include="Source\Code\uTerraLoader.pas"/>
-        <DCCReference Include="Source\Code\GnuGetText.pas"/>
         <DCCReference Include="Source\Code\uWhittle.pas"/>
-        <DCCReference Include="Source\Code\uDiscoMetric.pas"/>
-        <DCCReference Include="Source\Code\uDiscoCore.pas"/>
-        <DCCReference Include="Source\Code\uDiscoPoly.pas"/>
+        <DCCReference Include="Source\Code\cDiscoMetric.pas"/>
+        <DCCReference Include="Source\Code\cDiscoCore.pas"/>
+        <DCCReference Include="Source\Code\cDiscoPoly.pas"/>
         <DCCReference Include="Source\Code\uTerraBalloon.pas"/>
         <DCCReference Include="Source\Interface\iToolsGBA.pas"/>
         <DCCReference Include="Source\Interface\fTerraSceneVR.pas">
@@ -453,11 +487,19 @@
             <Form>fmFileNew</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="Source\Interface\fInitialForm.pas">
+            <Form>fmInitialForm</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
         <BuildConfiguration Include="Release">
             <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
         </BuildConfiguration>
     </ItemGroup>
@@ -513,6 +555,7 @@
             </Delphi.Personality>
             <Platforms>
                 <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
             </Platforms>
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>

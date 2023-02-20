@@ -24,8 +24,8 @@ uses
   Vcl.ExtCtrls,
 
   fMethodDialog,
-  uGlobals,
-  uInterpol,
+  cGlobals,
+  cInterpol,
   uOptimizePF,
   uOptimizeLG;
 

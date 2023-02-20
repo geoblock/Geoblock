@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
 {! The pattern and texture editor}
 
@@ -129,9 +129,9 @@ implementation
 //========================================================================
 
 uses
-  uGlobals,
+  cGlobals,
   uCommon,
-  uResStrings,
+  cResStrings,
   fDrawLineStyle,
   fDrawImageEditor,
   GBGraphics,

@@ -1,5 +1,5 @@
  //-------------------------------------------------------------------------
- // This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+ // The modeling system Geoblock http://sourceforge.net/projects/geoblock
  //-------------------------------------------------------------------------
  {! It creates Variogram for Irregular Spaced 3-D Data}
 
@@ -22,7 +22,7 @@ uses
   Vcl.ComCtrls,
 
   
-  uInterpol;
+  cInterpol;
 
 const
   vtSemivariogram = 1;

@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 // -----------------------------------------------------------------------------
 { ! TableWindow is designed to browse tables }
 
@@ -144,9 +144,9 @@ implementation
 //=========================================================================
 
 uses
-  uGlobals,
-  uResStrings,
-  uProfuns,
+  cGlobals,
+  cResStrings,
+  cProfuns,
   uCommon,
   uFileCreator,
   fGeoblock,

@@ -43,7 +43,7 @@ uses
   fViewVariogram,
 
   GBGeometry,
-  uInterpol,
+  cInterpol,
   uVariograms;
 
 type
@@ -116,9 +116,9 @@ implementation
 //=========================================================================
 
 uses
-  uGlobals,
+  cGlobals,
   uCommon,
-  uProfuns,
+  cProfuns,
   uFileCreator,
   gnuGettext;
 

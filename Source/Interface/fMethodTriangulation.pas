@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
 {! The dialog for Triangulation in 2D and 3D}
 
@@ -28,19 +28,19 @@ uses
 
   Bde.DBTables,
   Data.DB,
-  GLVectorTypes,
-  GLVectorGeometry,
+  GLS.VectorTypes,
+  GLS.VectorGeometry,
 
   dBase,
   fMethodDialog,
   gnuGettext,
   GBGeometry,
   uCommon,
-  uGlobals,
-  uProfuns,
+  cGlobals,
+  cProfuns,
   uDelaunay2D,
-  uDiscoCore,
-  uResStrings;
+  cDiscoCore,
+  cResStrings;
 
 type
   TfmMethodTriangulation = class(TfmMethodDialog)

@@ -36,7 +36,7 @@ uses
   Bde.DBTables,
   
   fInitialDialog,
-  uInterpol,
+  cInterpol,
   uVariograms;
 
 type
@@ -101,7 +101,7 @@ implementation
 
 uses
   uCommon, 
-  uGlobals, 
+  cGlobals, 
   gnuGettext,
   fAnalyseVariograms,
   fViewVariogram;

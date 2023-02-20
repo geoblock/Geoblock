@@ -1,5 +1,5 @@
 // -------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 // -------------------------------------------------------------------------
 (*  The unit to define a Superblock based on:
 
@@ -35,7 +35,7 @@ unit uSuperblock;
 interface
 
 uses
-  uInterpol;
+  cInterpol;
 
 (* Initialize_super_block(super_block, &search_pattern, &pattern_len);
    This subroutine is called once to initialize the super block arrays *)

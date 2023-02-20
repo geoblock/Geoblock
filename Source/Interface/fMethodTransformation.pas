@@ -1,5 +1,5 @@
 //---------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //---------------------------------------------------------------------------
 
 unit fMethodTransformation;
@@ -27,8 +27,8 @@ uses
   Data.DB, 
   Bde.DBTables,
 
-  GLVectorTypes,
-  GLVectorGeometry,
+  GLS.VectorTypes,
+  GLS.VectorGeometry,
 
   
   fMethodDialog,
@@ -94,7 +94,7 @@ type
     procedure ListBoxInputNamesClick(Sender: TObject);
   private
      
-    Matrix:     TMatrix;
+    Matrix:     TGLMatrix;
     Tables:     TStringList;
     FEditArray: array[0..3, 0..3] of TGBEditValue;
     FOnUpdate:  TNotifyEvent;
@@ -120,8 +120,8 @@ implementation
 
 uses
   dBase,
-  uGlobals,
-  uProfuns,
+  cGlobals,
+  cProfuns,
   uFileCreator;
 
 {$R *.dfm}
@@ -241,7 +241,7 @@ const
 
 var
   I:      integer;
-  Vector: TVector;
+  Vector: TGLVector;
   AffineVector: TAffineVector;
 begin
   Table.Open;

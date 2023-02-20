@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 
 #include "uPluginReg.h"
-#include "uConsts.hpp"
+#include "cResStrings.h"
 
 //---------------------------------------------------------------------------
 
@@ -12,10 +12,10 @@ __fastcall TCustomPlugin::TCustomPlugin(TComponent *AOwner): TComponent(AOwner)
   FHelpContext = 0;
   FAuthor = " ";
   FHint = " ";
-  FBitmap = new Vcl.CheckLst::TBitmap;
+  FBitmap = new TBitmap;
   FCaption = ClassName();
 //  FIDString = uConsts_SgbGeology + "." + FCaption;
-  FIDString = "Geology." + FCaption;
+  FIDString = "Geology" + FCaption;
 //  FPageName = uConsts_SgbMiscellany;      // Default
   FPageName = "Miscellany";      // Default
   FTopicIndex = 0;

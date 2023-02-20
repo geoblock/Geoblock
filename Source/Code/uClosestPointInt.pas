@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-------------------------------------------------------------------------
 {! Closest Point interpolation - CPI }
 
@@ -12,10 +12,10 @@ uses
   System.Math,
   Vcl.ComCtrls, // there is Vcl.Dialogs.TTaskDialog.ProgressBar
 
-  uGlobals,
+  cGlobals,
   uCommon,
-  uProfuns,
-  uInterpol,
+  cProfuns,
+  cInterpol,
   uSuperblock;
 
 /// Returns IDs of closest points for all nodes

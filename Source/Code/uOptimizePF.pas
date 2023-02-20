@@ -1,5 +1,5 @@
 //
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //
 unit uOptimizePF;
 
@@ -8,9 +8,9 @@ interface
 uses
   System.Math,
   Vcl.ComCtrls,
-  uGlobals,
+  cGlobals,
   uCommon,
-  uInterpol;
+  cInterpol;
 
 (*
  The deposit is divided into two- and three-dimensional array

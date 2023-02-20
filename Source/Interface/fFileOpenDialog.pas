@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
 {
   The Dialog to open data files
@@ -93,8 +93,8 @@ implementation
 //========================================================================
 
 uses
-  uResStrings,
-  uGlobals,
+  cResStrings,
+  cGlobals,
   uFileCreator,
   uCommon;
 

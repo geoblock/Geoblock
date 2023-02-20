@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
 {! The Dialog to calculate ore intervals in drillholes }
 
@@ -64,12 +64,12 @@ implementation
 //=============================================================
 
 uses
-  uGlobals,
+  cGlobals,
   uCommon,
   dDialogs,
   uFileCreator,
-  uProfuns,
-  uResStrings;
+  cProfuns,
+  cResStrings;
 
 {$R *.DFM}
 

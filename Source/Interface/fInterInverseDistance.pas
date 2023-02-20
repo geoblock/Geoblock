@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
 {!Inverse distance interpolation dialog }
 
@@ -22,7 +22,7 @@ uses
 
   
   fInitialDialog,
-  uInterpol;
+  cInterpol;
 
 type
   TfmInterInverseDistance = class(TfmInitialDialog)

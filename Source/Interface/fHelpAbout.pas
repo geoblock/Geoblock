@@ -1,5 +1,5 @@
 //--------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //--------------------------------------------------------------------------
 {! The form About for version information }
 
@@ -66,9 +66,9 @@ implementation
 //================================================================
 
 uses
-  uGlobals,
+  cGlobals,
   fInfoDialog,
-  uResStrings;
+  cResStrings;
 
 {$R *.DFM}
 

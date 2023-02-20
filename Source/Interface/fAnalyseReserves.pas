@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
 {! The reserve calculation dialog with routines}
 
@@ -28,11 +28,11 @@ uses
   Bde.DBTables,
   Data.DB,
 
-  GLVectorTypes,
-  GLVectorGeometry,
+  GLS.VectorTypes,
+  GLS.VectorGeometry,
 
   fMethodDialog,
-  uGlobals,
+  cGlobals,
   GBEditValue;
 
 type
@@ -92,16 +92,16 @@ implementation
 //=========================================================================
 
 uses
-  uResStrings,
-  uCommon,
   dBase,
   dDialogs,
   GBGeometry,
-  uProfuns,
-  uDiscoCore,
-  uDiscoMetric,
-  uSorting,
+  cProfuns,
+  cDiscoCore,
+  cDiscoMetric,
+  cSorting,
   uFileCreator,
+  cResStrings,
+  uCommon,
   gnuGettext,
   fReserveCutOptions;
 
@@ -1047,7 +1047,7 @@ var
   begin
     with dmBase do
     begin
-      Result := uGlobals.fldX;
+      Result := cGlobals.fldX;
       TableInput.Open;
       TableInput.Filter := fldID_TYPE + '=3';
       if not TableInput.FindFirst then
@@ -1094,13 +1094,13 @@ var
         MinZ := Abs(MaxZ - MinZ);
         MinD := Min(Min(MinX, MinY), MinZ);
         if MinD = MinX then
-          Result := uGlobals.fldX
+          Result := cGlobals.fldX
         else if MinD = MinY then
-          Result := uGlobals.fldY
+          Result := cGlobals.fldY
         else if MinD = MinZ then
-          Result := uGlobals.fldZ
+          Result := cGlobals.fldZ
         else
-          Result := uGlobals.fldX;
+          Result := cGlobals.fldX;
       except
       end;
       TablePolyVert.Free;
@@ -1930,13 +1930,13 @@ var
         MinZ := Abs(MaxZ - MinZ);
         MinD := Min(Min(MinX, MinY), MinZ);
         if MinD = MinX then
-          Result := uGlobals.fldX
+          Result := cGlobals.fldX
         else if MinD = MinY then
-          Result := uGlobals.fldY
+          Result := cGlobals.fldY
         else if MinD = MinZ then
-          Result := uGlobals.fldZ
+          Result := cGlobals.fldZ
         else
-          Result := uGlobals.fldX;
+          Result := cGlobals.fldX;
       except
         TablePolyVert.Free;
       end;

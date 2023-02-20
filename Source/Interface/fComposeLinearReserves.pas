@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
 {! The dialog to set parameters for linear reserve calculations}
 
@@ -66,11 +66,11 @@ implementation
 //===========================================================
 
 uses
-  uGlobals,
+  cGlobals,
   uCommon,
   uFileCreator,
-  uResStrings,
-  uProfuns;
+  cResStrings,
+  cProfuns;
 
 {$R *.DFM}
 

@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
 {! The dialog to output information and translated messages instead of System dialogs }
 
@@ -41,7 +41,7 @@ var
 implementation
 
 uses
-  uGlobals,
+  cGlobals,
   uCommon;
 
 {$R *.dfm}

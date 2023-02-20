@@ -230,8 +230,8 @@ uses
   fTerraSplash,
   uCommon,
   gnuGettext,
-  uGlobals,
-  uResStrings,
+  cGlobals,
+  cResStrings,
   uTerraSound,
   uTerraLoader,
   uTerraObjects;

@@ -1,5 +1,5 @@
 //
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //
 unit uOptimizeLG;
 
@@ -8,9 +8,9 @@ interface
 uses
   System.Math,
   Vcl.ComCtrls,
-  uGlobals,
+  cGlobals,
   uCommon,
-  uInterpol;
+  cInterpol;
 
 (*
  Source code LG23D.F was adopted from paper of P.A.Dowd (1994)

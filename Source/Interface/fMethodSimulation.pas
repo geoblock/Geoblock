@@ -34,8 +34,8 @@ uses
   GBEditValue,
   fInitialForm,
   fPageDialog,
-  uGlobals,
-  uProfuns,
+  cGlobals,
+  cProfuns,
   uFileCreator;
 
 type
@@ -117,7 +117,7 @@ implementation
 
 uses
   uCommon,
-  uResStrings,
+  cResStrings,
   fFileOpenText,
   uRandomAM;
 

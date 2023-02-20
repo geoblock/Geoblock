@@ -40,7 +40,6 @@ object fmGeoblock: TfmGeoblock
     0000000000000000000000000000000000000000000000000000000000000000
     0000000000000000000000000000400000000000000000000000000000000000
     000000000000000000000000000000000000000000000000000000000000}
-  OldCreateOrder = True
   PrintScale = poPrintToFit
   Scaled = False
   ShowHint = True
@@ -50,7 +49,6 @@ object fmGeoblock: TfmGeoblock
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   OnShow = FormShow
-  PixelsPerInch = 96
   TextHeight = 19
   object StatusBar: TStatusBar
     Left = 0
@@ -78,7 +76,7 @@ object fmGeoblock: TfmGeoblock
   end
   object ControlBarTop: TControlBar
     Left = 0
-    Top = 25
+    Top = 30
     Width = 1109
     Height = 66
     Align = alTop
@@ -618,10 +616,6 @@ object fmGeoblock: TfmGeoblock
         object TabSheetPolylines: TTabSheet
           Caption = 'Polylines'
           ImageIndex = 112
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object ActionToolBarPolylines: TActionToolBar
             Left = 0
             Top = 0
@@ -813,9 +807,9 @@ object fmGeoblock: TfmGeoblock
   end
   object ControlBarLeft: TControlBar
     Left = 0
-    Top = 91
+    Top = 96
     Width = 25
-    Height = 562
+    Height = 557
     Align = alLeft
     Anchors = [akLeft]
     BevelEdges = [beRight]
@@ -829,9 +823,9 @@ object fmGeoblock: TfmGeoblock
   end
   object ControlBarRight: TControlBar
     Left = 1067
-    Top = 91
+    Top = 96
     Width = 42
-    Height = 562
+    Height = 557
     Align = alRight
     Anchors = [akRight]
     AutoDrag = False
@@ -846,9 +840,9 @@ object fmGeoblock: TfmGeoblock
     TabOrder = 4
     Visible = False
     object ActionToolBarObserve: TActionToolBar
-      Left = 11
+      Left = 14
       Top = 2
-      Width = 27
+      Width = 25
       Height = 239
       ActionManager = ActionManager
       Align = alClient
@@ -876,7 +870,7 @@ object fmGeoblock: TfmGeoblock
     Left = 0
     Top = 0
     Width = 1109
-    Height = 25
+    Height = 30
     UseSystemFont = False
     ActionManager = ActionManager
     AnimationStyle = asNone

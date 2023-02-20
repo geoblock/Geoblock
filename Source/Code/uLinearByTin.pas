@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
 {! Linear interpolation from TIN points to GRID 2D nodes }
 
@@ -12,7 +12,7 @@ uses
   System.Variants,
   Vcl.ComCtrls,
 
-  uInterpol;
+  cInterpol;
 
 function Linear2DInterpolation(var Points, Nodes: TCoordinateArray; ExtraValue: double;
   ProgressBar: TProgressBar): boolean; overload;
@@ -25,9 +25,9 @@ implementation
 //=============================================================================
 
 uses
-  uGlobals,
+  cGlobals,
   uCommon,
-  uProfuns,
+  cProfuns,
   uDelaunay2D;
 
 type

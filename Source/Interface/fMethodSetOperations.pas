@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //---------------------------------------------------------------------------
 {! The unit for set operations }
 //-----------------------------------------------------------------------------
@@ -33,8 +33,8 @@ uses
   Bde.DBTables,
   Data.DB,
 
-  GLVectorTypes,
-  GLVectorGeometry,
+  GLS.VectorTypes,
+  GLS.VectorGeometry,
 
   dBase,
   GBGeometry,
@@ -82,10 +82,10 @@ implementation
 
 uses
   uCommon,
-  uProfuns,
-  uDiscoCore,
-  uGlobals,
-  uResStrings,
+  cProfuns,
+  cDiscoCore,
+  cGlobals,
+  cResStrings,
   uFileCreator,
   fMethodDialog,
   uNormal;

@@ -420,10 +420,10 @@ implementation
 //==========================================================================
 
 uses
-  uGlobals,
+  cGlobals,
   uCommon,
-  uResStrings,
-  uProfuns,
+  cResStrings,
+  cProfuns,
   gnuGettext,
   fAnalyseProblems,
   fAnalyseReserves,
@@ -777,8 +777,8 @@ procedure TfmGeoblock.FileOpenProjectExecute(Sender: TObject);
 begin
   with dmDialogs do
   begin
-    OpenDialogProject.FileName   := ExpandPath(DirProjects) + 'Geoblock' + PrjExt;
-    OpenDialogProject.InitialDir := ExpandPath(DirProjects);
+    OpenDialogProject.FileName   := ExpandPath(DirProject) + 'Geoblock' + PrjExt;
+    OpenDialogProject.InitialDir := ExpandPath(DirProject);
     if OpenDialogProject.Execute then
     begin
       if OpenDialogProject.FilterIndex = 2 then
@@ -891,8 +891,8 @@ procedure TfmGeoblock.FileSaveProjectAsExecute(Sender: TObject);
 begin
   with dmDialogs do
   begin
-    SaveDialogText.FileName   := ExpandPath(DirProjects) + 'Geoblock' + PrjExt;
-    SaveDialogText.InitialDir := ExpandPath(DirProjects);
+    SaveDialogText.FileName   := ExpandPath(DirProject) + 'Geoblock' + PrjExt;
+    SaveDialogText.InitialDir := ExpandPath(DirProject);
     SaveDialogText.Title      := LoadResString(@rsSaveProjectAs);
     SaveDialogText.FilterIndex := 2; //*.prj
     if SaveDialogText.Execute then
@@ -2163,7 +2163,7 @@ var
 
 begin
   try
-    FileName := ExpandPath(DirProjects);
+    FileName := ExpandPath(DirProject);
     fmViewProjectManager.SaveToFile(FileName + 'Geoblock.prj');
   except
   end;

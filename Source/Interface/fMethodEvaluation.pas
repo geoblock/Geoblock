@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
 {
   The dialog for evaluation of block values
@@ -81,7 +81,7 @@ implementation
 
 uses
   uCommon,
-  uGlobals;
+  cGlobals;
 
 {$R *.DFM}
 

@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
 {! The Image Editor for database fields
 
@@ -88,11 +88,11 @@ implementation
 //========================================================================
 
 uses
-  uGlobals,
+  cGlobals,
   uCommon,
   dDialogs,
   dBase,
-  uResStrings,
+  cResStrings,
   GBGraphics;
 
 {$R *.dfm}

@@ -15,6 +15,9 @@
         <Projects Include="Plugins\Mendeleev\Mendeleev.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="Plugins\MendeleevCPP\MendeleevCPP.cbproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -59,14 +62,23 @@
     <Target Name="Mendeleev:Make">
         <MSBuild Projects="Plugins\Mendeleev\Mendeleev.dproj" Targets="Make"/>
     </Target>
+    <Target Name="MendeleevCPP">
+        <MSBuild Projects="Plugins\MendeleevCPP\MendeleevCPP.cbproj"/>
+    </Target>
+    <Target Name="MendeleevCPP:Clean">
+        <MSBuild Projects="Plugins\MendeleevCPP\MendeleevCPP.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MendeleevCPP:Make">
+        <MSBuild Projects="Plugins\MendeleevCPP\MendeleevCPP.cbproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="GBComps;Geoblock;Geochronology;Mendeleev"/>
+        <CallTarget Targets="GBComps;Geoblock;Geochronology;Mendeleev;MendeleevCPP"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="GBComps:Clean;Geoblock:Clean;Geochronology:Clean;Mendeleev:Clean"/>
+        <CallTarget Targets="GBComps:Clean;Geoblock:Clean;Geochronology:Clean;Mendeleev:Clean;MendeleevCPP:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="GBComps:Make;Geoblock:Make;Geochronology:Make;Mendeleev:Make"/>
+        <CallTarget Targets="GBComps:Make;Geoblock:Make;Geochronology:Make;Mendeleev:Make;MendeleevCPP:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

@@ -21,9 +21,9 @@ program Geoblock;
 
 uses
   Forms,
-  dDialogs in 'Source\Interface\dDialogs.pas' {dmDialogs: TDataModule},
+  GnuGetText in 'Source\Code\GnuGetText.pas',
   dBase in 'Source\Interface\dBase.pas' {dmBase: TDataModule},
-  fInitialForm in 'Source\Interface\fInitialForm.pas' {fmInitialForm},
+  dDialogs in 'Source\Interface\dDialogs.pas' {dmDialogs: TDataModule},
   fInitialDialog in 'Source\Interface\fInitialDialog.pas' {fmInitialDialog},
   fMethodDialog in 'Source\Interface\fMethodDialog.pas' {fmMethodDialog},
   fMethodDualDialog in 'Source\Interface\fMethodDualDialog.pas' {fmMethodDualDialog},
@@ -35,7 +35,6 @@ uses
   fGeoblock in 'Source\Interface\fGeoblock.pas' {fmGeoblock},
   fMethodEvaluation in 'Source\Interface\fMethodEvaluation.pas' {fmMethodEvaluation},
   fHelpAbout in 'Source\Interface\fHelpAbout.pas' {fmHelpAbout},
-  fToolsConfiguration in 'Source\Interface\fToolsConfiguration.pas' {fmToolsConfiguration},
   fDrawFillStyle in 'Source\Interface\fDrawFillStyle.pas' {fmDrawFillStyle},
   fDisplayGrid3DOptions in 'Source\Interface\fDisplayGrid3DOptions.pas' {fmDisplayGrid3DOptions},
   fComposeLinearReserves in 'Source\Interface\fComposeLinearReserves.pas' {fmComposeLinearReserves},
@@ -89,6 +88,7 @@ uses
   fToolsGeometryCalculator in 'Source\Interface\fToolsGeometryCalculator.pas' {fmToolsGeometryCalculator},
   fToolsGeologyCalculator in 'Source\Interface\fToolsGeologyCalculator.pas' {fmToolsGeologyCalculator},
   fComposeContacts in 'Source\Interface\fComposeContacts.pas' {fmComposeContacts},
+  fToolsConfiguration in 'Source\Interface\fToolsConfiguration.pas' {fmToolsConfiguration},
   fToolsMiningCalculator in 'Source\Interface\fToolsMiningCalculator.pas' {fmToolsMiningCalculator},
   fViewProjectManager in 'Source\Interface\fViewProjectManager.pas' {fmViewProjectManager},
   fStartup in 'Source\Interface\fStartup.pas' {fmStartup},
@@ -118,14 +118,14 @@ uses
   fInterLinear in 'Source\Interface\fInterLinear.pas' {fmInterLinear},
   fViewHorizon in 'Source\Interface\fViewHorizon.pas' {fmViewHorizon},
   fViewDataVisualizer in 'Source\Interface\fViewDataVisualizer.pas' {fmInitialForm1},
-  uResStrings in 'Source\Code\uResStrings.pas',
-  uGlobals in 'Source\Code\uGlobals.pas',
+  cResStrings in 'Source\Code\cResStrings.pas',
+  cGlobals in 'Source\Code\cGlobals.pas',
   uCommon in 'Source\Code\uCommon.pas',
-  uInterpol in 'Source\Code\uInterpol.pas',
+  cInterpol in 'Source\Code\cInterpol.pas',
   uPluginMng in 'Source\Code\uPluginMng.pas',
   uPluginReg in 'Source\Code\uPluginReg.pas',
-  uProfuns in 'Source\Code\uProfuns.pas',
-  uSorting in 'Source\Code\uSorting.pas',
+  cProfuns in 'Source\Code\cProfuns.pas',
+  cSorting in 'Source\Code\cSorting.pas',
   uVariograms in 'Source\Code\uVariograms.pas',
   uDelaunay2D in 'Source\Code\uDelaunay2D.pas',
   uIOPoly in 'Source\Code\uIOPoly.pas',
@@ -147,17 +147,17 @@ uses
   uOptimizeLG in 'Source\Code\uOptimizeLG.pas',
   uFileCreator in 'Source\Code\uFileCreator.pas',
   uTerraLoader in 'Source\Code\uTerraLoader.pas',
-  GnuGetText in 'Source\Code\GnuGetText.pas',
   uWhittle in 'Source\Code\uWhittle.pas',
-  uDiscoMetric in 'Source\Code\uDiscoMetric.pas',
-  uDiscoCore in 'Source\Code\uDiscoCore.pas',
-  uDiscoPoly in 'Source\Code\uDiscoPoly.pas',
+  cDiscoMetric in 'Source\Code\cDiscoMetric.pas',
+  cDiscoCore in 'Source\Code\cDiscoCore.pas',
+  cDiscoPoly in 'Source\Code\cDiscoPoly.pas',
   uTerraBalloon in 'Source\Code\uTerraBalloon.pas',
   iToolsGBA in 'Source\Interface\iToolsGBA.pas',
   fTerraSceneVR in 'Source\Interface\fTerraSceneVR.pas' {fmSceneVR},
   uOptimizePF in 'Source\Code\uOptimizePF.pas',
   fMethodOctree in 'Source\Interface\fMethodOctree.pas' {fmMethodOctree},
-  fMethodSimulation in 'Source\Interface\fMethodSimulation.pas' {fmFileNew};
+  fMethodSimulation in 'Source\Interface\fMethodSimulation.pas' {fmFileNew},
+  fInitialForm in 'Source\Interface\fInitialForm.pas' {fmInitialForm};
 
 {$R *.RES}
 {$SetPEFlags $20}  // Allows up to 4GB address space with FastMM
@@ -176,6 +176,7 @@ begin
   Application.CreateForm(TdmDialogs, dmDialogs);
   Application.CreateForm(TdmBase, dmBase);
   Application.CreateForm(TfmFileNew, fmFileNew);
+  Application.CreateForm(TfmInitialForm, fmInitialForm);
   //  Application.CreateForm(TfmGS_Splash, fmGS_Splash);
   fmGeoblock.Visible := True;
 //   LogoClose;

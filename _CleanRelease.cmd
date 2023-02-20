@@ -29,7 +29,7 @@ del *.otares /s
 del *.tvsconfig /s
 del *.stat /s
 
-rem delete cpp builder files
+rem don't delete .h and .cpp builder files
 
 del *.hpp /s
 del *.bpi /s
@@ -54,6 +54,8 @@ echo _
 
 rem del *.res /s
 del *.dres /s
+rem del c/c++ .obj and models
+del *.obj /s 
 
 
 echo --------------------------------------------------------
@@ -65,3 +67,4 @@ for /r %1 %%R in (Debug_Build) do if exist "%%R" (rd /s /q "%%R")
 for /r %1 %%R in (Release_Build) do if exist "%%R" (rd /s /q "%%R")
 for /r %1 %%R in (__history) do if exist "%%R" (rd /s /q "%%R")
 for /r %1 %%R in (__recovery) do if exist "%%R" (rd /s /q "%%R")
+for /r %1 %%R in (__astcache) do if exist "%%R" (rd /s /q "%%R")

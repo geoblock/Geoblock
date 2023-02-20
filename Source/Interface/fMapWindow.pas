@@ -37,7 +37,7 @@ uses
   Bde.DBTables,
 
   fInitialForm,
-  uGlobals, 
+  cGlobals, 
   uModels,
   fDisplayHolesOptions,
   fDisplayPoints2DOptions,
@@ -50,7 +50,7 @@ uses
   fDisplayMesh3dOptions,
 
   GBGraphics,
-  GLS.OpenGlx ;
+  GLS.VectorTypes;
 
 type
   TfmMapWindow = class(TfmInitialForm)
@@ -154,8 +154,8 @@ uses
   dBase,
   fGeoblock,
   uCommon,
-  uResStrings,
-  uProfuns,
+  cResStrings,
+  cProfuns,
   fFileExport,
   fMapLight,
   fViewProjectManager,
@@ -1689,7 +1689,7 @@ var
 begin
   for I := 0 to ModelCount - 1 do
   begin
-    if ModelList[I].Visible and (glIsList(ModelList[I].OGLListNo) = True) then
+    if ModelList[I].Visible and (glIsList(ModelList[I].OGLListNo) = 1 {True}) then
       glCallList(ModelList[I].OGLListNo);
   end;
   //  StatusBar.Panels[0].Text:=FloatToStr(GBCanvas.wVectorZ);
