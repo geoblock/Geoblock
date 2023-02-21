@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------------------
 // The unit of Geoblock, http://sourceforge.net/projects/geoblock
 // ---------------------------------------------------------------------------
-{ ! Data browser }
+(* Data browser *)
 
 unit fFileDataBrowser;
 

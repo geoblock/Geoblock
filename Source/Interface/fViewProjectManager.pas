@@ -1,7 +1,7 @@
 //------------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //---------------------------------------------------------------------------
-{ The Project Manager for MapWindow datasets}
+(* The Project Manager for MapWindow datasets *)
 
 unit fViewProjectManager;
 

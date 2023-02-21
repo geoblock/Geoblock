@@ -1,9 +1,7 @@
 //------------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //---------------------------------------------------------------------------
-{
-  The unit to change scales
-}
+(* Recalculating scales for a dataset in tabes *)
 
 unit fViewScale;
 

@@ -1,9 +1,7 @@
 //------------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
-{
-  The dialog for evaluation of block values
-}
+(* The dialog for cost evaluation of block values *)
 
 unit fMethodEvaluation;
 

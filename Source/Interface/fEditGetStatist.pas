@@ -1,7 +1,7 @@
 //------------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
-{!  The form to show main statistics }
+(*  The form to show main statistics *)
 
 unit fEditGetStatist;
 

@@ -1,7 +1,7 @@
 //------------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
-{!  The dialog to calculate values in a field }
+(* The dialog to calculate values in a field *)
 
 unit fEditCalcField;
 

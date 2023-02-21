@@ -1,13 +1,7 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
-{! The dialog for MapLight and Position parameters
-
-  History :
-     27/12/03 - Pavel Vassiliev - Added LightColor checkbox
-     14/05/97 - Pavel Vassiliev - Corrected
-
-}
+(* The dialog for MapLight and Position parameters *)
 
 unit fMapLight;
 

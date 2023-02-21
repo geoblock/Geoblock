@@ -1,8 +1,7 @@
 //-----------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
-{  The Terrascene unit to view geolobjects in VR}
-
+(*  The Terrascene unit to view geolobjects in VR *)
 
 unit fTerraScene;
 

@@ -1,7 +1,7 @@
 //-----------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
-{! The Dialog for unit conversion }
+(* The Dialog for unit conversion *)
 
 unit fToolsUnitsConverter;
 

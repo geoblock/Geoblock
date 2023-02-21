@@ -1,10 +1,10 @@
 //------------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
+(* The Initial form to inherit all child Forms of Geoblock GUI *)
 
 unit fInitialForm;
 
-(* The Initial form to inherit all child Forms of Geoblock *)
 
 interface
 

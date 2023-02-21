@@ -1,7 +1,7 @@
-//----------------------------------------------------------------------------
-// The unit of Geoblock, http://sourceforge.net/projects/geoblock
- //---------------------------------------------------------------------------
-{ The unit for fitting the variogram models}
+//------------------------------------------------------------------------------
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
+//------------------------------------------------------------------------------
+(* Fitting the variogram models *)
 
 unit fMethodVarioModeller;
 

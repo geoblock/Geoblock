@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------------
 // The unit of Geoblock, http://sourceforge.net/projects/geoblock
 //---------------------------------------------------------------------------
- { Fitting the variogram models }
+ (* Fitting the variogram models *)
 
 unit fEditVariogram;
 

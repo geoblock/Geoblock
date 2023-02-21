@@ -1,5 +1,5 @@
 //
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //
 {! Additional geoblock vector geometry routines }
 
@@ -12,8 +12,8 @@ uses
   System.Math.Vectors,
 
   
-  GLVectorTypes,
-  GLVectorGeometry;
+  GLS.VectorTypes,
+  GLS.VectorGeometry;
 
 type
   TVector2i = array [0..1] of longint;

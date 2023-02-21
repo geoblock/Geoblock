@@ -1,15 +1,7 @@
 //------------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
-{! The Image Editor for database fields
-
-  History :
-     22/03/06 - Ilya Lysenko and Alexey Barsuk - added ability to set a size of the
-                                                 texture and tiles option, fixed pathes.
-     12/12/03 - Pavel Vassiliev - Fixed minor bugs
-     11/12/99 - Elena Kinzerskaya - Added DBImageMouseMove
-     01/08/97 - Pavel Vassiliev - Creation
-}
+(* The Image Editor for database fields *)
 
 unit fDrawImageEditor;
 

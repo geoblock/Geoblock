@@ -1,6 +1,7 @@
 // -----------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 // -----------------------------------------------------------------------------
+(* Configuration of tools *)
 
 unit fToolsConfiguration;
 

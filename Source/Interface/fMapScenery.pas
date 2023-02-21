@@ -1,8 +1,7 @@
 //----------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
-{! MapScenery is based on Eric Grange GLSViewer for GLScene: www.glscene.org}
-
+(* MapScenery viewer *)
 
 unit fMapScenery;
 

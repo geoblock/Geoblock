@@ -1,18 +1,8 @@
- //----------------------------------------------------------------------------
- // Geoblock is a program for modeling and visualization of geoscience datasets.
+//-----------------------------------------------------------------------------
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
+//-----------------------------------------------------------------------------
+(* Options for viewing one layer or horizon in 3d grid model *)
 
- // The contents of this file are subject to the Mozilla Public License
- // Version 1.1 (the "License"); you may not use this file except in compliance
- // with the License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
-
- // Software distributed under the License is distributed on an "AS IS" basis,
- // WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
- // the specific language governing rights and limitations under the License.
-
- // The initial developer of the original code and contributors are documented
- // in the accompanying help file Geoblock.chm. Portions created by these
- // individuals are Copyright (C) of these individuals. All Rights Reserved.
- //---------------------------------------------------------------------------
 
 unit fViewHorizon;
 

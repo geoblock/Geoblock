@@ -1,11 +1,10 @@
 //------------------------------------------------------------------------------
 //
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //
 //------------------------------------------------------------------------------
-{
-  The dialog to display options for MESH 2D models
-}
+(* The dialog to display options for MESH 2D models *)
+
 unit fDisplayMesh2DOptions;
 
 interface

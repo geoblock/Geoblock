@@ -1,7 +1,7 @@
 //------------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
-{!  The dialog for adding field types }
+(*  The dialog for adding field types *)
 
 unit fEditAddField;
 

@@ -1,8 +1,7 @@
 //------------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
-{!  The form for image registration
-}
+(* The form for image registration *)
 
 unit fFileImageRegistration;
 

@@ -135,11 +135,11 @@
         <VerInfo_MajorVer>2020</VerInfo_MajorVer>
         <VerInfo_MinorVer>7</VerInfo_MinorVer>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Build>815</VerInfo_Build>
+        <VerInfo_Build>816</VerInfo_Build>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <DCC_ExeOutput>.\Bin</DCC_ExeOutput>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <VerInfo_Keys>CompanyName=Getos Ltd;FileVersion=2020.7.10.815;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=Geoblock;ProductVersion=1.2.3.4;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Getos Ltd;FileVersion=2020.7.10.816;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=Geoblock;ProductVersion=1.2.3.4;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName)</VerInfo_Keys>
         <DCC_ObjOutput>.\lib</DCC_ObjOutput>
         <DCC_BpiOutput>.\lib</DCC_BpiOutput>
         <DCC_HppOutput>.\include</DCC_HppOutput>

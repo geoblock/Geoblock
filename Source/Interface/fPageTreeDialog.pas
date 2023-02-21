@@ -1,7 +1,7 @@
 //-----------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
-{!  Parent page dialog }
+(*  Parent tree dialog *)
 
 unit fPageTreeDialog;
 

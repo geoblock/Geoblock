@@ -1,7 +1,8 @@
-//----------------------------------------------------------------------------
-// The unit of Geoblock, http://sourceforge.net/projects/geoblock
-//---------------------------------------------------------------------------
-{! The one dimensional prediction of mineral liberation using modal analysis of samples }
+//------------------------------------------------------------------------------
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
+//------------------------------------------------------------------------------
+(* The one dimensional prediction of mineral liberation using modal analysis of samples *)
+
 
 unit fMethodPrediction;
 

@@ -1,7 +1,7 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
-{! The Mining Calculator  }
+(* Basic mining calculator for recoverable reserves *)
 
 unit fToolsMiningCalculator;
 

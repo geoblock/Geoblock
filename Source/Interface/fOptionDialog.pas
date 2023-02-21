@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
-{! The dialog for display options }
+(* The dialog for display options *)
 
 unit fOptionDialog;
 

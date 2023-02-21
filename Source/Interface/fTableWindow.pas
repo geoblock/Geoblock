@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 // -----------------------------------------------------------------------------
-{ ! TableWindow is designed to browse tables }
+(* The Window to browse data tables in dbgrids *)
 
 unit fTableWindow;
 

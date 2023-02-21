@@ -1,13 +1,7 @@
 //----------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
-{!  The dialog to select features of contours}
-(*
-  History :
-     08/12/05 - Pavel Vassiliev - Deleted Save As GroupBox;
-     21/09/05 - Pavel Vassiliev - Added FontDialog.Execute;
-     01/08/97 - Pavel Vassiliev - Creation;
-*)
+(* The dialog to select parameters for making isoline contours *)
 
 unit fPerformContours;
 

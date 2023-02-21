@@ -1,7 +1,7 @@
 //------------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
-{!  The form for SQL queries }
+(*  The form for SQL queries *)
 
 unit fEditQuery;
 

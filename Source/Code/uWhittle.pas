@@ -1,7 +1,7 @@
 //
 // This unit is part of the Geoblock software, http://sourceforge.net/projects/geoblock
 //
-{! Import/export Gemcom's Whittle file of blocks }
+(* Import/export Whittle's file of blocks *)
 
 unit uWhittle;
 

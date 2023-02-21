@@ -1,11 +1,7 @@
 //------------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
-{! The Form to show grid parameters
-  History :
-    11/11/02 - Evgeniy Buianov - Last modified
-    01/09/99 - Evgeniy Buianov - Creation
-}
+(* The Form to show grid parameters *)
 
 unit fFileEditGridPars;
 

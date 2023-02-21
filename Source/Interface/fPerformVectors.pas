@@ -1,12 +1,7 @@
 //----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
-{!  Show features of vectors
-
-  History :
-     08/02/2015 - PW - Removed unnecessary units from uses clause
-     01/08/97 - Pavel Vassiliev - Created;
-}
+(* Show options for vectors *)
 
 unit fPerformVectors;
 

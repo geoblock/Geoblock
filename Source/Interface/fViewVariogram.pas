@@ -1,7 +1,7 @@
-//----------------------------------------------------------------------------
-// The unit of Geoblock, http://sourceforge.net/projects/geoblock
+//------------------------------------------------------------------------------
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //---------------------------------------------------------------------------
-{ Experimental variograms viewer }
+(* Experimental variograms viewer *)
 
 unit fViewVariogram;
 

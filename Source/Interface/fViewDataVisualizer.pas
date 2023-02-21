@@ -1,3 +1,9 @@
+//-----------------------------------------------------------------------------
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
+//-----------------------------------------------------------------------------
+(* Data visualizer *)
+
+
 unit fViewDataVisualizer;
 
 interface

@@ -1,3 +1,8 @@
+//------------------------------------------------------------------------------
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
+//------------------------------------------------------------------------------
+(*  The form to edit record on screen *)
+
 unit fEditRecord;
 
 interface

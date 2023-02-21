@@ -1,7 +1,7 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
-{! The display dialog for grid 2d models}
+(* The display dialog for grid 2d models *)
 
 
 unit fDisplayPoints3DOptions;

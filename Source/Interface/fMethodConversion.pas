@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //---------------------------------------------------------------------
-{! Conversion routines for Geoblock's model types }
+(* Conversion routines for Geoblock's model types *)
 
 unit fMethodConversion;
 

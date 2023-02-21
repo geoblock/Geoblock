@@ -1,9 +1,7 @@
 //----------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
-(*!
-  Features of isosorfaces dialog
-*)
+(* Features for isosorfaces making *)
 
 
 unit fPerformIsosurfaces;

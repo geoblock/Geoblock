@@ -1,7 +1,7 @@
 //-----------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
-{!Inverse distance interpolation dialog }
+(* Inverse distance interpolation dialog *)
 
 unit fInterInverseDistance;
 

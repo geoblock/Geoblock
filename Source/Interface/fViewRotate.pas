@@ -1,14 +1,7 @@
 //------------------------------------------------------------------------------
-//
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
-//
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //---------------------------------------------------------------------------
-{! The unit to rotate and change distances
-
-  History :
-     22/01/03 - Pavel Vassiliev - Added the EditScale box
-     11/08/97 - Pavel Vassiliev - Creation
-}
+(* Options for rotating and changing distances in datasets *)
 //-----------------------------------------------------------------------------
 
 unit fViewRotate;

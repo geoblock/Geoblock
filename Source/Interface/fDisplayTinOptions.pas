@@ -1,7 +1,7 @@
 //------------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
-{!  The dialog to display TIN models }
+(*  The dialog to display TIN models *)
 
 unit fDisplayTinOptions;
 
@@ -22,7 +22,7 @@ uses
   Vcl.Buttons,
   Vcl.Samples.Spin,
 
-  GLIsolines,
+  GLS.Isolines,
 
   fOptionDialog,
   fPerformContours,

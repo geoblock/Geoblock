@@ -1,9 +1,7 @@
 //----------------------------------------------------------------------------
 // This unit is part of the Geoblock software, http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
-{
-  The Form to edit parameters for Gemcom's Whittle file of blocks
-}
+(* The Form to edit parameters for Whittle's file of blocks *)
 
 unit fFileEditWhittlePars;
 

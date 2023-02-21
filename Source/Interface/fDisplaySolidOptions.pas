@@ -1,9 +1,7 @@
 //------------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
-{
-  The dialog to display options for SOLIDS models
-}
+(* The dialog to display options for SOLIDS models *)
 
 unit fDisplaySolidOptions;
 

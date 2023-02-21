@@ -1,3 +1,8 @@
+//------------------------------------------------------------------------------
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
+//------------------------------------------------------------------------------
+(* Splash window for TerraScene *)
+
 unit fTerraSplash;
 
 interface

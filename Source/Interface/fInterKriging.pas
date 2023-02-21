@@ -1,7 +1,7 @@
 //-----------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
-{! The dialog for Kriging options }
+(* The dialog for Kriging options *)
 
 unit fInterKriging;
 

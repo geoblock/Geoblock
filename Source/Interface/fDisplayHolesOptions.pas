@@ -1,12 +1,7 @@
 //-----------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
-{!  The dialog to display DHoles options
-
-  History :
-     21/03/99 - Pavel Vassiliev - Inserted the DrawOnChange ListBox;
-     01/08/97 - Pavel Vassiliev - Creation;
-}
+(*  The dialog to display DHoles options *)
 
 
 unit fDisplayHolesOptions;

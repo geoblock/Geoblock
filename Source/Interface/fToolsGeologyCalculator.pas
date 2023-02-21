@@ -1,7 +1,7 @@
 //--------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //--------------------------------------------------------------------------
-{! The Geology calculator }
+(* The basic geocalculator *)
 
 unit fToolsGeologyCalculator;
 

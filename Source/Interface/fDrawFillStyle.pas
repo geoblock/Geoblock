@@ -1,7 +1,7 @@
 //------------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
-{! The pattern and texture editor}
+(* The pattern and texture editor *)
 
 unit fDrawFillStyle;
 

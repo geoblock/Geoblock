@@ -1,9 +1,7 @@
 //---------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //---------------------------------------------------------------------------
-{
-  fInitialDialog is the parent form for inherited method dialogs
-}
+(* fInitialDialog is the parent form for inherited method dialogs *)
 
 unit fInitialDialog;
 

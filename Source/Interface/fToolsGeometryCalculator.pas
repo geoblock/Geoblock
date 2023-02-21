@@ -1,7 +1,7 @@
 //-----------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-----------------------------------------------------------------------------
-{! The Geometry Calculator }
+(* Basic geometry calculator for 2d/3d bodies *)
 
 
 unit fToolsGeometryCalculator;

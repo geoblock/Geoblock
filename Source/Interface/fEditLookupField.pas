@@ -1,8 +1,7 @@
 //------------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //------------------------------------------------------------------------------
-{!  The form to show lookup fields
-}
+(*  The form to show lookup fields *)
 
 unit fEditLookupField;
 

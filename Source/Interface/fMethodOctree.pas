@@ -1,3 +1,8 @@
+//------------------------------------------------------------------------------
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
+//------------------------------------------------------------------------------
+(* The dialog for octree model parameters *)
+
 unit fMethodOctree;
 
 interface

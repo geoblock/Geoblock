@@ -1,9 +1,8 @@
-//
+//------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
-//
-{!
-   Implements the polynomial regression scheem of interpolation
-}
+//-------------------------------------------------------------------
+(* Implements the polynomial regression scheem of interpolation *)
+
 unit fInterPolynomRegression;
 
 interface

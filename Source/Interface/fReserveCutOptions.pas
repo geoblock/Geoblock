@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //----------------------------------------------------------------------------
-{! The dialog for cut options }
+(* The dialog for cut options *)
 
 unit fReserveCutOptions;
 
