@@ -1,2 +1,2 @@
 # Geoblock
-Geomodeling system for estimation of recoverable mineral reserves
+Geomodeling system for evaluation of recoverable mineral reserves
