@@ -1,2 +1,2 @@
 # Geoblock
-Geomodeling system for estimation of natural resources
+Geomodeling system for estimation of mineral resources
