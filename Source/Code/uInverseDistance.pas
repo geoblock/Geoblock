@@ -14,7 +14,7 @@ uses
   cGlobals,
   uCommon,
   cInterpol,
-  uSuperblock;
+  cSuperblock;
 
 { Inverse Distance Weighted Interpolation with Superblock teñhnique}
 function InverseDistanceInterpolation(var Points: TCoordinateArray;

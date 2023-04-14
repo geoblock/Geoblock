@@ -27,8 +27,10 @@ uses
   Vcl.FileCtrl,
 
   //DB
-  Data.DB, 
+  Data.DB,
   Bde.DBTables,
+
+  GLS.RandomLib,
 
   dBase,
   GBEditValue,
@@ -118,8 +120,7 @@ implementation
 uses
   uCommon,
   cResStrings,
-  fFileOpenText,
-  uRandomAM;
+  fFileOpenText;
 
 {$R *.DFM}
 

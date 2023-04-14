@@ -3,8 +3,8 @@ object fmGeoblock: TfmGeoblock
   Top = 26
   Anchors = []
   Caption = 'Geoblock '
-  ClientHeight = 704
-  ClientWidth = 1109
+  ClientHeight = 651
+  ClientWidth = 997
   Color = clAppWorkSpace
   TransparentColorValue = clActiveCaption
   Constraints.MinWidth = 112
@@ -52,8 +52,8 @@ object fmGeoblock: TfmGeoblock
   TextHeight = 19
   object StatusBar: TStatusBar
     Left = 0
-    Top = 678
-    Width = 1109
+    Top = 625
+    Width = 997
     Height = 26
     AutoHint = True
     Panels = <
@@ -77,7 +77,7 @@ object fmGeoblock: TfmGeoblock
   object ControlBarTop: TControlBar
     Left = 0
     Top = 30
-    Width = 1109
+    Width = 997
     Height = 66
     Align = alTop
     AutoDrag = False
@@ -791,8 +791,8 @@ object fmGeoblock: TfmGeoblock
   end
   object ControlBarBottom: TControlBar
     Left = 0
-    Top = 653
-    Width = 1109
+    Top = 600
+    Width = 997
     Height = 25
     Align = alBottom
     AutoDrag = False
@@ -805,27 +805,11 @@ object fmGeoblock: TfmGeoblock
     TabOrder = 2
     Visible = False
   end
-  object ControlBarLeft: TControlBar
-    Left = 0
-    Top = 96
-    Width = 25
-    Height = 557
-    Align = alLeft
-    Anchors = [akLeft]
-    BevelEdges = [beRight]
-    BevelKind = bkSoft
-    Color = clBtnFace
-    ParentColor = False
-    RowSize = 16
-    RowSnap = False
-    TabOrder = 3
-    Visible = False
-  end
   object ControlBarRight: TControlBar
-    Left = 1067
+    Left = 928
     Top = 96
-    Width = 42
-    Height = 557
+    Width = 69
+    Height = 504
     Align = alRight
     Anchors = [akRight]
     AutoDrag = False
@@ -837,7 +821,7 @@ object fmGeoblock: TfmGeoblock
     DragMode = dmAutomatic
     ParentColor = False
     RowSnap = False
-    TabOrder = 4
+    TabOrder = 3
     Visible = False
     object ActionToolBarObserve: TActionToolBar
       Left = 14
@@ -869,7 +853,7 @@ object fmGeoblock: TfmGeoblock
   object ActionMainMenuBar: TActionMainMenuBar
     Left = 0
     Top = 0
-    Width = 1109
+    Width = 997
     Height = 30
     UseSystemFont = False
     ActionManager = ActionManager
@@ -886,6 +870,245 @@ object fmGeoblock: TfmGeoblock
     Font.Name = 'Segoe UI'
     Font.Style = []
     Spacing = 0
+  end
+  object PanelLeft: TPanel
+    Left = 0
+    Top = 96
+    Width = 289
+    Height = 504
+    Margins.Left = 4
+    Margins.Top = 4
+    Margins.Right = 4
+    Margins.Bottom = 4
+    Align = alLeft
+    ParentBackground = False
+    TabOrder = 5
+    object PanelBottom: TPanel
+      Left = 1
+      Top = 446
+      Width = 287
+      Height = 57
+      Align = alBottom
+      BorderWidth = 10
+      TabOrder = 0
+      object ToolBarShowAs: TToolBar
+        Left = 11
+        Top = 11
+        Width = 265
+        Height = 22
+        AutoSize = True
+        Color = clBtnFace
+        EdgeOuter = esNone
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -14
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        Images = fmInitialForm.ImageListInterface
+        ParentColor = False
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = False
+        TabOrder = 0
+        object ToolButton3: TToolButton
+          Left = 0
+          Top = 0
+          Width = 8
+          Style = tbsSeparator
+        end
+        object ToolButtonMap: TToolButton
+          Left = 8
+          Top = 0
+          Hint = 'Map|Show the result as map'
+          Caption = 'Show as map'
+          ImageIndex = 138
+          ParentShowHint = False
+          ShowHint = True
+          Style = tbsCheck
+        end
+        object ToolButtonTable: TToolButton
+          Tag = 1
+          Left = 31
+          Top = 0
+          Hint = 'Table|Show the result as table'
+          Caption = 'Show as table'
+          ImageIndex = 139
+          ParentShowHint = False
+          ShowHint = True
+          Style = tbsCheck
+        end
+        object ToolButtonGraph: TToolButton
+          Tag = 2
+          Left = 54
+          Top = 0
+          Hint = 'Graph|Show the result as Vcl.Vcl.CheckLst,'
+          Caption = 'Show as graph'
+          ImageIndex = 140
+          ParentShowHint = False
+          ShowHint = True
+          Style = tbsCheck
+        end
+        object ToolButton1: TToolButton
+          Left = 77
+          Top = 0
+          Width = 132
+          Caption = 'ToolButton1'
+          ImageIndex = 141
+          Style = tbsSeparator
+        end
+        object tbCollapse: TToolButton
+          Left = 209
+          Top = 0
+          Hint = 'Collapse|Full Collapse'
+          Caption = 'Collapse'
+          ImageIndex = 133
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object tbExpand: TToolButton
+          Left = 232
+          Top = 0
+          Hint = 'Expand|Full Expand'
+          Caption = 'Expand'
+          ImageIndex = 132
+          ParentShowHint = False
+          ShowHint = True
+          Style = tbsCheck
+        end
+      end
+    end
+    object PanelTop: TPanel
+      Left = 1
+      Top = 1
+      Width = 287
+      Height = 46
+      Align = alTop
+      BorderWidth = 10
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -17
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      DesignSize = (
+        287
+        46)
+      object LabelPath: TLabel
+        Left = 8
+        Top = 24
+        Width = 24
+        Height = 15
+        Caption = 'Path'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Times New Roman'
+        Font.Style = []
+        ParentFont = False
+      end
+      object SpeedButtonBrowse: TSpeedButton
+        Left = 202
+        Top = 16
+        Width = 25
+        Height = 24
+        Hint = 'Browse|Browse the directory'
+        Anchors = [akTop, akRight]
+        Caption = '...'
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object SpeedButtonDelete: TSpeedButton
+        Left = 243
+        Top = 16
+        Width = 24
+        Height = 24
+        Hint = 'Delete|Delete the current table with associated files'
+        Anchors = [akTop, akRight]
+        Enabled = False
+        Glyph.Data = {
+          F6000000424DF600000000000000760000002800000010000000100000000100
+          040000000000800000007A120000701200001000000000000000000000000000
+          80000080000000808000800000008000800080800000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00DDDDDDDDDDDD
+          DDDDDDDDDDDDDDDDDDDDDDD0DDDDDDDDDD0DDD000DDDDDDDDDDDDD0000DDDDDD
+          D0DDDDD000DDDDDD0DDDDDDD000DDDD00DDDDDDDD000DD00DDDDDDDDDD00000D
+          DDDDDDDDDDD000DDDDDDDDDDDD00000DDDDDDDDDD000DD00DDDDDDD0000DDDD0
+          0DDDDD0000DDDDDD00DDDD000DDDDDDDDD0DDDDDDDDDDDDDDDDD}
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object PanelInputPath: TPanel
+        Left = 80
+        Top = 16
+        Width = 116
+        Height = 24
+        Alignment = taLeftJustify
+        Anchors = [akTop, akRight]
+        BevelOuter = bvLowered
+        TabOrder = 0
+      end
+    end
+    object PanelMiddle: TPanel
+      Left = 1
+      Top = 47
+      Width = 287
+      Height = 399
+      Align = alClient
+      BorderWidth = 10
+      TabOrder = 2
+      object pgDatabase: TPageControl
+        Left = 11
+        Top = 11
+        Width = 265
+        Height = 377
+        ActivePage = tsReference
+        Align = alClient
+        Style = tsButtons
+        TabOrder = 0
+        object tsExploring: TTabSheet
+          Caption = 'Database'
+          object TreeView: TTreeView
+            Left = 0
+            Top = 0
+            Width = 257
+            Height = 340
+            Align = alClient
+            AutoExpand = True
+            Indent = 35
+            RowSelect = True
+            ShowButtons = False
+            TabOrder = 0
+          end
+        end
+        object tsModeling: TTabSheet
+          Caption = 'Models'
+          ImageIndex = 1
+          object TreeView1: TTreeView
+            Left = 0
+            Top = 0
+            Width = 257
+            Height = 340
+            Align = alClient
+            Indent = 19
+            TabOrder = 0
+          end
+        end
+        object tsReference: TTabSheet
+          Caption = 'Catalogs'
+          ImageIndex = 2
+          object TreeView2: TTreeView
+            Left = 0
+            Top = 0
+            Width = 257
+            Height = 340
+            Align = alClient
+            Indent = 19
+            TabOrder = 0
+          end
+        end
+      end
+    end
   end
   object ActionManager: TActionManager
     ActionBars = <

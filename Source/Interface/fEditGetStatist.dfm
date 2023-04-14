@@ -7,12 +7,10 @@ inherited fmEditGetStatist: TfmEditGetStatist
   Caption = 'Statistics'
   ClientHeight = 341
   ClientWidth = 745
-  OldCreateOrder = True
   OnClose = FormClose
   OnCreate = FormCreate
-  ExplicitWidth = 761
-  ExplicitHeight = 380
-  PixelsPerInch = 96
+  ExplicitWidth = 763
+  ExplicitHeight = 388
   TextHeight = 16
   inherited PanelTop: TPanel
     Width = 745

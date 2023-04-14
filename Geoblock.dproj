@@ -135,11 +135,11 @@
         <VerInfo_MajorVer>2020</VerInfo_MajorVer>
         <VerInfo_MinorVer>7</VerInfo_MinorVer>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Build>816</VerInfo_Build>
+        <VerInfo_Build>830</VerInfo_Build>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <DCC_ExeOutput>.\Bin</DCC_ExeOutput>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <VerInfo_Keys>CompanyName=Getos Ltd;FileVersion=2020.7.10.816;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=Geoblock;ProductVersion=1.2.3.4;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Getos Ltd;FileVersion=2020.7.10.830;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=Geoblock;ProductVersion=1.2.3.4;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName)</VerInfo_Keys>
         <DCC_ObjOutput>.\lib</DCC_ObjOutput>
         <DCC_BpiOutput>.\lib</DCC_BpiOutput>
         <DCC_HppOutput>.\include</DCC_HppOutput>
@@ -153,7 +153,7 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="Source\Code\GnuGetText.pas"/>
+        <DCCReference Include="Source\Code\gnuGettext.pas"/>
         <DCCReference Include="Source\Interface\dBase.pas">
             <Form>dmBase</Form>
             <DesignClass>TDataModule</DesignClass>
@@ -453,7 +453,7 @@
         <DCCReference Include="Source\Code\uIOPoly.pas"/>
         <DCCReference Include="Source\Code\uDrawVor.pas"/>
         <DCCReference Include="Source\Code\uInverseDistance.pas"/>
-        <DCCReference Include="Source\Code\uSuperblock.pas"/>
+        <DCCReference Include="Source\Code\cSuperblock.pas"/>
         <DCCReference Include="Source\Code\uLinearByTin.pas"/>
         <DCCReference Include="Source\Code\uNaturalNeighbors.pas"/>
         <DCCReference Include="Source\Code\uKriging.pas"/>

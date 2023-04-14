@@ -168,9 +168,13 @@ var
   PrevClick: Longword = 0;
 
 procedure TfmTableWindow.FormCreate(Sender: TObject);
+var
+  S: String;
 begin
   inherited;
-  dmBase.TableLookup.TableName := ExpandPath(DirDataReference) + tblMaterial;
+//  dmBase.TableLookup.TableName := ExpandPath(DirDataReference) + tblMaterial;
+  S := GetDataPath;
+  dmBase.TableLookup.TableName := GetDataPath() + DirDataReference + tblMaterial;
   DBGridMaster.DefaultDrawing := False;
   ReadIniFile;
 end;
@@ -336,6 +340,8 @@ begin
     end;
   end;
 end;
+
+//----------------------------------------------------------------
 
 procedure TfmTableWindow.EditFieldCalculateExecute(Sender: TObject);
 var

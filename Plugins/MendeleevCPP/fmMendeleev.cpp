@@ -4,7 +4,7 @@
 #pragma hdrstop
 #include "fmMendeleev.h"
 //---------------------------------------------------------------------------
-#pragma link "uResStrings"
+//#pragma link "cResStrings"     for localization
 //#pragma link "gnugettext"
 
 #pragma package(smart_init)

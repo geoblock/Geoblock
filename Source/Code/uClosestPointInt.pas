@@ -16,7 +16,7 @@ uses
   uCommon,
   cProfuns,
   cInterpol,
-  uSuperblock;
+  cSuperblock;
 
 /// Returns IDs of closest points for all nodes
 function ClosestPointGridding(var Points: TCoordinateArray; var Nodes: TCoordinateArray;

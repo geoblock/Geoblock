@@ -16,7 +16,7 @@
 #include <DB.hpp>
 #include <DBTables.hpp>
 #include <Registry.hpp>
-#include "cResStrings.hpp"
+//#include "cResStrings.hpp"    for licalization
 //#include "gnugettext.hpp"
 
 

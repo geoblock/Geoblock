@@ -7,16 +7,14 @@ inherited fmMapWindow: TfmMapWindow
   ClientWidth = 626
   Font.Height = -11
   FormStyle = fsMDIChild
-  OldCreateOrder = True
   Position = poDefault
   Visible = True
   OnClose = FormClose
   OnKeyDown = FormKeyDown
   OnPaint = FormPaint
   OnResize = FormResize
-  ExplicitWidth = 642
-  ExplicitHeight = 345
-  PixelsPerInch = 96
+  ExplicitWidth = 644
+  ExplicitHeight = 353
   TextHeight = 13
   object GBCanvas: TGBCanvas [0]
     Left = 0

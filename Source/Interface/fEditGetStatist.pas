@@ -162,7 +162,7 @@ procedure TfmEditGetStatist.ButtonSaveAsClick(Sender: TObject);
 begin
   with dmDialogs do
   begin
-    SaveDialog.InitialDir  := ExpandPath(DirReport);
+    SaveDialog.InitialDir  := ExpandPath(DirReports);
     SaveDialog.DefaultExt  := TableExt;
     SaveDialog.Filter      := Format('*.%s |*.%0:s', [SaveDialog.DefaultExt]);
     SaveDialog.FilterIndex := 1;

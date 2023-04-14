@@ -1,24 +1,23 @@
 inherited fmToolsConfiguration: TfmToolsConfiguration
   Caption = 'Configuration'
   OnDestroy = FormDestroy
-  PixelsPerInch = 96
   TextHeight = 16
   inherited PanelMiddle: TPanel
+    Height = 365
+    ExplicitHeight = 365
     inherited PageControl: TPageControl
       Left = 169
       Width = 436
-      ActivePage = tsInterface
+      Height = 355
+      ActivePage = tsMaterial
       MultiLine = False
       Style = tsButtons
       ExplicitLeft = 169
       ExplicitWidth = 436
+      ExplicitHeight = 355
       object tsInterface: TTabSheet
         Caption = 'Interface'
         TabVisible = False
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 0
-        ExplicitHeight = 0
         object LabelProgram: TLabel
           Tag = 1000
           Left = 33
@@ -36,15 +35,6 @@ inherited fmToolsConfiguration: TfmToolsConfiguration
           Alignment = taRightJustify
           AutoSize = False
           Caption = 'Data'
-        end
-        object LabelReference: TLabel
-          Left = -4
-          Top = 134
-          Width = 97
-          Height = 16
-          Alignment = taRightJustify
-          AutoSize = False
-          Caption = 'Reference'
         end
         object PanelExePath: TPanel
           Left = 19
@@ -77,27 +67,9 @@ inherited fmToolsConfiguration: TfmToolsConfiguration
           TabOrder = 2
           OnClick = ButtonBrowsePathDataClick
         end
-        object cbReferencePath: TComboBox
-          Left = 19
-          Top = 156
-          Width = 310
-          Height = 24
-          Enabled = False
-          TabOrder = 3
-        end
-        object RadioGroupLanguage: TRadioGroup
-          Left = 0
-          Top = 248
-          Width = 428
-          Height = 91
-          Align = alBottom
-          Caption = 'Language'
-          Columns = 2
-          TabOrder = 4
-        end
         object lbLanguage: TListBox
-          Left = 19
-          Top = 272
+          Left = 27
+          Top = 225
           Width = 310
           Height = 25
           Columns = 3
@@ -105,38 +77,34 @@ inherited fmToolsConfiguration: TfmToolsConfiguration
             'English'
             'Russian'
             'Spanish')
-          TabOrder = 5
+          TabOrder = 3
           OnClick = lbLanguageClick
         end
         object CheckBoxLoadProject: TCheckBox
-          Left = 19
-          Top = 208
+          Left = 27
+          Top = 161
           Width = 184
           Height = 17
           Caption = 'Load when starting'
           Checked = True
           State = cbChecked
-          TabOrder = 6
+          TabOrder = 4
         end
         object CheckBoxSaveProject: TCheckBox
-          Left = 201
-          Top = 208
+          Left = 209
+          Top = 161
           Width = 176
           Height = 17
           Caption = 'Save when exiting'
           Checked = True
           State = cbChecked
-          TabOrder = 7
+          TabOrder = 5
         end
       end
       object tsDisplay: TTabSheet
         Caption = 'Display'
         ImageIndex = 2
         TabVisible = False
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 0
-        ExplicitHeight = 0
         object LabelBackground: TLabel
           Left = 178
           Top = 23
@@ -225,10 +193,6 @@ inherited fmToolsConfiguration: TfmToolsConfiguration
         Caption = 'Data'
         ImageIndex = 3
         TabVisible = False
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 0
-        ExplicitHeight = 0
         object LabelPrecision: TLabel
           Left = 24
           Top = 33
@@ -327,10 +291,6 @@ inherited fmToolsConfiguration: TfmToolsConfiguration
         Caption = 'Material'
         ImageIndex = 4
         TabVisible = False
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 0
-        ExplicitHeight = 0
         object ListView: TListView
           Left = 0
           Top = 0
@@ -369,6 +329,7 @@ inherited fmToolsConfiguration: TfmToolsConfiguration
     end
     inherited TreeView: TTreeView
       Width = 164
+      Height = 355
       AutoExpand = True
       Images = ImageList
       OnClick = TreeViewClick
@@ -381,11 +342,20 @@ inherited fmToolsConfiguration: TfmToolsConfiguration
         FFFFFFFFFFFFFF04000000000000000000000001084D00610074006500720069
         0061006C00}
       ExplicitWidth = 164
+      ExplicitHeight = 355
     end
   end
   inherited PanelBottom: TPanel
+    Top = 378
+    Height = 41
+    ExplicitTop = 378
+    ExplicitHeight = 41
     inherited ButtonOK: TButton
+      Left = 494
+      Top = 1
       OnClick = ButtonOKClick
+      ExplicitLeft = 494
+      ExplicitTop = 1
     end
   end
   object ImageList: TImageList

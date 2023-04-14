@@ -87,9 +87,9 @@ type
   public
     OnCreation:  boolean;
     //Current Model frame
-    FrameMinX, FrameMaxX: TGLfloat;
-    FrameMinY, FrameMaxY: TGLfloat;
-    FrameMinZ, FrameMaxZ: TGLfloat;
+    FrameMinX, FrameMaxX: Single;
+    FrameMinY, FrameMaxY: Single;
+    FrameMinZ, FrameMaxZ: Single;
     OGLListAxis: Cardinal;
 
     //Indicates the Active Model in List
@@ -170,17 +170,17 @@ uses
 {$R *.dfm}
 
 var
-  DAX: TGLfloat;  //=1
-  DAY: TGLfloat;
-  DAZ: TGLfloat;
+  DAX: Single;  //=1
+  DAY: Single;
+  DAZ: Single;
 
-  DVX: TGLfloat;
-  DVY: TGLfloat;
-  DVZ: TGLfloat;  //=1
+  DVX: Single;
+  DVY: Single;
+  DVZ: Single;  //=1
 
-  DefwVectorX: TGLfloat;
-  DefwVectorY: TGLfloat;
-  DefwVectorZ: TGLfloat;
+  DefwVectorX: Single;
+  DefwVectorY: Single;
+  DefwVectorZ: Single;
 
   LastDir: string;
 
@@ -308,7 +308,7 @@ end;
 //===================== private =========================
 procedure TfmMapWindow.DefineCoords;
 var
-  RatioF: TGLfloat;
+  RatioF: Single;
 begin
   with GBCanvas do
   begin
@@ -1247,7 +1247,7 @@ const
     TVertexArr = array of TVertex;
     PVertexArr = ^TVertexArr;
 
-    procedure AddVertex(X, Y, Z: TGLDouble; V: PVertexArr; var Count: integer);
+    procedure AddVertex(X, Y, Z: Double; V: PVertexArr; var Count: integer);
     begin
       if High(V^) < Count then
         SetLength(V^, Count + 20);
@@ -1264,7 +1264,7 @@ const
     Attributes: string;
     AttribName: string;
     Poly1, Poly2: integer;
-    ValueFloat: TGLfloat;
+    ValueFloat: Single;
     //  ValueInteger:Integer;
     OldCursor: TCursor;
     IsVisible: boolean;
@@ -1685,7 +1685,7 @@ procedure TfmMapWindow.GBCanvasCallLists(Sender: TObject);
 var
   I: integer;
   V: TVertex;
-  OldPointSize: TGLint;
+  OldPointSize: Integer;
 begin
   for I := 0 to ModelCount - 1 do
   begin

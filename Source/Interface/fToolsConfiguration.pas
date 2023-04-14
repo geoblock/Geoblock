@@ -47,14 +47,11 @@ type
     tsData: TTabSheet;
     LabelProgram: TLabel;
     LabelData: TLabel;
-    LabelReference: TLabel;
     PanelExePath: TPanel;
     cbDataPath: TComboBox;
     ButtonBrowsePathData: TButton;
-    cbReferencePath: TComboBox;
     LabelPrecision: TLabel;
     SpinEditPrecision: TSpinEdit;
-    RadioGroupLanguage: TRadioGroup;
     lbLanguage: TListBox;
     CheckBoxCoordinates: TCheckBox;
     LabelMapUnits: TLabel;
@@ -180,8 +177,6 @@ begin
   PanelExePath.Hint    := PanelExePath.Caption;
   cbDataPath.Items.Add(DataBasePath);
   cbDataPath.ItemIndex := 0;
-  cbReferencePath.Items.Add(DataReferencePath);
-  cbReferencePath.ItemIndex := 0;
 end;
 
 procedure TfmToolsConfiguration.lbLanguageClick(Sender: TObject);
@@ -190,9 +185,6 @@ begin
     0: LangID := LANG_ENGLISH;
     1: LangID := LANG_RUSSIAN;
     2: LangID := LANG_SPANISH;
-    3: LangID := LANG_GERMAN;
-    4: LangID := LANG_FRENCH;
-    5: LangID := LANG_ITALIAN;
     else
       LangID := LANG_RUSSIAN;
   end;
@@ -214,8 +206,6 @@ procedure TfmToolsConfiguration.SetDirectories;
 begin
   if CheckDirectory(cbDataPath.Text) then
     DataBasePath := cbDataPath.Text;
-  if CheckDirectory(cbReferencePath.Text) then
-    DataReferencePath := cbReferencePath.Text;
 end;
 
 procedure TfmToolsConfiguration.SetValues;

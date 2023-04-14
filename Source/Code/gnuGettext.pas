@@ -49,41 +49,12 @@ interface
  // Use DefaultInstance.DebugLogToFile() to write the log to a file.
  { $define DXGETTEXTDEBUG}
 
-{$ifdef VER140}
-  // Delphi 6
-  {$DEFINE DELPHI2007OROLDER}
-{$ifdef MSWINDOWS}
-  {$DEFINE DELPHI6OROLDER}
-{$endif}
-{$endif}
 {$ifdef VER150}
   // Delphi 7
   {$DEFINE DELPHI2007OROLDER}
 {$endif}
-{$ifdef VER160}
-  // Delphi 8
-  {$DEFINE DELPHI2007OROLDER}
-{$endif}
-{$ifdef VER170}
-  // Delphi 2005
-  {$DEFINE DELPHI2007OROLDER}
-{$endif}
-{$ifdef VER180}
-  // Delphi 2006
-  {$DEFINE DELPHI2007OROLDER}
-{$endif}
-{$ifdef VER190}
-  // Delphi 2007
-  {$DEFINE DELPHI2007OROLDER}
-{$endif}
-{$ifdef VER200}
-  // Delphi 2009 with Unicode
-{$endif}
 {$ifdef VER220}
   // Delphi XE with Unicode
-{$endif}
-{$ifdef VER230}
-  // Delphi XE2 with Unicode
 {$endif}
 {$ifdef VER240}
   // Delphi XE3 with Unicode

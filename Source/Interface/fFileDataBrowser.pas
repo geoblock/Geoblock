@@ -58,8 +58,8 @@ type
     tbCollapse: TToolButton;
     pgDatabase: TPageControl;
     tsExploring: TTabSheet;
-    tsModeling: TTabSheet;
-    tsReference: TTabSheet;
+    tsModels: TTabSheet;
+    tsCatalogs: TTabSheet;
     TreeView: TTreeView;
     TreeView1: TTreeView;
     TreeView2: TTreeView;

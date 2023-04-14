@@ -116,7 +116,6 @@ begin
   DataPath := AppPath + DirData;
   DataAssetsPath := AppPath + DirDataAssets;
   DataBasePath := AppPath + DirDataBase; //Default DataBase directory
-  DataReferencePath := AppPath + DirDataReference; //Default Reference directory
   RegIni := TRegistryIniFile.Create(GeneralSection);
   try
     with RegIni do
@@ -162,40 +161,25 @@ begin
     // Removing the upper line will cause long loading but Action.Category translation
   end;
   case LangID of
-    LANG_GERMAN:
-    begin
-      UseLanguage('de'); //or de_DE
-      Application.HelpFile := UpperCase(AppPath + 'Help' + PathDelim + 'de'+
-                              PathDelim + 'Geoblock.chm');
-      DataReferencePath := AppPath +'Data'+ PathDelim +'Reference'+ PathDelim + 'de';
-    end;
     LANG_ENGLISH:
     begin
       UseLanguage('en');
-      Application.HelpFile := UpperCase(AppPath +'Help'+PathDelim+'en'+
-                              PathDelim+'Geoblock.chm');
-      DataReferencePath := UpperCase(AppPath +'Data'+PathDelim +'Reference'+ PathDelim +'en');
+      Application.HelpFile := UpperCase(AppPath +'Help'+PathDelim+'en'+ PathDelim+'Geoblock.chm');
     end;
     LANG_SPANISH:
     begin
       UseLanguage('es');
-      Application.HelpFile := UpperCase(AppPath + 'Help'+PathDelim+'es'+
-                              PathDelim + 'Geoblock.chm');
-      DataReferencePath := AppPath +'Data'+PathDelim +'Reference'+ PathDelim +'es';
+      Application.HelpFile := UpperCase(AppPath + 'Help'+PathDelim+'es'+ PathDelim + 'Geoblock.chm');
     end;
     LANG_RUSSIAN:
     begin
       UseLanguage('ru');
-      Application.HelpFile := UpperCase(AppPath  +'Help'+PathDelim+'ru'+
-                              PathDelim+'Geoblock.chm');
-      DataReferencePath := AppPath +'Data'+PathDelim +'Reference'+ PathDelim +'ru';
+      Application.HelpFile := UpperCase(AppPath  +'Help'+PathDelim+'ru'+ PathDelim+'Geoblock.chm');
     end
     else   //DEFAULT LANGUAGE
     begin
       UseLanguage('en');
-      Application.HelpFile := UpperCase(AppPath + 'Help' + PathDelim +'en' +
-                               PathDelim + 'Geoblock.chm');
-      DataReferencePath := AppPath +'Data'+ PathDelim +'Reference'+ PathDelim + 'en';
+      Application.HelpFile := UpperCase(AppPath + 'Help' + PathDelim +'en' + PathDelim + 'Geoblock.chm');
     end;
   end;
   //LoadNewResourceModule(Language);//when using ITE, ENU for English USA

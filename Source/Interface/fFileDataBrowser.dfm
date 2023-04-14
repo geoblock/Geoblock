@@ -10,9 +10,8 @@ inherited fmFileDataBrowser: TfmFileDataBrowser
   FormStyle = fsStayOnTop
   PopupMenu = PopupMenu
   Position = poDesigned
-  ExplicitWidth = 346
-  ExplicitHeight = 486
-  PixelsPerInch = 96
+  ExplicitWidth = 348
+  ExplicitHeight = 494
   TextHeight = 16
   object PanelTop: TPanel [0]
     Left = 0
@@ -33,7 +32,7 @@ inherited fmFileDataBrowser: TfmFileDataBrowser
       Caption = 'Path'
     end
     object SpeedButtonBrowse: TSpeedButton
-      Left = 268
+      Left = 241
       Top = 16
       Width = 25
       Height = 24
@@ -42,11 +41,10 @@ inherited fmFileDataBrowser: TfmFileDataBrowser
       Caption = '...'
       ParentShowHint = False
       ShowHint = True
-      ExplicitLeft = 370
     end
     object SpeedButtonDelete: TSpeedButton
-      Left = 295
-      Top = 14
+      Left = 272
+      Top = 16
       Width = 24
       Height = 24
       Hint = 'Delete|Delete the current table with associated files'
@@ -63,12 +61,11 @@ inherited fmFileDataBrowser: TfmFileDataBrowser
         0DDDDD0000DDDDDD00DDDD000DDDDDDDDD0DDDDDDDDDDDDDDDDD}
       ParentShowHint = False
       ShowHint = True
-      ExplicitLeft = 397
     end
     object PanelInputPath: TPanel
       Left = 104
       Top = 16
-      Width = 144
+      Width = 116
       Height = 24
       Alignment = taLeftJustify
       Anchors = [akTop, akRight]
@@ -89,12 +86,12 @@ inherited fmFileDataBrowser: TfmFileDataBrowser
       Top = 11
       Width = 308
       Height = 322
-      ActivePage = tsExploring
+      ActivePage = tsCatalogs
       Align = alClient
       Style = tsButtons
       TabOrder = 0
       object tsExploring: TTabSheet
-        Caption = 'Exploring'
+        Caption = 'Database'
         object TreeView: TTreeView
           Left = 0
           Top = 0
@@ -110,13 +107,9 @@ inherited fmFileDataBrowser: TfmFileDataBrowser
           OnClick = TreeViewClick
         end
       end
-      object tsModeling: TTabSheet
+      object tsModels: TTabSheet
         Caption = 'Modeling'
         ImageIndex = 1
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 0
-        ExplicitHeight = 0
         object TreeView1: TTreeView
           Left = 0
           Top = 0
@@ -127,13 +120,9 @@ inherited fmFileDataBrowser: TfmFileDataBrowser
           TabOrder = 0
         end
       end
-      object tsReference: TTabSheet
+      object tsCatalogs: TTabSheet
         Caption = 'Reference'
         ImageIndex = 2
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 0
-        ExplicitHeight = 0
         object TreeView2: TTreeView
           Left = 0
           Top = 0
@@ -153,6 +142,7 @@ inherited fmFileDataBrowser: TfmFileDataBrowser
     Height = 57
     Align = alBottom
     BorderWidth = 10
+    Caption = 'fmInitialForm.ImageListInterface'
     TabOrder = 2
     object ToolBarShowAs: TToolBar
       Left = 11

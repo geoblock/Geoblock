@@ -6,9 +6,8 @@ inherited fmMethodTriangulation: TfmMethodTriangulation
   Caption = 'Triangulation'
   ClientHeight = 584
   ClientWidth = 628
-  ExplicitWidth = 644
-  ExplicitHeight = 623
-  PixelsPerInch = 96
+  ExplicitWidth = 656
+  ExplicitHeight = 641
   TextHeight = 16
   inherited PanelTop: TPanel
     Width = 628

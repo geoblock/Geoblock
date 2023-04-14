@@ -1,6 +1,7 @@
-//----------------------------------------------------------------------------
-// The unit of Geoblock, http://sourceforge.net/projects/geoblock
-//---------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
+//------------------------------------------------------------------------------
+(* Parameters of methods for open pit optimization *)
 
 unit fMethodPitOptimization;
 

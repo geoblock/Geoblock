@@ -126,7 +126,7 @@ end;
 procedure TfmAnalyseReserves.ToolButtonInputClick(Sender: TObject);
 begin
   inherited;
-  PanelOutPath.Caption := ExpandPath(DirReport);
+  PanelOutPath.Caption := ExpandPath(DirReports);
   ListBoxInputNamesClick(Self);
 end;
 

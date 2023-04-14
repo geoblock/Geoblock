@@ -1,5 +1,5 @@
 // -------------------------------------------------------------------------
-// This unit is part of the Geoblock, http://sourceforge.net/projects/geoblock
+// The modeling system Geoblock http://sourceforge.net/projects/geoblock
 // -------------------------------------------------------------------------
 // ! The unit for 3D triangulations and voronoi diagrams in 3D
 // ---------------------------------------------------------------------------

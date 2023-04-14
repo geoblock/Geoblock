@@ -36,7 +36,7 @@ implementation
 uses
   uCommon,
   uDelaunay2D,
-  uSuperblock;
+  cSuperblock;
 
 
 type

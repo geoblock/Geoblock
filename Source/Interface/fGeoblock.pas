@@ -58,7 +58,6 @@ type
     StatusBar:    TStatusBar;
     ControlBarTop: TControlBar;
     ControlBarBottom: TControlBar;
-    ControlBarLeft: TControlBar;
     ControlBarRight: TControlBar;
     PanelModelPalette: TPanel;
     PageControlModels: TPageControl;
@@ -275,6 +274,29 @@ type
     ViewMapWindow: TAction;
     OctreeConstruction: TAction;
     MethodSimulation: TAction;
+    PanelLeft: TPanel;
+    PanelBottom: TPanel;
+    ToolBarShowAs: TToolBar;
+    ToolButton3: TToolButton;
+    ToolButtonMap: TToolButton;
+    ToolButtonTable: TToolButton;
+    ToolButtonGraph: TToolButton;
+    ToolButton1: TToolButton;
+    tbCollapse: TToolButton;
+    tbExpand: TToolButton;
+    PanelTop: TPanel;
+    LabelPath: TLabel;
+    SpeedButtonBrowse: TSpeedButton;
+    SpeedButtonDelete: TSpeedButton;
+    PanelInputPath: TPanel;
+    PanelMiddle: TPanel;
+    pgDatabase: TPageControl;
+    tsExploring: TTabSheet;
+    TreeView: TTreeView;
+    tsModeling: TTabSheet;
+    TreeView1: TTreeView;
+    tsReference: TTabSheet;
+    TreeView2: TTreeView;
     procedure ViewTableWindowExecute(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormCreate(Sender: TObject);
@@ -511,6 +533,7 @@ end;
 procedure TfmGeoblock.FormCreate(Sender: TObject);
 begin
   ReadIniFile;
+  GetDataPath;
   Application.OnHint      := ShowStatusText;
 //  PanelModelPalette.Width := fmMain.Width - PanelModelPalette.Left - 10;
 end;
@@ -777,8 +800,8 @@ procedure TfmGeoblock.FileOpenProjectExecute(Sender: TObject);
 begin
   with dmDialogs do
   begin
-    OpenDialogProject.FileName   := ExpandPath(DirProject) + 'Geoblock' + PrjExt;
-    OpenDialogProject.InitialDir := ExpandPath(DirProject);
+    OpenDialogProject.FileName   := ExpandPath(DirProjects) + 'Geoblock' + PrjExt;
+    OpenDialogProject.InitialDir := ExpandPath(DirProjects);
     if OpenDialogProject.Execute then
     begin
       if OpenDialogProject.FilterIndex = 2 then
@@ -831,7 +854,7 @@ procedure TfmGeoblock.FileOpenReportExecute(Sender: TObject);
 begin
   with dmDialogs do
   begin
-    OpenDialog.InitialDir := DataBasePath + DirReport;
+    OpenDialog.InitialDir := DataBasePath + DirReports;
     OpenDialog.Filter     := '.rpt';
     if OpenDialog.Execute then
     begin
@@ -842,7 +865,7 @@ end;
 
 procedure TfmGeoblock.FileOpenImageExecute(Sender: TObject);
 begin
-  dmDialogs.OpenPictureDialog.InitialDir := ExpandPath(DirPicture);
+  dmDialogs.OpenPictureDialog.InitialDir := GetCurrentDir();
   if dmDialogs.OpenPictureDialog.Execute then
   begin
     with TfmFileImageRegistration.Create(Self) do
@@ -891,8 +914,8 @@ procedure TfmGeoblock.FileSaveProjectAsExecute(Sender: TObject);
 begin
   with dmDialogs do
   begin
-    SaveDialogText.FileName   := ExpandPath(DirProject) + 'Geoblock' + PrjExt;
-    SaveDialogText.InitialDir := ExpandPath(DirProject);
+    SaveDialogText.FileName   := GetCurrentDir + 'Geoblock' + PrjExt;
+    SaveDialogText.InitialDir := ExpandPath(DirProjects);
     SaveDialogText.Title      := LoadResString(@rsSaveProjectAs);
     SaveDialogText.FilterIndex := 2; //*.prj
     if SaveDialogText.Execute then
@@ -923,7 +946,7 @@ begin
     end;
     if (ActiveMDIChild is TfmMapWindow) then
     begin
-      SavePictureDialog.InitialDir := ExpandPath(DirPicture);
+      SavePictureDialog.InitialDir := GetCurrentDir();
       if SavePictureDialog.Execute then
       begin
         (ActiveMDIChild as
@@ -1085,8 +1108,6 @@ begin
     end;
 end;
 
-
-
 //____________________________ Methods _____________________________\\
 
 procedure TfmGeoblock.MethodGridGenerationExecute(Sender: TObject);
@@ -1124,6 +1145,8 @@ begin
       Free;
     end;
 end;
+
+//---------------------------------------------------------
 
 procedure TfmGeoblock.MethodVarModelingExecute(Sender: TObject);
 begin
@@ -2163,7 +2186,7 @@ var
 
 begin
   try
-    FileName := ExpandPath(DirProject);
+    FileName := ExpandPath(DirProjects);
     fmViewProjectManager.SaveToFile(FileName + 'Geoblock.prj');
   except
   end;

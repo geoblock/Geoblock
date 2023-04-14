@@ -1,7 +1,7 @@
 //-------------------------------------------------------------------------
 // The modeling system Geoblock http://sourceforge.net/projects/geoblock
 //-------------------------------------------------------------------------
-{! Global types, variables and constants }
+(* Global types, variables and constants with utils *)
 
 unit cGlobals;
 
@@ -13,7 +13,7 @@ uses
   System.IniFiles;
 
 const
-  {Cursors}
+  // Cursors
   crSelectCursor = 0; //crDefault
   crPenCursor    = 1;
   crPanCursor    = 2;
@@ -61,7 +61,8 @@ const
 
 var
   GeneralSection: string = '\SOFTWARE\Geoblock\General';
-  { This vars  must not be declared as const }
+  GeneralSextion: string = '\SOFTWARE\Gexoblock\General';
+  // This vars  must not be declared as const
   TableExt:  string = '.db';
   TableInd:  string = '.px';
   TableMask: string = '*.db';
@@ -72,33 +73,26 @@ var
 
 
 var
-  { Paths and Dirs }
+  // Paths and Dirs
   AppPath:  TFileName = '';  //..\geoblock\
   ExePath:  TFileName = '';  //..\geoblock\bin\ for geoblock.exe
   DataPath : TFileName = '';
   DataAssetsPath: TFileName = '';
   DataBasePath: TFileName = '';
-  DataReferencePath: TFileName = '';
 
+  //------------------------------ Dirs for    --------------------------------
   DirData: TFileName = 'Data'+ PathDelim;
-  DirDataBase: TFileName = 'Data'+ PathDelim + 'Base' + PathDelim;
 
-  DirDataReference: TFileName = 'Data'+ PathDelim + 'Reference' + PathDelim;
-  DirDataAssets: TFileName = 'Data'+ PathDelim + 'Assets' + PathDelim;
-  DirDataSQLs: TFileName = 'Data'+ PathDelim + 'SQLs' + PathDelim;
-
-  DirExploring: TFileName ='Data'+ PathDelim + 'Base' + PathDelim + 'Exploring' + PathDelim;
-  DirModels:    TFileName = 'Data'+ PathDelim + 'Base' + PathDelim + 'Models' + PathDelim;
-
-  DirDholes:   TFileName = 'Models' + PathDelim + 'Dholes' + PathDelim;
+  DirModels: TFileName = 'Models' + PathDelim;
+  DirDholes: TFileName = 'Models' + PathDelim + 'Dholes' + PathDelim;
   DirPoints2D: TFileName = 'Models' + PathDelim + 'Points2D' + PathDelim;
   DirPoints3D: TFileName = 'Models' + PathDelim + 'Points3D' + PathDelim;
-  DirPolygons:      TFileName = 'Models' + PathDelim + 'Polygons' + PathDelim;
+  DirPolygons: TFileName = 'Models' + PathDelim + 'Polygons' + PathDelim;
   DirPolygonVertex: TFileName = 'Models' + PathDelim + 'Polygons' + PathDelim + 'Vertex' + PathDelim;
   DirPolygonPoly:   TFileName = 'Models' + PathDelim + 'Polygons' + PathDelim + 'Poly' + PathDelim;
   DirTins:      TFileName = 'Models' + PathDelim + 'Tins' + PathDelim;
-  DirTinVertices: TFileName = 'Models' + PathDelim + 'Tins' + PathDelim + 'Vertices' + PathDelim;
-  DirTinFaces: TFileName = 'Models' + PathDelim + 'Tins' + PathDelim + 'Faces' + PathDelim;
+  DirTinVertices: TFileName = 'Models'+ PathDelim + 'Tins' + PathDelim + 'Vertices' + PathDelim;
+  DirTinFaces: TFileName = 'Models'+ PathDelim + 'Tins' + PathDelim + 'Faces' + PathDelim;
   DirSolids:      TFileName = 'Models' + PathDelim + 'Solids' + PathDelim;
   DirSolidVertices: TFileName = 'Models' + PathDelim + 'Solids' + PathDelim + 'Vertices' + PathDelim;
   DirSolidFaces:  TFileName = 'Models' + PathDelim + 'Solids' + PathDelim + 'Faces' + PathDelim;
@@ -113,17 +107,22 @@ var
   DirMesh3DElement: TFileName = 'Models' + PathDelim + 'Meshes3D' + PathDelim + 'Element' + PathDelim;
   DirMesh3DMatrix: TFileName = 'Models' + PathDelim + 'Meshes3D' + PathDelim + 'Matrix' + PathDelim;
 
-  DirFiles: TFileName = 'Files' + PathDelim;
-  DirLegends: TFileName = 'Legends' + PathDelim;
-  DirProject: TFileName = 'Projects' + PathDelim;
+  //-------------------------------------------------------------------------------------
+  DirDataBase: TFileName = 'Data' + PathDelim + 'Base' + PathDelim;
 
-  //Reports Directory
-  DirReport:  TFileName = 'Reports' + PathDelim;
-  DirPicture: TFileName = 'Reports' + PathDelim + 'Picture' + PathDelim;
-  DirGraph:   TFileName = 'Reports' + PathDelim + 'Graph' + PathDelim;
-  DirVideo:   TFileName = 'Reports' + PathDelim + 'Video' + PathDelim;
+  DirDataReference: TFileName = 'Data'+ PathDelim + 'Base' + PathDelim + 'Reference' + PathDelim;
+  DirDataAssets: TFileName = 'Data'+ PathDelim + 'Assets' + PathDelim;
+  DirDataSQLs: TFileName = 'Data'+ PathDelim + 'SQLs' + PathDelim;
 
-  //GeoStatistical Directory
+  DirExploring: TFileName = 'Data'+ PathDelim + 'Base' + 'Exploring' + PathDelim;
+  DirReports:  TFileName = 'Data'+ PathDelim + 'Base' + 'Reports' + PathDelim;
+
+
+  DirFiles: TFileName = 'Data'+ PathDelim + 'Files' + PathDelim;
+  DirLegends: TFileName = 'Data' + PathDelim + 'Legends' + PathDelim;
+  DirProjects: TFileName = 'Data' + PathDelim + 'Projects' + PathDelim;
+
+  //GeoStatistical Directory for variography
   DirExpVar: TFileName = 'GeoStat' + PathDelim + 'ExpVar' + PathDelim;
   DirFitVar: TFileName = 'GeoStat' + PathDelim + 'FitVar' + PathDelim;
   DirHisto:  TFileName = 'GeoStat' + PathDelim + 'Histo' + PathDelim;
@@ -280,12 +279,30 @@ var
 
 function SlashSep(const Path, S: string): string;
 function ExpandPath(Path: TFileName): TFileName;
+function GetDataPath: TFileName;
 
 
 //=========================================================================
 implementation
 //=========================================================================
 
+function GetDataPath(): TFileName;
+var
+  path: TFileName;
+  p: Integer;
+begin
+// SetCurrentDir(ExtractFilePath(Application.ExeName));  // for win32/win64
+// SetCurrentDir(ExtractFilePath(ParamStr(0)));          // for crossplatform
+
+  SetCurrentDir(ExtractFilePath(ParamStr(0)));
+  path := LowerCase(ExtractFilePath(ParamStr(0)));
+  p := Pos('geoblock', path);
+  Delete(path, p + 8, Length(path));
+  path := IncludeTrailingPathDelimiter(path) + 'data';
+  Result := path;
+end;
+
+//---------------------------------------------------------------------------
 
 function SlashSep(const Path, S: string): string;
 begin
@@ -296,6 +313,37 @@ begin
 end;
 
 //================================================================\\
+
+function ExpandPath(Path: TFileName): TFileName;
+begin
+  if AppPath = '' then
+    Exit;
+  Result := Path;
+  if Pos('Geoblock', Result) <> 0 then
+    Result := AppPath
+//  if Pos('Gexoblock', Result) <> 0 then
+//    Result := AppPath
+  else if Pos(DirPlugins, Result) <> 0 then
+    Result := SlashSep(AppPath, DirPlugins)
+  else if Pos(DirDataSQLs, Result) <> 0 then
+    Result := SlashSep(AppPath, DirDataSQLs)
+  else if Pos(DirProjects, Result) <> 0 then
+    Result := SlashSep(DataBasePath, DirProjects)
+  else if Pos(DirExploring, Result) <> 0 then
+    Result := SlashSep(DataBasePath, DirExploring)
+  else if Pos(DirFiles, Result) <> 0 then
+    Result := SlashSep(DataBasePath, DirFiles)
+  else if Pos(DirLegends, Result) <> 0 then
+    Result := SlashSep(DataBasePath, DirLegends);
+
+  try
+    if not DirectoryExists(Result) then
+      ForceDirectories(Result);
+  finally
+  end;
+end;
+
+(*
 function ExpandPath(Path: TFileName): TFileName;
 begin
   if AppPath = '' then
@@ -305,12 +353,11 @@ begin
     Result := AppPath
   else if Pos(DirPlugins, Result) <> 0 then
     Result := SlashSep(AppPath, DirPlugins)
-
   else if Pos(DirDataSQLs, Result) <> 0 then
     Result := SlashSep(AppPath, DirDataSQLs)
 
-  else if Pos(DirProject, Result) <> 0 then
-    Result := SlashSep(DataBasePath, DirProject)
+  else if Pos(DirProjects, Result) <> 0 then
+    Result := SlashSep(DataBasePath, DirProjects)
   else if Pos(DirExploring, Result) <> 0 then
     Result := SlashSep(DataBasePath, DirExploring)
   else if Pos(DirFiles, Result) <> 0 then
@@ -363,18 +410,14 @@ begin
     Result := SlashSep(DataBasePath, DirMesh3D)
   else if Pos(DirMesh3D, Result) <> 0 then
     Result := SlashSep(DataBasePath, DirMesh3D)
-  else if Pos(DirPicture, Result) <> 0 then
-    Result := SlashSep(DataBasePath, DirPicture)
-  else if Pos(DirPicture, Result) <> 0 then
-    Result := SlashSep(DataBasePath, DirPicture)
   else if Pos(DirDataAssets, Result) <> 0 then
     Result := SlashSep(DataBasePath, DirDataAssets)
   else if Pos(DirModels, Result) <> 0 then
     Result := SlashSep(DataBasePath, DirModels)
   else if Pos(DataBasePath, Result) <> 0 then
     Result := DataBasePath
-  else if Pos(DirReport, Result) <> 0 then
-    Result := SlashSep(DataBasePath, DirReport)
+  else if Pos(DirReports, Result) <> 0 then
+    Result := SlashSep(DataBasePath, DirReports)
   else if Pos(DirExpVar, Result) <> 0 then
   //Geostat Directories
     Result := SlashSep(DataBasePath, DirExpVar)
@@ -392,7 +435,7 @@ begin
   finally
   end;
 end;
-
+*)
 
 //===========================================
 initialization

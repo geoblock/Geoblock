@@ -14,26 +14,29 @@ uses
   System.Classes,
   System.IniFiles,
   System.Math,
-  Vcl.Graphics, 
-  Vcl.Controls, 
+  System.ImageList,
+
+  Vcl.ImgList,
+  Vcl.Graphics,
+  Vcl.Controls,
   Vcl.Forms,
-  Vcl.Dialogs, 
+  Vcl.Dialogs,
   Vcl.StdCtrls,
-  Vcl.ComCtrls, 
-  Vcl.Buttons, 
+  Vcl.ComCtrls,
+  Vcl.Buttons,
   Vcl.ToolWin,
-  Vcl.ExtCtrls, 
+  Vcl.ExtCtrls,
   //DB
-  Data.DB, 
+  Data.DB,
   Bde.DBTables,
 
   GLS.VectorTypes,
   GLS.VectorGeometry,
 
-  
+
   fMethodDialog,
   GBEditValue,
-  GBGeometry, System.ImageList, Vcl.ImgList;
+  GBGeometry;
 
 type
   TfmMethodTransformation = class(TfmMethodDialog)

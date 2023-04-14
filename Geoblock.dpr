@@ -21,7 +21,7 @@ program Geoblock;
 
 uses
   Forms,
-  GnuGetText in 'Source\Code\GnuGetText.pas',
+  gnuGettext in 'Source\Code\gnuGettext.pas',
   dBase in 'Source\Interface\dBase.pas' {dmBase: TDataModule},
   dDialogs in 'Source\Interface\dDialogs.pas' {dmDialogs: TDataModule},
   fInitialDialog in 'Source\Interface\fInitialDialog.pas' {fmInitialDialog},
@@ -131,7 +131,7 @@ uses
   uIOPoly in 'Source\Code\uIOPoly.pas',
   uDrawVor in 'Source\Code\uDrawVor.pas',
   uInverseDistance in 'Source\Code\uInverseDistance.pas',
-  uSuperblock in 'Source\Code\uSuperblock.pas',
+  cSuperblock in 'Source\Code\cSuperblock.pas',
   uLinearByTin in 'Source\Code\uLinearByTin.pas',
   uNaturalNeighbors in 'Source\Code\uNaturalNeighbors.pas',
   uKriging in 'Source\Code\uKriging.pas',
@@ -172,12 +172,11 @@ begin
   Application.Title := 'Geoblock';
   Application.CreateForm(TfmGeoblock, fmGeoblock);
   Application.CreateForm(TfmViewProjectManager, fmViewProjectManager);
-  Application.CreateForm(TfmFileDataBrowser, fmFileDataBrowser);
   Application.CreateForm(TdmDialogs, dmDialogs);
   Application.CreateForm(TdmBase, dmBase);
   Application.CreateForm(TfmFileNew, fmFileNew);
   Application.CreateForm(TfmInitialForm, fmInitialForm);
-  //  Application.CreateForm(TfmGS_Splash, fmGS_Splash);
+  Application.CreateForm(TfmFileDataBrowser, fmFileDataBrowser);
   fmGeoblock.Visible := True;
 //   LogoClose;
   Application.Run;

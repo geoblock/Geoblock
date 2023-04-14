@@ -5,9 +5,8 @@ inherited fmFileNew: TfmFileNew
   Caption = 'Simulation of Points'
   ClientHeight = 652
   ClientWidth = 755
-  ExplicitWidth = 761
-  ExplicitHeight = 681
-  PixelsPerInch = 96
+  ExplicitWidth = 773
+  ExplicitHeight = 699
   TextHeight = 16
   inherited PanelTop: TPanel
     Width = 755
