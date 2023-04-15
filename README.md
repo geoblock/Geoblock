@@ -1,3 +1,7 @@
 # Geoblock
 Geomodeling system for estimation of mineral resources
-In stage of conversion from px database to sqlite.
+
+Now in stage of conversion from px database to sqlite.
+
+Enjoy!
+© 1996-2023 The Geoblock Team
