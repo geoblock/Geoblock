@@ -1,5 +1,5 @@
 # Geoblock
-Geomodeling system for estimation of mineral resources
+Geomodeling system for estimation of recoverable mineral reserves
 
 Now in stage of conversion from px database to sqlite.
 
