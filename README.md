@@ -5,4 +5,4 @@ To compile the program you need to install GLScene components in RAD Studio befo
 
 Now in stage of conversion from px database to sqlite.
 
-© 1996-2023 The Geoblock Team
+© 1997-2023 The Geoblock Team
