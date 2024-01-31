@@ -1,5 +1,5 @@
 # Geoblock
-Geomodeling system of lythosphere for estimation of mineral reserves.
+Lithosphere geomodeling system for estimating mineral reserves.
 
 Now in stage of conversion from px database to sqlite.
 
